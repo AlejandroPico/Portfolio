@@ -9,9 +9,57 @@ const skillGroups=[
 {t:'IA, web y recursos',f:['ChatGPT.svg','Claude.svg','Claude code.svg','Deepseek.svg','Google Gemini.svg','Google.svg','Google developers.svg','Khan academy.svg','Stack Overflow.svg','Blogger.svg','Wordpress.svg']},
 {t:'Navegadores',f:['Chrome.svg','Firefox.svg','Brave.svg','Opera.svg','Microsoft Edge.svg','Apple Safari.svg','Duckduckgo.svg']}
 ];
-const catLabels={en:['Languages and markup','Databases and data','Frameworks and development','DevOps, cloud and repositories','IDEs, engines and editors','Systems and terminals','Design, documents and office tools','AI, web and resources','Browsers'],ca:['Llenguatges i marcatge','Bases de dades i dades','Frameworks i desenvolupament','DevOps, núvol i repositoris','IDEs, motors i editors','Sistemes i terminals','Disseny, documentació i ofimàtica','IA, web i recursos','Navegadors']};
-function skillName(file){return file.replace('.svg','').replace('C# (CSharp)','C#').replace('C++ (CPlusPlus)','C++').replace('PostgresSQL','PostgreSQL').replace('NET core','.NET Core').replace('Claude code','Claude Code').replace('Duckduckgo','DuckDuckGo').replace('Mariadb','MariaDB')}
-function skillSrc(file){return 'Icons/'+encodeURIComponent(file)}
-function renderSkills(){const root=document.querySelector('#conocimientos');if(!root)return;const lang=document.documentElement.lang||'es';root.innerHTML='<div class="section-title"><h2>'+(lang==='en'?'Skills':lang==='ca'?'Coneixements':'Conocimientos')+'</h2></div><div class="tech-groups skills-from-icons">'+skillGroups.map((g,gi)=>'<div class="tech-group"><h3>'+((catLabels[lang]&&catLabels[lang][gi])||g.t)+'</h3><div class="tech-grid">'+g.f.map(file=>'<div class="tech-card has-local-icon"><img src="'+skillSrc(file)+'" alt=""><span>'+skillName(file)+'</span></div>').join('')+'</div></div>').join('')+'</div>'}
-function skillStyle(){const s=document.createElement('style');s.textContent='.tech-card.has-local-icon:before{display:none!important}.tech-card.has-local-icon{font-size:1rem}.tech-card.has-local-icon img{width:2.55rem;height:2.55rem;object-fit:contain}.skills-from-icons .tech-grid{grid-template-columns:repeat(auto-fill,minmax(92px,1fr))}';document.head.appendChild(s)}
-window.addEventListener('DOMContentLoaded',()=>{skillStyle();renderSkills();const sel=document.getElementById('languageSelect');if(sel)sel.addEventListener('change',()=>setTimeout(renderSkills,0))});
+
+const catLabels={
+  en:['Languages and markup','Databases and data','Frameworks and development','DevOps, cloud and repositories','IDEs, engines and editors','Systems and terminals','Design, documents and office tools','AI, web and resources','Browsers'],
+  ca:['Llenguatges i marcatge','Bases de dades i dades','Frameworks i desenvolupament','DevOps, núvol i repositoris','IDEs, motors i editors','Sistemes i terminals','Disseny, documentació i ofimàtica','IA, web i recursos','Navegadors']
+};
+
+function skillName(file){
+  return file.replace('.svg','')
+    .replace('C# (CSharp)','C#')
+    .replace('C++ (CPlusPlus)','C++')
+    .replace('PostgresSQL','PostgreSQL')
+    .replace('NET core','.NET Core')
+    .replace('Claude code','Claude Code')
+    .replace('Duckduckgo','DuckDuckGo')
+    .replace('Mariadb','MariaDB');
+}
+
+function skillSrc(file){return 'Icons/'+encodeURIComponent(file);}
+
+function renderSkills(){
+  const root=document.querySelector('#conocimientos');
+  if(!root)return;
+  const lang=document.documentElement.lang||'es';
+  const title=lang==='en'?'Skills':lang==='ca'?'Coneixements':'Conocimientos';
+  root.innerHTML='<div class="section-title"><h2>'+title+'</h2></div><div class="tech-groups skills-from-icons">'+
+    skillGroups.map((g,gi)=>'<div class="tech-group"><h3>'+((catLabels[lang]&&catLabels[lang][gi])||g.t)+'</h3><div class="tech-grid">'+
+      g.f.map(file=>'<div class="tech-card has-local-icon"><img src="'+skillSrc(file)+'" alt=""><span>'+skillName(file)+'</span></div>').join('')+
+    '</div></div>').join('')+
+  '</div>';
+}
+
+function skillStyle(){
+  if(document.getElementById('skills-local-style'))return;
+  const s=document.createElement('style');
+  s.id='skills-local-style';
+  s.textContent='.tech-card.has-local-icon:before{display:none!important}.tech-card.has-local-icon{font-size:1rem}.tech-card.has-local-icon img{width:2.55rem;height:2.55rem;object-fit:contain}.skills-from-icons .tech-grid{grid-template-columns:repeat(auto-fill,minmax(92px,1fr))}';
+  document.head.appendChild(s);
+}
+
+function initSkillsIcons(){
+  skillStyle();
+  renderSkills();
+  const sel=document.getElementById('languageSelect');
+  if(sel&&!sel.dataset.skillsBound){
+    sel.dataset.skillsBound='true';
+    sel.addEventListener('change',()=>setTimeout(renderSkills,0));
+  }
+}
+
+if(document.readyState==='loading'){
+  window.addEventListener('DOMContentLoaded',initSkillsIcons,{once:true});
+}else{
+  initSkillsIcons();
+}
