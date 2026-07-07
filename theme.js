@@ -1,0 +1,1 @@
+function portfolioHourTheme(){var h=new Date().getHours();document.body.setAttribute('data-theme',h>=7&&h<20?'light':'dark')}portfolioHourTheme();
