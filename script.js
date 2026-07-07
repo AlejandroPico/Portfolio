@@ -15,3 +15,7 @@ navLinks.querySelectorAll('a').forEach((link) => {
     menuButton.setAttribute('aria-expanded', 'false');
   });
 });
+
+const skillsScript = document.createElement('script');
+skillsScript.src = 'skills-icons.js';
+document.body.appendChild(skillsScript);
