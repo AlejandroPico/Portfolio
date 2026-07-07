@@ -4,20 +4,27 @@ function initProgressNavigation(){
     .filter(link=>document.querySelector(link.getAttribute('href')));
   if(!nav||!links.length)return;
 
-  const style=document.createElement('style');
-  style.textContent=`
-    .site-nav{overflow:hidden;}
-    .scroll-progress{position:absolute;left:0;bottom:0;width:100%;height:2px;pointer-events:none;}
-    .scroll-progress span{display:block;width:0;height:100%;background:color-mix(in srgb,var(--accent) 55%,var(--muted));opacity:.7;transition:width .08s linear;}
-    .nav-links a[href^="#"].active{color:var(--text);background:color-mix(in srgb,var(--surface) 58%,transparent);border-color:color-mix(in srgb,var(--accent) 28%,var(--line));}
-    .nav-links a[href^="#"].active::after{content:"";width:.28rem;height:.28rem;border-radius:50%;background:var(--accent);opacity:.55;margin-left:.42rem;}
-  `;
-  document.head.appendChild(style);
+  if(!document.getElementById('progress-nav-style')){
+    const style=document.createElement('style');
+    style.id='progress-nav-style';
+    style.textContent=`
+      .site-nav{overflow:hidden;}
+      .scroll-progress{position:absolute;left:0;top:0;width:100%;height:3px;pointer-events:none;background:color-mix(in srgb,var(--line) 65%,transparent);z-index:50;}
+      .scroll-progress span{display:block;width:0;height:100%;background:linear-gradient(90deg,color-mix(in srgb,var(--accent) 45%,var(--muted)),color-mix(in srgb,var(--accent-2) 50%,var(--accent)));opacity:.82;transition:width .08s linear;box-shadow:0 0 14px color-mix(in srgb,var(--accent) 24%,transparent);}
+      .nav-links a[href^="#"].active{color:var(--text);background:color-mix(in srgb,var(--surface) 56%,transparent);border-color:color-mix(in srgb,var(--accent) 36%,var(--line));}
+      .nav-links a[href^="#"].active::after{content:"";width:.32rem;height:.32rem;border-radius:50%;background:var(--accent);opacity:.65;margin-left:.42rem;}
+    `;
+    document.head.appendChild(style);
+  }
 
-  const progress=document.createElement('div');
-  progress.className='scroll-progress';
-  progress.innerHTML='<span></span>';
-  nav.appendChild(progress);
+  let progress=document.querySelector('.scroll-progress');
+  if(!progress){
+    progress=document.createElement('div');
+    progress.className='scroll-progress';
+    progress.innerHTML='<span></span>';
+    nav.appendChild(progress);
+  }
+
   const bar=progress.querySelector('span');
   const sections=links.map(link=>({link,section:document.querySelector(link.getAttribute('href'))}));
 
@@ -27,7 +34,7 @@ function initProgressNavigation(){
     const value=Math.min(1,Math.max(0,window.scrollY/max));
     bar.style.width=(value*100).toFixed(2)+'%';
 
-    const checkpoint=window.scrollY+(window.innerHeight*.38);
+    const checkpoint=window.scrollY+(window.innerHeight*.40);
     let current=sections[0];
     sections.forEach(item=>{if(item.section.offsetTop<=checkpoint)current=item;});
     links.forEach(link=>link.classList.remove('active'));
