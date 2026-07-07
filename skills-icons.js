@@ -1,65 +1,18 @@
 const skillGroups=[
 {t:'Lenguajes y marcado',f:['Java.svg','C.svg','C++ (CPlusPlus).svg','C# (CSharp).svg','Embedded C.svg','Cobol.svg','Dart.svg','HTML5.svg','CSS3.svg','JavaScript.svg','jQuery.svg','Kotlin.svg','PHP.svg','Pascal.svg','Python.svg','R.svg','Ruby.svg','Rust.svg','Scala.svg','Swift.svg','TypeScript.svg','Visual Basic.svg','JSON.svg','LaTeX.svg','TeX.svg']},
-{t:'Bases de datos y datos',f:['MySQL.svg','Mariadb.svg','PostgresSQL.svg','Microsoft SQL Server.svg','Oracle.svg','MongoDB.svg','Neo4j.svg','SQLite.svg','Microsoft Office Access.svg','DBeaver.svg','SQL Developer.svg']},
-{t:'Frameworks y desarrollo',f:['Angular.svg','AngularJS.svg','React.svg','Node.js.svg','Spring.svg','Hibernate.svg','GWT.svg','Symfony.svg','Tailwind CSS.svg','Flutter.svg','NET core.svg','JUnit.svg','Apache Maven.svg','Gradle.svg','Apache Tomcat.svg','Firebase.svg','Postman.svg','OpenGL.svg','Openclaw.svg','Matter.svg','Salesforce.svg']},
+{t:'Bases de datos y datos',f:['MySQL.svg','Mariadb.svg','PostgresSQL.svg','Microsoft SQL Server.svg','Oracle.svg','MongoDB.svg','Neo4j.svg','SQLite.svg','Microsoft Office Access.svg','DBeaver.svg','SQL Developer.svg','Redis.svg','Couchbase.svg','Aws dynamodb.svg','Aws keyspaces.svg','Sybase.svg']},
+{t:'Frameworks, APIs y desarrollo',f:['Angular.svg','AngularJS.svg','React.svg','Node.js.svg','Spring.svg','Hibernate.svg','GWT.svg','Symfony.svg','Tailwind CSS.svg','Flutter.svg','NET core.svg','JUnit.svg','Apache Maven.svg','Gradle.svg','Apache Tomcat.svg','Firebase.svg','Postman.svg','OpenGL.svg','Openclaw.svg','Matter.svg','Salesforce.svg','Odoo_logo.svg']},
 {t:'DevOps, nube y repositorios',f:['Git.svg','GitHub.svg','GitHub Actions.svg','GitHub Codespaces.svg','GitLab.svg','Docker.svg','Kubernetes.svg','Jenkins.svg','AWS.svg','Google Cloud.svg','Microsoft Azure.svg']},
-{t:'IDEs, motores y editores',f:['IntelliJ IDEA.svg','Eclipse IDE.svg','Visual Studio Code (VS Code).svg','Visual Studio.svg','Android Studio.svg','Cursor.svg','Vim.svg','Godot Engine.svg','Unreal Engine.svg']},
-{t:'Sistemas y terminales',f:['Linux.svg','Debian.svg','Ubuntu.svg','Fedora.svg','Red Hat.svg','Gentoo.svg','Open SUSE.svg','Windows 11.svg','MS-DOS.svg','Powershell.svg','Raspberry Pi.svg','Android.svg']},
-{t:'Diseño, documentación y ofimática',f:['Adobe Acrobat DC.svg','Adobe Illustrator.svg','Adobe Photoshop.svg','Canva.svg','Figma.svg','GIMP.svg','Microsoft Office Excel.svg','Microsoft Office Word.svg','Microsoft Office PowerPoint.svg','Microsoft Office OneNote.svg','Microsoft Office Teams.svg','Microsoft OneDrive.svg','Google Drive.svg']},
+{t:'IDEs, motores y editores',f:['IntelliJ IDEA.svg','Eclipse IDE.svg','Visual Studio Code (VS Code).svg','Visual Studio.svg','Android Studio.svg','Cursor.svg','Vim.svg','Godot Engine.svg','Unreal Engine.svg','Unity.svg','Apache NetBeans.svg','Adobe Dreamweaver CC.svg']},
+{t:'Sistemas, virtualización y terminales',f:['Linux.svg','Debian.svg','Ubuntu.svg','Fedora.svg','Red Hat.svg','Gentoo.svg','Open SUSE.svg','Mint.svg','Windows 11.svg','MS-DOS.svg','Powershell.svg','Raspberry Pi.svg','Android.svg','VirtualBox.svg','Vmware workstation.svg']},
+{t:'Diseño, documentación y ofimática',f:['Adobe Acrobat DC.svg','Adobe Illustrator.svg','Adobe Photoshop.svg','Adobe InDesign CC.svg','Canva.svg','Figma.svg','GIMP.svg','Microsoft Office Excel.svg','Microsoft Office Word.svg','Microsoft Office PowerPoint.svg','Microsoft Office OneNote.svg','Microsoft Office Teams.svg','Microsoft OneDrive.svg','Google Drive.svg']},
 {t:'IA, web y recursos',f:['ChatGPT.svg','Claude.svg','Claude code.svg','Deepseek.svg','Google Gemini.svg','Google.svg','Google developers.svg','Khan academy.svg','Stack Overflow.svg','Blogger.svg','Wordpress.svg']},
-{t:'Navegadores',f:['Chrome.svg','Firefox.svg','Brave.svg','Opera.svg','Microsoft Edge.svg','Apple Safari.svg','Duckduckgo.svg']}
+{t:'Navegadores y privacidad',f:['Chrome.svg','Firefox.svg','Brave.svg','Opera.svg','Microsoft Edge.svg','Apple Safari.svg','Duckduckgo.svg','Tor Browser.svg','Tor.svg']}
 ];
-
-const catLabels={
-  en:['Languages and markup','Databases and data','Frameworks and development','DevOps, cloud and repositories','IDEs, engines and editors','Systems and terminals','Design, documents and office tools','AI, web and resources','Browsers'],
-  ca:['Llenguatges i marcatge','Bases de dades i dades','Frameworks i desenvolupament','DevOps, núvol i repositoris','IDEs, motors i editors','Sistemes i terminals','Disseny, documentació i ofimàtica','IA, web i recursos','Navegadors']
-};
-
-function skillName(file){
-  return file.replace('.svg','')
-    .replace('C# (CSharp)','C#')
-    .replace('C++ (CPlusPlus)','C++')
-    .replace('PostgresSQL','PostgreSQL')
-    .replace('NET core','.NET Core')
-    .replace('Claude code','Claude Code')
-    .replace('Duckduckgo','DuckDuckGo')
-    .replace('Mariadb','MariaDB');
-}
-
-function skillSrc(file){return 'Icons/'+encodeURIComponent(file);}
-
-function renderSkills(){
-  const root=document.querySelector('#conocimientos');
-  if(!root)return;
-  const lang=document.documentElement.lang||'es';
-  const title=lang==='en'?'Skills':lang==='ca'?'Coneixements':'Conocimientos';
-  root.innerHTML='<div class="section-title"><h2>'+title+'</h2></div><div class="tech-groups skills-from-icons">'+
-    skillGroups.map((g,gi)=>'<div class="tech-group"><h3>'+((catLabels[lang]&&catLabels[lang][gi])||g.t)+'</h3><div class="tech-grid">'+
-      g.f.map(file=>'<div class="tech-card has-local-icon"><img src="'+skillSrc(file)+'" alt=""><span>'+skillName(file)+'</span></div>').join('')+
-    '</div></div>').join('')+
-  '</div>';
-}
-
-function skillStyle(){
-  if(document.getElementById('skills-local-style'))return;
-  const s=document.createElement('style');
-  s.id='skills-local-style';
-  s.textContent='.tech-card.has-local-icon:before{display:none!important}.tech-card.has-local-icon{font-size:1rem}.tech-card.has-local-icon img{width:2.55rem;height:2.55rem;object-fit:contain}.skills-from-icons .tech-grid{grid-template-columns:repeat(auto-fill,minmax(92px,1fr))}';
-  document.head.appendChild(s);
-}
-
-function initSkillsIcons(){
-  skillStyle();
-  renderSkills();
-  const sel=document.getElementById('languageSelect');
-  if(sel&&!sel.dataset.skillsBound){
-    sel.dataset.skillsBound='true';
-    sel.addEventListener('change',()=>setTimeout(renderSkills,0));
-  }
-}
-
-if(document.readyState==='loading'){
-  window.addEventListener('DOMContentLoaded',initSkillsIcons,{once:true});
-}else{
-  initSkillsIcons();
-}
+const catLabels={en:['Languages and markup','Databases and data','Frameworks, APIs and development','DevOps, cloud and repositories','IDEs, engines and editors','Systems, virtualization and terminals','Design, documents and office tools','AI, web and resources','Browsers and privacy'],ca:['Llenguatges i marcatge','Bases de dades i dades','Frameworks, APIs i desenvolupament','DevOps, núvol i repositoris','IDEs, motors i editors','Sistemes, virtualització i terminals','Disseny, documentació i ofimàtica','IA, web i recursos','Navegadors i privacitat']};
+function skillName(file){return file.replace('.svg','').replace('C# (CSharp)','C#').replace('C++ (CPlusPlus)','C++').replace('PostgresSQL','PostgreSQL').replace('NET core','.NET Core').replace('Claude code','Claude Code').replace('Duckduckgo','DuckDuckGo').replace('Mariadb','MariaDB').replace('Odoo_logo','Odoo').replace('Aws dynamodb','AWS DynamoDB').replace('Aws keyspaces','AWS Keyspaces').replace('Vmware workstation','VMware Workstation')}
+function skillSrc(file){return 'Icons/'+encodeURIComponent(file)}
+function renderSkills(){const root=document.querySelector('#conocimientos');if(!root)return;const lang=document.documentElement.lang||'es';const title=lang==='en'?'Skills':lang==='ca'?'Coneixements':'Conocimientos';root.innerHTML='<div class="section-title"><h2>'+title+'</h2></div><div class="tech-groups skills-from-icons">'+skillGroups.map((g,gi)=>'<div class="tech-group"><h3>'+((catLabels[lang]&&catLabels[lang][gi])||g.t)+'</h3><div class="tech-grid">'+g.f.map(file=>'<div class="tech-card has-local-icon"><img src="'+skillSrc(file)+'" alt=""><span>'+skillName(file)+'</span></div>').join('')+'</div></div>').join('')+'</div>'}
+function skillStyle(){if(document.getElementById('skills-local-style'))return;const s=document.createElement('style');s.id='skills-local-style';s.textContent='.tech-card.has-local-icon:before{display:none!important}.tech-card.has-local-icon{font-size:1rem}.tech-card.has-local-icon img{width:2.55rem;height:2.55rem;object-fit:contain}.skills-from-icons .tech-grid{grid-template-columns:repeat(auto-fill,minmax(92px,1fr))}';document.head.appendChild(s)}
+function initSkillsIcons(){skillStyle();renderSkills();const sel=document.getElementById('languageSelect');if(sel&&!sel.dataset.skillsBound){sel.dataset.skillsBound='true';sel.addEventListener('change',()=>setTimeout(renderSkills,0))}}
+if(document.readyState==='loading'){window.addEventListener('DOMContentLoaded',initSkillsIcons,{once:true})}else{initSkillsIcons()}
