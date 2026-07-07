@@ -33,7 +33,6 @@ function initProgressNavigation(){
     const max=Math.max(1,doc.scrollHeight-window.innerHeight);
     const value=Math.min(1,Math.max(0,window.scrollY/max));
     bar.style.width=(value*100).toFixed(2)+'%';
-
     const checkpoint=window.scrollY+(window.innerHeight*.40);
     let current=sections[0];
     sections.forEach(item=>{if(item.section.offsetTop<=checkpoint)current=item;});
@@ -45,9 +44,11 @@ function initProgressNavigation(){
   window.addEventListener('scroll',updateProgress,{passive:true});
   window.addEventListener('resize',updateProgress);
 }
-
+function loadPortfolioAddon(src){if(document.querySelector('script[src^="'+src.split('?')[0]+'"]'))return;const s=document.createElement('script');s.async=false;s.src=src;document.body.appendChild(s)}
+function loadPortfolioCss(src){if(document.querySelector('link[href^="'+src.split('?')[0]+'"]'))return;const l=document.createElement('link');l.rel='stylesheet';l.href=src;document.head.appendChild(l)}
+function loadLanguageAddons(){loadPortfolioCss('language-picker.css?v=20260707-1');loadPortfolioAddon('fr.js?v=20260707-1');loadPortfolioAddon('de.js?v=20260707-1');loadPortfolioAddon('tags.js?v=20260707-1');loadPortfolioAddon('language-picker.js?v=20260707-1')}
 if(document.readyState==='loading'){
-  window.addEventListener('DOMContentLoaded',initProgressNavigation,{once:true});
+  window.addEventListener('DOMContentLoaded',()=>{initProgressNavigation();loadLanguageAddons()},{once:true});
 }else{
-  initProgressNavigation();
+  initProgressNavigation();loadLanguageAddons();
 }
