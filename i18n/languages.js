@@ -3,5 +3,7 @@ window.portfolioLanguages=[
   {code:'ca',label:'CA',name:'Català',flagUrl:'https://upload.wikimedia.org/wikipedia/commons/c/ce/Flag_of_Catalonia.svg',file:'ca.js'},
   {code:'en',label:'EN',name:'English',flagUrl:'https://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg',file:'en.js'},
   {code:'fr',label:'FR',name:'Français',flagUrl:'https://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg',file:'fr.js'},
-  {code:'de',label:'DE',name:'Deutsch',flagUrl:'https://upload.wikimedia.org/wikipedia/en/b/ba/Flag_of_Germany.svg',file:'de.js'}
+  {code:'de',label:'DE',name:'Deutsch',flagUrl:'https://upload.wikimedia.org/wikipedia/en/b/ba/Flag_of_Germany.svg',file:'de.js'},
+  {code:'pt',label:'PT',name:'Português',flagUrl:'https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_Portugal.svg',file:'pt.js'},
+  {code:'it',label:'IT',name:'Italiano',flagUrl:'https://upload.wikimedia.org/wikipedia/en/0/03/Flag_of_Italy.svg',file:'it.js'}
 ];
