@@ -3,10 +3,27 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Portfolio de Alejandro Pico: proyectos web, simuladores, visualización científica, desarrollo Java y herramientas interactivas publicadas en GitHub Pages.">
+  <meta name="description" content="Portfolio de Alejandro Pico: proyectos web, visualización científica, simuladores educativos, desarrollo backend Java, bases de datos y herramientas interactivas publicadas en GitHub Pages.">
+  <meta name="author" content="Alejandro Pico Perez">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://alejandropico.github.io/Portfolio/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:title" content="Alejandro Pico · Portfolio">
+  <meta property="og:description" content="Portfolio profesional de Alejandro Pico: desarrollo, sistemas, datos, proyectos web interactivos y visualización técnica.">
+  <meta property="og:url" content="https://alejandropico.github.io/Portfolio/">
+  <meta property="og:site_name" content="Alejandro Pico · Portfolio">
+  <meta property="og:image" content="https://alejandropico.github.io/Portfolio/CV/Alejandro%20Pico.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Alejandro Pico · Portfolio">
+  <meta name="twitter:description" content="Portfolio profesional con proyectos de desarrollo, ciencia, simuladores, visualización y herramientas interactivas.">
+  <meta name="twitter:image" content="https://alejandropico.github.io/Portfolio/CV/Alejandro%20Pico.svg">
   <title>Alejandro Pico · Portfolio</title>
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Person","name":"Alejandro Pico Perez","url":"https://alejandropico.github.io/Portfolio/","email":"alejandro.picoperez@gmail.com","sameAs":["https://github.com/AlejandroPico","https://www.linkedin.com/in/alejandro-pico-perez-a70681210/"],"knowsAbout":["Java","Spring","Backend development","Databases","ERP","Software architecture","Microservices","REST APIs","Technical visualization","Interactive web projects"]}
+  </script>
 </head>
 <body>
   <nav class="site-nav" aria-label="Navegación principal">
@@ -16,11 +33,11 @@
       <a href="#valor" data-i18n="nav.value">Valor</a>
       <a href="#proyectos" data-i18n="nav.projects">Proyectos</a>
       <a href="#conocimientos" data-i18n="nav.skills">Conocimientos</a>
-      <a href="#curriculum" data-i18n="nav.cv">Currículum</a>
+      <a href="#curriculum" data-i18n="nav.cv">CV</a>
       <a href="#contacto" data-i18n="nav.contact">Contacto</a>
       <a href="https://www.linkedin.com/in/alejandro-pico-perez-a70681210/" target="_blank" rel="noreferrer">LinkedIn</a>
       <a href="https://github.com/AlejandroPico" target="_blank" rel="noreferrer">GitHub</a>
-      <select id="languageSelect" class="language-select" aria-label="Idioma"><option value="es">ES</option><option value="ca">CA</option><option value="en">EN</option></select>
+      <select id="languageSelect" class="language-select" aria-label="Idioma"><option value="es">ES</option><option value="ca">CA</option><option value="en">EN</option><option value="fr">FR</option><option value="de">DE</option></select>
       <button id="themeButton" class="theme-button" type="button" data-mode="auto" aria-label="Cambiar tema">Auto</button>
     </div>
   </nav>
@@ -29,9 +46,9 @@
     <div class="hero-inner">
       <img class="portrait" src="CV/Alejandro%20Pico.svg?v=20260707" alt="Foto de Alejandro Pico">
       <div class="hero-copy">
-        <p class="kicker" data-i18n="hero.kicker">Desarrollador · Java · Web · Visualización técnica</p>
-        <h1><span>Alejandro</span><span>Pico Pérez</span></h1>
-        <p data-i18n="hero.text">Este espacio reúne mis proyectos web publicados: visualización científica, herramientas educativas, simuladores y experimentos técnicos. Es mi punto de entrada público para mostrar trabajo real, accesible y navegable.</p>
+        <p class="kicker" data-i18n="hero.kicker">Tecnología · Desarrollo · Sistemas · Datos · Aprendizaje continuo</p>
+        <h1><span>Alejandro</span><span>Pico Perez</span></h1>
+        <p data-i18n="hero.text">Bienvenido a mi portfolio. Si me das un momento, te mostraré quién soy, mis conocimientos, mi trayectoria y qué puedo aportar en tu empresa.</p>
       </div>
     </div>
   </header>
@@ -40,7 +57,7 @@
     <section class="section profile-open" id="perfil">
       <h2 data-i18n="profile.title">Quién soy</h2>
       <div class="profile-text">
-        <p data-i18n="profile.text1">Soy un profesional orientado a la tecnología, el desarrollo de software y la resolución práctica de problemas. Me interesa construir herramientas útiles, interfaces claras y proyectos que permitan aprender, visualizar o analizar información técnica de una forma directa.</p>
+        <p data-i18n="profile.text1">Soy Alejandro Pico Pérez, de Barcelona, y desde siempre he sido amante de la tecnología. Me interesa entender cómo funcionan las cosas, construir herramientas útiles y convertir ideas técnicas en soluciones claras, ordenadas y prácticas.</p>
         <p data-i18n="profile.text2">Mi trayectoria combina desarrollo, ERP, soporte técnico, sistemas, bases de datos, logística, coordinación de equipos, formación de producto y trabajo con usuarios reales. Esa mezcla me permite entender tanto la parte técnica como la parte funcional y operativa de un proyecto.</p>
         <p data-i18n="profile.text3">Me defino por la constancia, la curiosidad técnica y la capacidad de adaptarme a contextos distintos. He trabajado en entornos operativos, comerciales, logísticos y de software, y esa visión transversal me ayuda a detectar necesidades reales, aterrizar soluciones y comunicarme con perfiles técnicos y no técnicos.</p>
         <p data-i18n="profile.text4">Actualmente estoy reforzando mi perfil hacia desarrollo backend, Java, Spring, bases de datos, arquitectura de aplicaciones y proyectos web interactivos. Este portfolio funciona como escaparate vivo de esa evolución: no solo enumera conocimientos, sino que enlaza proyectos publicados que se pueden abrir, probar y revisar.</p>
@@ -71,12 +88,18 @@
 
     <section class="section skills-open" id="conocimientos"><div class="section-title"><h2 data-i18n="skills.title">Conocimientos</h2></div></section>
 
-    <section class="section resume-open" id="curriculum"><div class="resume-head"><h2 data-i18n="cv.title">Currículum</h2><div class="cv-actions"><a href="CV/CV%20-%20Alejandro%20Pico(1).pdf" download>Descargar CV ES</a><a href="CV/CV%20EN%20-%20Alejandro%20Pico%20-%202025.pdf" download>Descargar CV EN</a></div></div><div class="resume-columns"><div class="resume-column"><h3>Formación</h3><ol><li><span>2025 - Actualidad</span><strong>42 Barcelona</strong><ul><li>Campus de programación.</li><li>Refuerzo práctico de programación, resolución de problemas y lógica de software.</li></ul></li><li><span>2024 - Actualidad</span><strong>Grado en Ingeniería Informática · UNED</strong><ul><li>Parcialmente cursado / en curso.</li><li>Base universitaria en ingeniería, programación, sistemas y fundamentos informáticos.</li></ul></li><li><span>2021 - 2023</span><strong>CFGS Desarrollo de Aplicaciones Multiplataforma · STUCOM</strong><ul><li>Formación técnica en desarrollo de aplicaciones.</li><li>Programación, bases de datos, interfaces, aplicaciones multiplataforma y fundamentos de despliegue.</li></ul></li><li><span>2013 - 2015</span><strong>Grado en Administración y Dirección de Empresas · UNED</strong><ul><li>Parcialmente cursado.</li><li>Formación orientada a empresa, gestión, procesos, economía y visión funcional del negocio.</li></ul></li><li><span>2005 - 2007</span><strong>CFGM Equipos Electrónicos de Consumo · IES Escola del Treball</strong><ul><li>Formación técnica en electrónica.</li><li>Base en instalaciones, mantenimiento, componentes y sistemas electrónicos.</li></ul></li><li><span>Promoción 2002</span><strong>ESO · IES Escola Pia Sant Antoni Abad</strong><ul><li>Educación secundaria obligatoria.</li></ul></li></ol></div><div class="resume-column"><h3>Experiencia</h3><ol><li><span>Junio 2025 - Julio 2026</span><strong>Operador informático · AERCO S.A.</strong><ul><li>Mantenimiento de sistemas, equipos e infraestructura interna.</li><li>Administración de redes y soporte de entornos operativos.</li><li>Ingeniería de software y mantenimiento de productos internos.</li><li>Operador de incidencias y seguimiento de problemas técnicos.</li><li>Gestión de emergencias, continuidad operativa y funciones de operador de seguridad.</li></ul></li><li><span>2022 - 2024</span><strong>Programador ERP · Datalab</strong><ul><li>Analista de negocios y consultor funcional en proyectos ERP.</li><li>Integración de sistemas e implementación de procesos ERP.</li><li>Desarrollo Java y optimización backend.</li><li>Control de calidad, validación y formación de producto.</li><li>Soporte a clientes, migración legacy, implementación ERP y arquitectura de bases de datos.</li></ul></li><li><span>2015 - 2020</span><strong>Programador web, aplicaciones y ERP · Voluntariado · El Corte Inglés</strong><ul><li>Administración de redes y sistemas internos.</li><li>Instalación y mantenimiento de TPV.</li><li>Gestión de incidencias y soporte técnico interno.</li><li>Desarrollo de aplicaciones para uso interno, despliegue de versiones, web y mantenimiento ERP.</li></ul></li><li><span>2006 - 2022</span><strong>El Corte Inglés</strong><ul><li>Mozo de almacén, stockroom manager, inventariado, ajustes y movimientos de stock.</li><li>Coordinación de equipos, logística de envíos y transportes, gestión de pedidos y productividad.</li><li>Control de indicadores KPI, rentabilidades y mejora de productividad.</li><li>Dependiente, ayudante de sección, Sales Manager, responsable de tienda y responsable de grupo.</li></ul></li><li><span>2005</span><strong>Oficial técnico de 1ª en electricidad · Astilleros navales de Barcelona · Merusa</strong><ul><li>Instalación de equipos electrónicos en navíos.</li><li>Mantenimiento de instalaciones de sistemas de radares y geolocalización.</li><li>Mantenimiento de sistemas eléctricos de dirección y sistemas de emergencia.</li></ul></li></ol></div></div></section>
+    <section class="section resume-open" id="curriculum">
+      <div class="resume-head"><h2 data-i18n="cv.title">CV</h2><div class="cv-actions"><a href="CV/CV%20ES%20-%20Alejandro%20Pico.pdf" download>Descargar CV ES</a><a href="CV/CV%20EN%20-%20Alejandro%20Pico.pdf" download>Descargar CV EN</a></div></div>
+      <div class="resume-columns">
+        <div class="resume-column"><h3>Formación</h3><ol><li><span>2025 - Actualidad</span><strong>42 Barcelona</strong><ul><li>Campus de programación.</li><li>Refuerzo práctico de programación, resolución de problemas y lógica de software.</li></ul></li><li><span>2024 - Actualidad</span><strong>Grado en Ingeniería Informática · UNED</strong><ul><li>Parcialmente cursado / en curso.</li><li>Base universitaria en ingeniería, programación, sistemas y fundamentos informáticos.</li></ul></li><li><span>2021 - 2023</span><strong>CFGS Desarrollo de Aplicaciones Multiplataforma · STUCOM</strong><ul><li>Formación técnica en desarrollo de aplicaciones.</li><li>Programación, bases de datos, interfaces, aplicaciones multiplataforma y fundamentos de despliegue.</li></ul></li><li><span>2013 - 2015</span><strong>Grado en Administración y Dirección de Empresas · UNED</strong><ul><li>Parcialmente cursado.</li><li>Formación orientada a empresa, gestión, procesos, economía y visión funcional del negocio.</li></ul></li><li><span>2005 - 2007</span><strong>CFGM Equipos Electrónicos de Consumo · IES Escola del Treball</strong><ul><li>Formación técnica en electrónica.</li><li>Base en instalaciones, mantenimiento, componentes y sistemas electrónicos.</li></ul></li><li><span>Promoción 2002</span><strong>ESO · IES Escola Pia Sant Antoni Abad</strong><ul><li>Educación secundaria obligatoria.</li></ul></li></ol></div>
+        <div class="resume-column"><h3>Experiencia</h3><ol><li><span>Junio 2025 - Julio 2026</span><strong>Operador informático · AERCO S.A.</strong><ul><li>Mantenimiento de sistemas, equipos e infraestructura interna.</li><li>Administración de redes y soporte de entornos operativos.</li><li>Ingeniería de software y mantenimiento de productos internos.</li><li>Operador de incidencias y seguimiento de problemas técnicos.</li><li>Gestión de emergencias, continuidad operativa y funciones de operador de seguridad.</li></ul></li><li><span>2022 - 2024</span><strong>Programador ERP · Datalab</strong><ul><li>Analista de negocios y consultor funcional en proyectos ERP.</li><li>Integración de sistemas e implementación de procesos ERP.</li><li>Desarrollo Java y optimización backend.</li><li>Control de calidad, validación y formación de producto.</li><li>Soporte a clientes, migración legacy, implementación ERP y arquitectura de bases de datos.</li></ul></li><li><span>2015 - 2020</span><strong>Programador web, aplicaciones y ERP · Voluntariado · El Corte Inglés</strong><ul><li>Administración de redes y sistemas internos.</li><li>Instalación y mantenimiento de TPV.</li><li>Gestión de incidencias y soporte técnico interno.</li><li>Desarrollo de aplicaciones para uso interno, despliegue de versiones, web y mantenimiento ERP.</li></ul></li><li><span>2006 - 2022</span><strong>El Corte Inglés</strong><ul><li>Mozo de almacén, stockroom manager, inventariado, ajustes y movimientos de stock.</li><li>Coordinación de equipos, logística de envíos y transportes, gestión de pedidos y productividad.</li><li>Control de indicadores KPI, rentabilidades y mejora de productividad.</li><li>Dependiente, ayudante de sección, Sales Manager, responsable de tienda y responsable de grupo.</li></ul></li><li><span>2005</span><strong>Oficial técnico de 1ª en electricidad · Astilleros navales de Barcelona · Merusa</strong><ul><li>Instalación de equipos electrónicos en navíos.</li><li>Mantenimiento de instalaciones de sistemas de radares y geolocalización.</li><li>Mantenimiento de sistemas eléctricos de dirección y sistemas de emergencia.</li></ul></li></ol></div>
+      </div>
+    </section>
 
     <section class="section contact-open" id="contacto"><div class="section-title"><h2 data-i18n="contact.title">Contacto</h2><p data-i18n="contact.lead">Escríbeme desde este formulario. Al enviarlo se abrirá tu cliente de correo con el mensaje preparado.</p></div><form class="contact-form" action="mailto:alejandro.picoperez@gmail.com?subject=Contacto%20desde%20el%20portfolio" method="post" enctype="text/plain"><label>Nombre<input type="text" name="nombre" autocomplete="name"></label><label>Asunto<input type="text" name="asunto" value="Contacto desde el portfolio"></label><label>Mensaje<textarea name="mensaje" rows="6" required></textarea></label><button type="submit">Enviar mensaje</button></form></section>
   </main>
 
-  <footer><p>© <span id="year"></span> Alejandro Pico Pérez</p><a href="#inicio" data-i18n="footer.top">Volver arriba</a></footer>
-  <script src="theme.js"></script><script src="i18n.js?v=20260707-3"></script><script src="skills-icons.js?v=20260707-3"></script><script src="script.js?v=20260707-3"></script>
+  <footer><p>© <span id="year"></span> Alejandro Pico Perez</p><a href="#inicio" data-i18n="footer.top">Volver arriba</a></footer>
+  <script src="theme.js?v=20260708-1"></script><script src="skills-icons.js?v=20260708-1"></script><script src="script.js?v=20260708-4"></script>
 </body>
 </html>
