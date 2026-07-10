@@ -18,7 +18,9 @@ function initPortfolio(){const year=document.querySelector('#year');if(year)year
 loadCss('layout-polish.css?v=20260707-1');
 loadCss('glass-ui.css?v=20260708-2');
 loadCss('theme-variants.css?v=20260708-2');
+loadCss('plan-b.css?v=20260710-1');
 portfolioApplyTheme();
 if(document.readyState==='loading')window.addEventListener('DOMContentLoaded',initPortfolio,{once:true});else initPortfolio();
 document.addEventListener('portfolio-language-change',()=>setTimeout(initScrollReveal,120));
 loadJs('i18n/index.js?v=20260710-1');
+loadJs('plan-b.js?v=20260710-1');
