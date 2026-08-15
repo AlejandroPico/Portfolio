@@ -2,8 +2,8 @@
   .site-nav{
     position:fixed!important;
     top:max(.75rem,env(safe-area-inset-top))!important;
-    right:max(.75rem,env(safe-area-inset-right))!important;
-    left:auto!important;
+    left:max(.75rem,env(safe-area-inset-left))!important;
+    right:auto!important;
     width:auto!important;
     min-height:0!important;
     padding:0!important;
