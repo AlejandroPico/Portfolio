@@ -1,0 +1,13 @@
+:root{--solar-transition:1.6s cubic-bezier(.2,.75,.2,1)}
+body,.site-nav,.project-card,.tech-card,.project-icon,.language-picker__button,.language-picker__menu,.theme-button,.menu-button,.contact-form input,.contact-form textarea,.cv-actions a,.contact-form button{transition:background-color var(--solar-transition),background var(--solar-transition),color var(--solar-transition),border-color var(--solar-transition),box-shadow var(--solar-transition),opacity var(--solar-transition)!important}
+body[data-day-phase="morning"]{--bg:#f8f5ee;--surface:#fffdf8;--surface-2:#eee8dd;--text:#222326;--muted:#686159;--line:rgba(49,43,36,.14);--accent:#b65f31;--accent-2:#356b7c;--chip:#f1e3cb;--nav:rgba(248,245,238,.90)}
+body[data-day-phase="afternoon"]{--bg:#f2dfc5;--surface:#fff2df;--surface-2:#e7cfae;--text:#2c2520;--muted:#735f4d;--line:rgba(78,55,36,.17);--accent:#c46b35;--accent-2:#8e664b;--chip:#ead0ad;--nav:rgba(242,223,197,.90)}
+body[data-day-phase="night"]{--bg:#0f141b;--surface:#171f2a;--surface-2:#202b38;--text:#f3efe7;--muted:#b8b1a6;--line:rgba(255,255,255,.14);--accent:#d99a5d;--accent-2:#7fb7c9;--chip:#2a3442;--nav:rgba(15,20,27,.88)}
+body[data-day-phase="morning"]::before{background:radial-gradient(circle at 14% 4%,rgba(255,222,158,.26),transparent 28rem),radial-gradient(circle at 84% 14%,rgba(122,189,215,.17),transparent 28rem),linear-gradient(135deg,rgba(255,255,255,.15),transparent 45%)!important;opacity:.92!important}
+body[data-day-phase="afternoon"]::before{background:radial-gradient(circle at 14% 10%,rgba(235,147,73,.29),transparent 29rem),radial-gradient(circle at 82% 18%,rgba(184,114,79,.18),transparent 27rem),radial-gradient(circle at 58% 84%,rgba(255,214,154,.18),transparent 24rem),linear-gradient(135deg,rgba(255,244,222,.12),transparent 46%)!important;opacity:.95!important}
+body[data-day-phase="night"]::before{background:radial-gradient(circle at 16% 18%,rgba(93,133,184,.16),transparent 27rem),radial-gradient(circle at 82% 24%,rgba(93,79,145,.13),transparent 26rem),linear-gradient(145deg,rgba(10,16,26,.14),transparent 42%)!important;opacity:.86!important}
+.theme-button[data-phase="morning"]::before{content:"☀";margin-right:.34rem;font-size:.92em}
+.theme-button[data-phase="afternoon"]::before{content:"◐";margin-right:.34rem;font-size:.92em}
+.theme-button[data-phase="night"]::before{content:"☾";margin-right:.34rem;font-size:.98em}
+.theme-button[data-phase="auto"]::before{content:"◌";margin-right:.34rem;font-size:.92em}
+@media(prefers-reduced-motion:reduce){body,.site-nav,.project-card,.tech-card,.project-icon,.language-picker__button,.language-picker__menu,.theme-button,.menu-button,.contact-form input,.contact-form textarea,.cv-actions a,.contact-form button{transition:none!important}}
