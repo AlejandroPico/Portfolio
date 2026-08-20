@@ -1,11 +1,11 @@
 const portfolioThemeLabels={
-  es:{auto:'Automático',morning:'Mañana',afternoon:'Tarde',night:'Noche'},
-  ca:{auto:'Automàtic',morning:'Matí',afternoon:'Tarda',night:'Nit'},
-  en:{auto:'Automatic',morning:'Morning',afternoon:'Afternoon',night:'Night'},
-  fr:{auto:'Automatique',morning:'Matin',afternoon:'Après-midi',night:'Nuit'},
-  de:{auto:'Automatisch',morning:'Morgen',afternoon:'Nachmittag',night:'Nacht'},
-  pt:{auto:'Automático',morning:'Manhã',afternoon:'Tarde',night:'Noite'},
-  it:{auto:'Automatico',morning:'Mattina',afternoon:'Pomeriggio',night:'Notte'}
+  es:{auto:'Auto',morning:'Mañana',afternoon:'Tarde',night:'Noche'},
+  ca:{auto:'Auto',morning:'Matí',afternoon:'Tarda',night:'Nit'},
+  en:{auto:'Auto',morning:'Morning',afternoon:'Afternoon',night:'Night'},
+  fr:{auto:'Auto',morning:'Matin',afternoon:'Après-midi',night:'Nuit'},
+  de:{auto:'Auto',morning:'Morgen',afternoon:'Nachmittag',night:'Nacht'},
+  pt:{auto:'Auto',morning:'Manhã',afternoon:'Tarde',night:'Noite'},
+  it:{auto:'Auto',morning:'Mattina',afternoon:'Pomeriggio',night:'Notte'}
 };
 const solarPalettes={
   morning:{bg:'#f8f5ee',surface:'#fffdf8',surface2:'#eee8dd',text:'#222326',muted:'#686159',line:'rgba(49,43,36,.14)',accent:'#b65f31',accent2:'#356b7c',chip:'#f1e3cb',nav:'rgba(248,245,238,.90)'},
@@ -28,5 +28,5 @@ function clearPalette(){['--bg','--surface','--surface-2','--text','--muted','--
 function themeLanguage(){const l=(document.documentElement.lang||'es').toLowerCase().split('-')[0];return portfolioThemeLabels[l]?l:'es'}
 function updateThemeButton(){const b=document.getElementById('themeButton');if(!b)return;const labels=portfolioThemeLabels[themeLanguage()];b.dataset.phase=portfolioThemeMode;b.textContent=labels[portfolioThemeMode]||labels.auto;b.setAttribute('aria-label',`${labels.auto}: ${b.textContent}`)}
 function applySolarTheme(){document.body.setAttribute('data-visual-style',portfolioVisualStyle);if(portfolioThemeMode==='auto'){const state=automaticSolarState();applyPalette(state.palette);document.body.dataset.dayPhase=state.phase;document.body.dataset.theme=state.phase==='night'?'dark':state.phase==='afternoon'?'afternoon':'light';}else{clearPalette();const phase=portfolioThemeMode;document.body.dataset.dayPhase=phase;document.body.dataset.theme=phase==='night'?'dark':phase==='afternoon'?'afternoon':'light';}updateThemeButton()}
-function installSolarTheme(){let saved='auto';try{saved=localStorage.getItem('portfolio-theme')||'auto'}catch(e){}if(saved==='light')saved='morning';if(saved==='dark')saved='night';if(!['auto','morning','afternoon','night'].includes(saved))saved='auto';portfolioThemeMode=saved;portfolioApplyTheme=applySolarTheme;const old=document.getElementById('themeButton');if(old){const b=old.cloneNode(true);old.replaceWith(b);b.addEventListener('click',event=>{if(event.altKey){event.preventDefault();portfolioToggleThemePanel();return}const modes=['auto','morning','afternoon','night'];portfolioThemeMode=modes[(modes.indexOf(portfolioThemeMode)+1)%modes.length];try{localStorage.setItem('portfolio-theme',portfolioThemeMode)}catch(e){}applySolarTheme()})}applySolarTheme();setInterval(()=>{if(portfolioThemeMode==='auto')applySolarTheme()},60000);document.addEventListener('portfolio-language-change',updateThemeButton);window.addEventListener('focus',()=>{if(portfolioThemeMode==='auto')applySolarTheme()});document.addEventListener('visibilitychange',()=>{if(!document.hidden&&portfolioThemeMode==='auto')applySolarTheme()})}
+function installSolarTheme(){let saved='auto';try{saved=localStorage.getItem('portfolio-theme')||'auto'}catch(e){}if(saved==='light')saved='morning';if(saved==='dark')saved='night';if(!['auto','morning','afternoon','night'].includes(saved))saved='auto';portfolioThemeMode=saved;portfolioApplyTheme=applySolarTheme;const old=document.getElementById('themeButton');if(old){const b=old.cloneNode(true);old.replaceWith(b);b.addEventListener('click',event=>{if(event.altKey){event.preventDefault();event.stopPropagation();portfolioToggleThemePanel();return}const modes=['auto','morning','afternoon','night'];portfolioThemeMode=modes[(modes.indexOf(portfolioThemeMode)+1)%modes.length];try{localStorage.setItem('portfolio-theme',portfolioThemeMode)}catch(e){}applySolarTheme()})}applySolarTheme();setInterval(()=>{if(portfolioThemeMode==='auto')applySolarTheme()},60000);document.addEventListener('portfolio-language-change',updateThemeButton);window.addEventListener('focus',()=>{if(portfolioThemeMode==='auto')applySolarTheme()});document.addEventListener('visibilitychange',()=>{if(!document.hidden&&portfolioThemeMode==='auto')applySolarTheme()})}
 if(document.readyState==='loading')window.addEventListener('DOMContentLoaded',installSolarTheme,{once:true});else installSolarTheme();
