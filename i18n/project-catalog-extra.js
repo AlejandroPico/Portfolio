@@ -1,5 +1,5 @@
 const extraCatalogProjects=[
-  {id:'scansat',key:'scansat',title:'ScanSat',url:'https://alejandropico.github.io/Scansat/',repo:'https://github.com/AlejandroPico/Scansat',icon:'https://alejandropico.github.io/Scansat/favicon.svg',description:'Atlas tridimensional del tráfico orbital público y de la exploración del Sistema Solar, con satélites SGP4, efemérides JPL, sondas, basura espacial, cuerpos a escala física y navegación temporal.',tags:['Órbitas','Sistema Solar']},
+  {id:'scansat',key:'scansat',title:'ScanSat',url:'https://alejandropico.github.io/Scansat/',repo:'https://github.com/AlejandroPico/Scansat',icon:'assets/scansat-favicon.svg?v=20260829-3',description:'Atlas tridimensional del tráfico orbital público y de la exploración del Sistema Solar, con satélites SGP4, efemérides JPL, sondas, basura espacial, cuerpos a escala física y navegación temporal.',tags:['Órbitas','Sistema Solar']},
   {id:'molecular',key:'molecular',title:'Molecular',url:'https://alejandropico.github.io/Molecular/',repo:'https://github.com/AlejandroPico/Molecular',icon:'https://alejandropico.github.io/Molecular/favicon.svg',description:'Estudio químico visual para construir estructuras 2D, validar enlaces y explorar moléculas en 3D, con los 118 elementos, fragmentos, edición vectorial y documentos portables.',tags:['Química','Modelado 3D']}
 ];
 const extraCatalogTranslations={
