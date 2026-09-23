@@ -146,6 +146,10 @@ La sección de conocimientos incluye lenguajes, bases de datos, frameworks, herr
 
 ## Despliegue
 
+### Instalación en Android
+
+Abra `https://alejandropico.github.io/Portfolio/` en Chrome y elija **Instalar aplicación** en el menú. El manifest, los iconos y el service worker permiten abrir el portfolio en una ventana independiente y volver a consultar los recursos visitados sin conexión. La instalación requiere HTTPS o localhost; abrir `index.html` como archivo local no activa el service worker.
+
 El proyecto se publica mediante **GitHub Pages** desde la rama `main`.
 
 No requiere instalación ni build. Para ejecutarlo localmente basta con abrir `index.html` en un navegador o servir la carpeta con un servidor estático simple.
