@@ -5,7 +5,10 @@ const portfolioThemeLabels={
   fr:{auto:'Auto',morning:'Matin',afternoon:'Après-midi',night:'Nuit'},
   de:{auto:'Auto',morning:'Morgen',afternoon:'Nachmittag',night:'Nacht'},
   pt:{auto:'Auto',morning:'Manhã',afternoon:'Tarde',night:'Noite'},
-  it:{auto:'Auto',morning:'Mattina',afternoon:'Pomeriggio',night:'Notte'}
+  it:{auto:'Auto',morning:'Mattina',afternoon:'Pomeriggio',night:'Notte'},
+  zh:{auto:'Auto',morning:'早晨',afternoon:'下午',night:'夜晚'},
+  ja:{auto:'Auto',morning:'朝',afternoon:'午後',night:'夜'},
+  hi:{auto:'Auto',morning:'सुबह',afternoon:'दोपहर',night:'रात'}
 };
 const solarPalettes={
   morning:{bg:'#f8f5ee',surface:'#fffdf8',surface2:'#eee8dd',text:'#222326',muted:'#686159',line:'rgba(49,43,36,.14)',accent:'#b65f31',accent2:'#356b7c',chip:'#f1e3cb',nav:'rgba(248,245,238,.90)'},

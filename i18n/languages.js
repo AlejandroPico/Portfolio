@@ -5,5 +5,8 @@ window.portfolioLanguages=[
   {code:'fr',label:'FR',name:'Français',flagUrl:'https://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg',file:'fr.js'},
   {code:'de',label:'DE',name:'Deutsch',flagUrl:'https://upload.wikimedia.org/wikipedia/en/b/ba/Flag_of_Germany.svg',file:'de.js'},
   {code:'pt',label:'PT',name:'Português',flagUrl:'https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_Portugal.svg',file:'pt.js'},
-  {code:'it',label:'IT',name:'Italiano',flagUrl:'https://upload.wikimedia.org/wikipedia/en/0/03/Flag_of_Italy.svg',file:'it.js'}
+  {code:'it',label:'IT',name:'Italiano',flagUrl:'https://upload.wikimedia.org/wikipedia/en/0/03/Flag_of_Italy.svg',file:'it.js'},
+  {code:'zh',label:'中文',name:'中文（简体）',flagUrl:'https://upload.wikimedia.org/wikipedia/commons/0/0d/Flag_of_China.svg',file:'zh.js'},
+  {code:'ja',label:'日本語',name:'日本語',flagUrl:'https://upload.wikimedia.org/wikipedia/en/9/9e/Flag_of_Japan.svg',file:'ja.js'},
+  {code:'hi',label:'हिन्दी',name:'हिन्दी',flagUrl:'https://upload.wikimedia.org/wikipedia/en/4/41/Flag_of_India.svg',file:'hi.js'}
 ];

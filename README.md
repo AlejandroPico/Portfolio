@@ -182,3 +182,10 @@ Proyecto en evolución. La intención es mantenerlo como portfolio activo, añad
 
 - Añadido Lector: lectura de libros y documentos con notas y narración por voz.
 - Su icono se obtiene de `https://alejandropico.github.io/Lector/favicon.svg`.
+
+## Actualización 20261013-2
+
+- Diez idiomas: español, catalán, inglés, francés, alemán, portugués, italiano, chino simplificado, japonés e hindi.
+- Auto es la opción inicial del selector: sigue las preferencias de idioma del navegador/sistema y permite volver a la detección automática tras elegir un idioma manualmente. Si ninguno está disponible, se utiliza inglés.
+- Traducciones de perfil, CV, contacto, descripciones y etiquetas de los 29 proyectos, incluido Lector.
+- Los iconos de las fichas siguen obteniéndose del `favicon.svg` de la raíz pública de cada proyecto.

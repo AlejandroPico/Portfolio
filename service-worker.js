@@ -1,5 +1,5 @@
 const CACHE_PREFIX = 'portfolio-pwa-';
-const CACHE_NAME = `${CACHE_PREFIX}1`;
+const CACHE_NAME = `${CACHE_PREFIX}20261013-2`;
 const APP_SHELL = [
   './', './index.html', './styles.css', './solar-theme.css',
   './script.js', './skills-icons.js', './solar-theme.js',
