@@ -1,23 +1,580 @@
 const extraCatalogProjects=[
-  {id:'universal',key:'universal',title:'Universal',url:'https://alejandropico.github.io/Universal/',repo:'https://github.com/AlejandroPico/Universal',icon:'https://alejandropico.github.io/Universal/favicon.svg',description:'Atlas continuo del universo, desde la Tierra y el tráfico orbital hasta estrellas, galaxias, estructura a gran escala y el horizonte observable, con escalas físicas, datos científicos y navegación 3D.',tags:['Universo','Atlas 3D']},
-  {id:'molecular',key:'molecular',title:'Molecular',url:'https://alejandropico.github.io/Molecular/',repo:'https://github.com/AlejandroPico/Molecular',icon:'https://alejandropico.github.io/Molecular/favicon.svg',description:'Estudio químico visual para construir estructuras 2D, validar enlaces y explorar moléculas en 3D, con los 118 elementos, fragmentos, edición vectorial y documentos portables.',tags:['Química','Modelado 3D']},
-  {id:'games',key:'games',title:'Games',url:'https://alejandropico.github.io/Games/',repo:'https://github.com/AlejandroPico/Games',icon:'https://alejandropico.github.io/Games/favicon.svg',description:'Colección de juegos de distintos géneros para disfrutar directamente en el navegador, desde mesa, lógica y estrategia hasta cartas y otros formatos interactivos, reunidos en una misma experiencia.',tags:['Juegos','PWA']},
-  {id:'transportination',key:'transportination',title:'Transportination',url:'https://alejandropico.github.io/Transportination/',repo:'https://github.com/AlejandroPico/Transportination',icon:'https://alejandropico.github.io/Transportination/favicon.svg',description:'Atlas interactivo del movimiento sobre y alrededor de la Tierra, que reúne aviación, ferrocarril, navegación y órbitas con cartografía, meteorología y vistas 2D/3D.',tags:['Transporte','Atlas 3D']},
-  {id:'en-ruta',key:'enRuta',title:'En Ruta',url:'https://alejandropico.github.io/TMB/',repo:'https://github.com/AlejandroPico/TMB',icon:'https://alejandropico.github.io/TMB/favicon.svg',description:'Atlas interactivo del transporte público de Barcelona para explorar líneas, paradas, horarios, recorridos y conexiones de metro, autobús y funicular sobre un mapa vivo de la ciudad.',tags:['Transporte público','Barcelona']},
-  {id:'elecciones',key:'elecciones',title:'Elecciones',url:'https://alejandropico.github.io/Elecciones/',repo:'https://github.com/AlejandroPico/Elecciones',icon:'https://alejandropico.github.io/Elecciones/favicon.svg',description:'Cuestionario interactivo para explorar posiciones políticas por temas, comparar respuestas sobre distintos ejes y visualizar afinidades, cobertura y resultados mediante gráficos y coordenadas.',tags:['Política','Cuestionario']},
-  {id:'bum',key:'bum',title:'Bum',url:'https://alejandropico.github.io/Bum/',repo:'https://github.com/AlejandroPico/Bum',icon:'https://alejandropico.github.io/Bum/favicon.svg',description:'Simulador 3D para explorar los efectos de explosiones nucleares e impactos de asteroides y cometas sobre cualquier lugar del mundo, con visualización geográfica, física y temporal de sus consecuencias.',tags:['Simulación','Impactos']},
-  {id:'sizes',key:'sizes',title:'Sizes',url:'https://alejandropico.github.io/Sizes/',repo:'https://github.com/AlejandroPico/Sizes',icon:'https://alejandropico.github.io/Sizes/favicon.svg',description:'Comparador visual multiescala para enfrentar objetos de tamaños muy distintos, desde lo microscópico hasta el universo observable, con vistas 2D/3D, catálogo y enciclopedia.',tags:['Escalas','Comparador visual']}
+  {
+    "id": "universal",
+    "key": "universal",
+    "title": "Universal",
+    "url": "https://alejandropico.github.io/Universal/",
+    "repo": "https://github.com/AlejandroPico/Universal",
+    "icon": "https://alejandropico.github.io/Universal/favicon.svg",
+    "description": "Atlas continuo del universo, desde la Tierra y el tráfico orbital hasta estrellas, galaxias, estructura a gran escala y el horizonte observable, con escalas físicas, datos científicos y navegación 3D.",
+    "tags": [
+      "Universo",
+      "Atlas 3D"
+    ]
+  },
+  {
+    "id": "molecular",
+    "key": "molecular",
+    "title": "Molecular",
+    "url": "https://alejandropico.github.io/Molecular/",
+    "repo": "https://github.com/AlejandroPico/Molecular",
+    "icon": "https://alejandropico.github.io/Molecular/favicon.svg",
+    "description": "Estudio químico visual para construir estructuras 2D, validar enlaces y explorar moléculas en 3D, con los 118 elementos, fragmentos, edición vectorial y documentos portables.",
+    "tags": [
+      "Química",
+      "Modelado 3D"
+    ]
+  },
+  {
+    "id": "games",
+    "key": "games",
+    "title": "Games",
+    "url": "https://alejandropico.github.io/Games/",
+    "repo": "https://github.com/AlejandroPico/Games",
+    "icon": "https://alejandropico.github.io/Games/favicon.svg",
+    "description": "Colección de juegos de distintos géneros para disfrutar directamente en el navegador, desde mesa, lógica y estrategia hasta cartas y otros formatos interactivos, reunidos en una misma experiencia.",
+    "tags": [
+      "Juegos",
+      "PWA"
+    ]
+  },
+  {
+    "id": "transportination",
+    "key": "transportination",
+    "title": "Transportination",
+    "url": "https://alejandropico.github.io/Transportination/",
+    "repo": "https://github.com/AlejandroPico/Transportination",
+    "icon": "https://alejandropico.github.io/Transportination/favicon.svg",
+    "description": "Atlas interactivo del movimiento sobre y alrededor de la Tierra, que reúne aviación, ferrocarril, navegación y órbitas con cartografía, meteorología y vistas 2D/3D.",
+    "tags": [
+      "Transporte",
+      "Atlas 3D"
+    ]
+  },
+  {
+    "id": "en-ruta",
+    "key": "enRuta",
+    "title": "En Ruta",
+    "url": "https://alejandropico.github.io/TMB/",
+    "repo": "https://github.com/AlejandroPico/TMB",
+    "icon": "https://alejandropico.github.io/TMB/favicon.svg",
+    "description": "Atlas interactivo del transporte público de Barcelona para explorar líneas, paradas, horarios, recorridos y conexiones de metro, autobús y funicular sobre un mapa vivo de la ciudad.",
+    "tags": [
+      "Transporte público",
+      "Barcelona"
+    ]
+  },
+  {
+    "id": "elecciones",
+    "key": "elecciones",
+    "title": "Elecciones",
+    "url": "https://alejandropico.github.io/Elecciones/",
+    "repo": "https://github.com/AlejandroPico/Elecciones",
+    "icon": "https://alejandropico.github.io/Elecciones/favicon.svg",
+    "description": "Cuestionario interactivo para explorar posiciones políticas por temas, comparar respuestas sobre distintos ejes y visualizar afinidades, cobertura y resultados mediante gráficos y coordenadas.",
+    "tags": [
+      "Política",
+      "Cuestionario"
+    ]
+  },
+  {
+    "id": "bum",
+    "key": "bum",
+    "title": "Bum",
+    "url": "https://alejandropico.github.io/Bum/",
+    "repo": "https://github.com/AlejandroPico/Bum",
+    "icon": "https://alejandropico.github.io/Bum/favicon.svg",
+    "description": "Simulador 3D para explorar los efectos de explosiones nucleares e impactos de asteroides y cometas sobre cualquier lugar del mundo, con visualización geográfica, física y temporal de sus consecuencias.",
+    "tags": [
+      "Simulación",
+      "Impactos"
+    ]
+  },
+  {
+    "id": "sizes",
+    "key": "sizes",
+    "title": "Sizes",
+    "url": "https://alejandropico.github.io/Sizes/",
+    "repo": "https://github.com/AlejandroPico/Sizes",
+    "icon": "https://alejandropico.github.io/Sizes/favicon.svg",
+    "description": "Comparador visual multiescala para enfrentar objetos de tamaños muy distintos, desde lo microscópico hasta el universo observable, con vistas 2D/3D, catálogo y enciclopedia.",
+    "tags": [
+      "Escalas",
+      "Comparador visual"
+    ]
+  },
+  {
+    "id": "lector",
+    "key": "lector",
+    "title": "Lector",
+    "url": "https://alejandropico.github.io/Lector/",
+    "repo": "https://github.com/AlejandroPico/Lector",
+    "icon": "https://alejandropico.github.io/Lector/favicon.svg",
+    "description": "Lector de libros y documentos para disfrutar de una lectura a pantalla completa, con tipografía personalizable, biblioteca, notas, marcadores y narración por voz.",
+    "tags": [
+      "Lectura",
+      "Libros"
+    ]
+  }
 ];
 const extraCatalogTranslations={
-  es:{universal:{description:'Atlas continuo del universo, desde la Tierra y el tráfico orbital hasta estrellas, galaxias, estructura a gran escala y el horizonte observable, con escalas físicas, datos científicos y navegación 3D.',tags:['Universo','Atlas 3D']},molecular:{description:'Estudio químico visual para construir estructuras 2D, validar enlaces y explorar moléculas en 3D, con los 118 elementos, fragmentos, edición vectorial y documentos portables.',tags:['Química','Modelado 3D']},games:{description:'Colección de juegos de distintos géneros para disfrutar directamente en el navegador, desde mesa, lógica y estrategia hasta cartas y otros formatos interactivos, reunidos en una misma experiencia.',tags:['Juegos','PWA']},transportination:{description:'Atlas interactivo del movimiento sobre y alrededor de la Tierra, que reúne aviación, ferrocarril, navegación y órbitas con cartografía, meteorología y vistas 2D/3D.',tags:['Transporte','Atlas 3D']},enRuta:{description:'Atlas interactivo del transporte público de Barcelona para explorar líneas, paradas, horarios, recorridos y conexiones de metro, autobús y funicular sobre un mapa vivo de la ciudad.',tags:['Transporte público','Barcelona']},elecciones:{description:'Cuestionario interactivo para explorar posiciones políticas por temas, comparar respuestas sobre distintos ejes y visualizar afinidades, cobertura y resultados mediante gráficos y coordenadas.',tags:['Política','Cuestionario']},bum:{description:'Simulador 3D para explorar los efectos de explosiones nucleares e impactos de asteroides y cometas sobre cualquier lugar del mundo, con visualización geográfica, física y temporal de sus consecuencias.',tags:['Simulación','Impactos']},sizes:{description:'Comparador visual multiescala para enfrentar objetos de tamaños muy distintos, desde lo microscópico hasta el universo observable, con vistas 2D/3D, catálogo y enciclopedia.',tags:['Escalas','Comparador visual']}},
-  ca:{universal:{description:'Atles continu de l’univers, des de la Terra i el trànsit orbital fins a estrelles, galàxies, estructura a gran escala i l’horitzó observable, amb escales físiques, dades científiques i navegació 3D.',tags:['Univers','Atles 3D']},molecular:{description:'Estudi químic visual per construir estructures 2D, validar enllaços i explorar molècules en 3D, amb els 118 elements, fragments, edició vectorial i documents portables.',tags:['Química','Modelatge 3D']},games:{description:'Col·lecció de jocs de diferents gèneres per gaudir directament al navegador, des de tauler, lògica i estratègia fins a cartes i altres formats interactius, reunits en una mateixa experiència.',tags:['Jocs','PWA']},transportination:{description:'Atles interactiu del moviment sobre i al voltant de la Terra, que reuneix aviació, ferrocarril, navegació i òrbites amb cartografia, meteorologia i vistes 2D/3D.',tags:['Transport','Atles 3D']},enRuta:{description:'Atles interactiu del transport públic de Barcelona per explorar línies, parades, horaris, recorreguts i connexions de metro, autobús i funicular sobre un mapa viu de la ciutat.',tags:['Transport públic','Barcelona']},elecciones:{description:'Qüestionari interactiu per explorar posicions polítiques per temes, comparar respostes en diferents eixos i visualitzar afinitats, cobertura i resultats mitjançant gràfics i coordenades.',tags:['Política','Qüestionari']},bum:{description:'Simulador 3D per explorar els efectes d’explosions nuclears i impactes d’asteroides i cometes sobre qualsevol lloc del món, amb visualització geogràfica, física i temporal de les seves conseqüències.',tags:['Simulació','Impactes']},sizes:{description:'Comparador visual multiescala per confrontar objectes de mides molt diferents, des del món microscòpic fins a l’univers observable, amb vistes 2D/3D, catàleg i enciclopèdia.',tags:['Escales','Comparador visual']}},
-  en:{universal:{description:'Continuous atlas of the universe, from Earth and orbital traffic to stars, galaxies, large-scale structure and the observable horizon, with physical scales, scientific data and 3D navigation.',tags:['Universe','3D Atlas']},molecular:{description:'Visual chemistry studio for building 2D structures, validating bonds and exploring molecules in 3D, with all 118 elements, fragments, vector editing and portable documents.',tags:['Chemistry','3D Modeling']},games:{description:'Collection of games from different genres to play directly in the browser, ranging from board, logic and strategy games to cards and other interactive formats, all gathered in one experience.',tags:['Games','PWA']},transportination:{description:'Interactive atlas of movement on and around Earth, bringing together aviation, rail, maritime traffic and orbits with mapping, weather data and 2D/3D views.',tags:['Transport','3D Atlas']},enRuta:{description:'Interactive atlas of Barcelona public transport for exploring lines, stops, timetables, routes and connections across metro, bus and funicular services on a living city map.',tags:['Public transport','Barcelona']},elecciones:{description:'Interactive questionnaire for exploring political positions by topic, comparing responses across different axes and visualizing affinities, coverage and results through charts and coordinates.',tags:['Politics','Questionnaire']},bum:{description:'3D simulator for exploring the effects of nuclear explosions and asteroid or comet impacts anywhere in the world, with geographic, physical and time-based visualization of their consequences.',tags:['Simulation','Impacts']},sizes:{description:'Multi-scale visual comparator for placing objects of very different sizes side by side, from the microscopic world to the observable universe, with 2D/3D views, a catalog and an encyclopedia.',tags:['Scales','Visual comparator']}},
-  fr:{universal:{description:'Atlas continu de l’univers, de la Terre et du trafic orbital aux étoiles, galaxies, structures à grande échelle et horizon observable, avec échelles physiques, données scientifiques et navigation 3D.',tags:['Univers','Atlas 3D']},molecular:{description:'Studio de chimie visuelle pour construire des structures 2D, valider les liaisons et explorer les molécules en 3D, avec les 118 éléments, fragments, édition vectorielle et documents portables.',tags:['Chimie','Modélisation 3D']},games:{description:'Collection de jeux de genres variés à utiliser directement dans le navigateur, des jeux de plateau, de logique et de stratégie aux cartes et autres formats interactifs, réunis dans une même expérience.',tags:['Jeux','PWA']},transportination:{description:'Atlas interactif des déplacements sur et autour de la Terre, réunissant aviation, rail, navigation maritime et orbites avec cartographie, météo et vues 2D/3D.',tags:['Transport','Atlas 3D']},enRuta:{description:'Atlas interactif des transports publics de Barcelone pour explorer lignes, arrêts, horaires, itinéraires et correspondances de métro, bus et funiculaire sur une carte vivante de la ville.',tags:['Transports publics','Barcelone']},elecciones:{description:'Questionnaire interactif pour explorer des positions politiques par thème, comparer les réponses sur différents axes et visualiser affinités, couverture et résultats à l’aide de graphiques et de coordonnées.',tags:['Politique','Questionnaire']},bum:{description:'Simulateur 3D pour explorer les effets d’explosions nucléaires et d’impacts d’astéroïdes ou de comètes partout dans le monde, avec visualisation géographique, physique et temporelle de leurs conséquences.',tags:['Simulation','Impacts']},sizes:{description:'Comparateur visuel multi-échelle pour confronter des objets de tailles très différentes, du monde microscopique à l’univers observable, avec vues 2D/3D, catalogue et encyclopédie.',tags:['Échelles','Comparateur visuel']}},
-  de:{universal:{description:'Kontinuierlicher Atlas des Universums von Erde und Orbitalverkehr bis zu Sternen, Galaxien, großräumiger Struktur und beobachtbarem Horizont, mit physikalischen Maßstäben, wissenschaftlichen Daten und 3D-Navigation.',tags:['Universum','3D-Atlas']},molecular:{description:'Visuelles Chemiestudio zum Erstellen von 2D-Strukturen, Prüfen von Bindungen und Erkunden von Molekülen in 3D, mit allen 118 Elementen, Fragmenten, Vektorbearbeitung und portablen Dokumenten.',tags:['Chemie','3D-Modellierung']},games:{description:'Sammlung unterschiedlicher Spiele, die direkt im Browser gespielt werden können – von Brett-, Logik- und Strategiespielen bis zu Karten- und weiteren interaktiven Formaten in einer gemeinsamen Oberfläche.',tags:['Spiele','PWA']},transportination:{description:'Interaktiver Atlas der Bewegung auf und um die Erde, der Luftfahrt, Schienenverkehr, Schifffahrt und Umlaufbahnen mit Kartografie, Wetterdaten und 2D/3D-Ansichten verbindet.',tags:['Verkehr','3D-Atlas']},enRuta:{description:'Interaktiver Atlas des öffentlichen Nahverkehrs in Barcelona zum Erkunden von Linien, Haltestellen, Fahrplänen, Routen und Verbindungen von Metro, Bus und Standseilbahn auf einer lebendigen Stadtkarte.',tags:['ÖPNV','Barcelona']},elecciones:{description:'Interaktiver Fragebogen zur Erkundung politischer Positionen nach Themen, zum Vergleich von Antworten auf verschiedenen Achsen und zur Visualisierung von Übereinstimmungen, Abdeckung und Ergebnissen in Diagrammen und Koordinaten.',tags:['Politik','Fragebogen']},bum:{description:'3D-Simulator zur Erkundung der Auswirkungen nuklearer Explosionen sowie Asteroiden- und Kometeneinschläge an beliebigen Orten der Welt mit geografischer, physikalischer und zeitlicher Darstellung ihrer Folgen.',tags:['Simulation','Einschläge']},sizes:{description:'Visueller Größenvergleich über viele Maßstäbe hinweg, von mikroskopischen Objekten bis zum beobachtbaren Universum, mit 2D/3D-Ansichten, Katalog und Enzyklopädie.',tags:['Maßstäbe','Größenvergleich']}},
-  pt:{universal:{description:'Atlas contínuo do universo, da Terra e do tráfego orbital até estrelas, galáxias, estrutura em grande escala e horizonte observável, com escalas físicas, dados científicos e navegação 3D.',tags:['Universo','Atlas 3D']},molecular:{description:'Estúdio químico visual para construir estruturas 2D, validar ligações e explorar moléculas em 3D, com os 118 elementos, fragmentos, edição vetorial e documentos portáteis.',tags:['Química','Modelação 3D']},games:{description:'Coleção de jogos de diferentes géneros para jogar diretamente no navegador, desde tabuleiro, lógica e estratégia até cartas e outros formatos interativos, reunidos numa única experiência.',tags:['Jogos','PWA']},transportination:{description:'Atlas interativo do movimento sobre e em redor da Terra, reunindo aviação, ferrovia, navegação marítima e órbitas com cartografia, meteorologia e vistas 2D/3D.',tags:['Transporte','Atlas 3D']},enRuta:{description:'Atlas interativo do transporte público de Barcelona para explorar linhas, paragens, horários, percursos e ligações de metro, autocarro e funicular num mapa vivo da cidade.',tags:['Transporte público','Barcelona']},elecciones:{description:'Questionário interativo para explorar posições políticas por temas, comparar respostas em diferentes eixos e visualizar afinidades, cobertura e resultados através de gráficos e coordenadas.',tags:['Política','Questionário']},bum:{description:'Simulador 3D para explorar os efeitos de explosões nucleares e impactos de asteroides e cometas em qualquer lugar do mundo, com visualização geográfica, física e temporal das suas consequências.',tags:['Simulação','Impactos']},sizes:{description:'Comparador visual multiescala para confrontar objetos de dimensões muito diferentes, do mundo microscópico ao universo observável, com vistas 2D/3D, catálogo e enciclopédia.',tags:['Escalas','Comparador visual']}},
-  it:{universal:{description:'Atlante continuo dell’universo, dalla Terra e dal traffico orbitale fino a stelle, galassie, struttura su larga scala e orizzonte osservabile, con scale fisiche, dati scientifici e navigazione 3D.',tags:['Universo','Atlante 3D']},molecular:{description:'Studio chimico visuale per costruire strutture 2D, validare legami ed esplorare molecole in 3D, con tutti i 118 elementi, frammenti, editing vettoriale e documenti portabili.',tags:['Chimica','Modellazione 3D']},games:{description:'Raccolta di giochi di generi diversi da usare direttamente nel browser, dai giochi da tavolo, di logica e strategia alle carte e ad altri formati interattivi, riuniti in un’unica esperienza.',tags:['Giochi','PWA']},transportination:{description:'Atlante interattivo del movimento sulla Terra e intorno ad essa, che riunisce aviazione, ferrovie, navigazione marittima e orbite con cartografia, meteo e viste 2D/3D.',tags:['Trasporti','Atlante 3D']},enRuta:{description:'Atlante interattivo del trasporto pubblico di Barcellona per esplorare linee, fermate, orari, percorsi e collegamenti di metro, autobus e funicolare su una mappa viva della città.',tags:['Trasporto pubblico','Barcellona']},elecciones:{description:'Questionario interattivo per esplorare posizioni politiche per tema, confrontare risposte su diversi assi e visualizzare affinità, copertura e risultati attraverso grafici e coordinate.',tags:['Politica','Questionario']},bum:{description:'Simulatore 3D per esplorare gli effetti di esplosioni nucleari e impatti di asteroidi e comete in qualsiasi luogo del mondo, con visualizzazione geografica, fisica e temporale delle conseguenze.',tags:['Simulazione','Impatti']},sizes:{description:'Comparatore visuale multiscala per affiancare oggetti di dimensioni molto diverse, dal mondo microscopico all’universo osservabile, con viste 2D/3D, catalogo ed enciclopedia.',tags:['Scale','Comparatore visuale']}}
+  "es": {
+    "universal": {
+      "description": "Atlas continuo del universo, desde la Tierra y el tráfico orbital hasta estrellas, galaxias, estructura a gran escala y el horizonte observable, con escalas físicas, datos científicos y navegación 3D.",
+      "tags": [
+        "Universo",
+        "Atlas 3D"
+      ]
+    },
+    "molecular": {
+      "description": "Estudio químico visual para construir estructuras 2D, validar enlaces y explorar moléculas en 3D, con los 118 elementos, fragmentos, edición vectorial y documentos portables.",
+      "tags": [
+        "Química",
+        "Modelado 3D"
+      ]
+    },
+    "games": {
+      "description": "Colección de juegos de distintos géneros para disfrutar directamente en el navegador, desde mesa, lógica y estrategia hasta cartas y otros formatos interactivos, reunidos en una misma experiencia.",
+      "tags": [
+        "Juegos",
+        "PWA"
+      ]
+    },
+    "transportination": {
+      "description": "Atlas interactivo del movimiento sobre y alrededor de la Tierra, que reúne aviación, ferrocarril, navegación y órbitas con cartografía, meteorología y vistas 2D/3D.",
+      "tags": [
+        "Transporte",
+        "Atlas 3D"
+      ]
+    },
+    "enRuta": {
+      "description": "Atlas interactivo del transporte público de Barcelona para explorar líneas, paradas, horarios, recorridos y conexiones de metro, autobús y funicular sobre un mapa vivo de la ciudad.",
+      "tags": [
+        "Transporte público",
+        "Barcelona"
+      ]
+    },
+    "elecciones": {
+      "description": "Cuestionario interactivo para explorar posiciones políticas por temas, comparar respuestas sobre distintos ejes y visualizar afinidades, cobertura y resultados mediante gráficos y coordenadas.",
+      "tags": [
+        "Política",
+        "Cuestionario"
+      ]
+    },
+    "bum": {
+      "description": "Simulador 3D para explorar los efectos de explosiones nucleares e impactos de asteroides y cometas sobre cualquier lugar del mundo, con visualización geográfica, física y temporal de sus consecuencias.",
+      "tags": [
+        "Simulación",
+        "Impactos"
+      ]
+    },
+    "sizes": {
+      "description": "Comparador visual multiescala para enfrentar objetos de tamaños muy distintos, desde lo microscópico hasta el universo observable, con vistas 2D/3D, catálogo y enciclopedia.",
+      "tags": [
+        "Escalas",
+        "Comparador visual"
+      ]
+    },
+    "lector": {
+      "description": "Lector de libros y documentos para disfrutar de una lectura a pantalla completa, con tipografía personalizable, biblioteca, notas, marcadores y narración por voz.",
+      "tags": [
+        "Lectura",
+        "Libros"
+      ]
+    }
+  },
+  "ca": {
+    "universal": {
+      "description": "Atles continu de l’univers, des de la Terra i el trànsit orbital fins a estrelles, galàxies, estructura a gran escala i l’horitzó observable, amb escales físiques, dades científiques i navegació 3D.",
+      "tags": [
+        "Univers",
+        "Atles 3D"
+      ]
+    },
+    "molecular": {
+      "description": "Estudi químic visual per construir estructures 2D, validar enllaços i explorar molècules en 3D, amb els 118 elements, fragments, edició vectorial i documents portables.",
+      "tags": [
+        "Química",
+        "Modelatge 3D"
+      ]
+    },
+    "games": {
+      "description": "Col·lecció de jocs de diferents gèneres per gaudir directament al navegador, des de tauler, lògica i estratègia fins a cartes i altres formats interactius, reunits en una mateixa experiència.",
+      "tags": [
+        "Jocs",
+        "PWA"
+      ]
+    },
+    "transportination": {
+      "description": "Atles interactiu del moviment sobre i al voltant de la Terra, que reuneix aviació, ferrocarril, navegació i òrbites amb cartografia, meteorologia i vistes 2D/3D.",
+      "tags": [
+        "Transport",
+        "Atles 3D"
+      ]
+    },
+    "enRuta": {
+      "description": "Atles interactiu del transport públic de Barcelona per explorar línies, parades, horaris, recorreguts i connexions de metro, autobús i funicular sobre un mapa viu de la ciutat.",
+      "tags": [
+        "Transport públic",
+        "Barcelona"
+      ]
+    },
+    "elecciones": {
+      "description": "Qüestionari interactiu per explorar posicions polítiques per temes, comparar respostes en diferents eixos i visualitzar afinitats, cobertura i resultats mitjançant gràfics i coordenades.",
+      "tags": [
+        "Política",
+        "Qüestionari"
+      ]
+    },
+    "bum": {
+      "description": "Simulador 3D per explorar els efectes d’explosions nuclears i impactes d’asteroides i cometes sobre qualsevol lloc del món, amb visualització geogràfica, física i temporal de les seves conseqüències.",
+      "tags": [
+        "Simulació",
+        "Impactes"
+      ]
+    },
+    "sizes": {
+      "description": "Comparador visual multiescala per confrontar objectes de mides molt diferents, des del món microscòpic fins a l’univers observable, amb vistes 2D/3D, catàleg i enciclopèdia.",
+      "tags": [
+        "Escales",
+        "Comparador visual"
+      ]
+    },
+    "lector": {
+      "description": "Lector de llibres i documents per gaudir d’una lectura a pantalla completa, amb tipografia personalitzable, biblioteca, notes, marcadors i narració per veu.",
+      "tags": [
+        "Lectura",
+        "Llibres"
+      ]
+    }
+  },
+  "en": {
+    "universal": {
+      "description": "Continuous atlas of the universe, from Earth and orbital traffic to stars, galaxies, large-scale structure and the observable horizon, with physical scales, scientific data and 3D navigation.",
+      "tags": [
+        "Universe",
+        "3D Atlas"
+      ]
+    },
+    "molecular": {
+      "description": "Visual chemistry studio for building 2D structures, validating bonds and exploring molecules in 3D, with all 118 elements, fragments, vector editing and portable documents.",
+      "tags": [
+        "Chemistry",
+        "3D Modeling"
+      ]
+    },
+    "games": {
+      "description": "Collection of games from different genres to play directly in the browser, ranging from board, logic and strategy games to cards and other interactive formats, all gathered in one experience.",
+      "tags": [
+        "Games",
+        "PWA"
+      ]
+    },
+    "transportination": {
+      "description": "Interactive atlas of movement on and around Earth, bringing together aviation, rail, maritime traffic and orbits with mapping, weather data and 2D/3D views.",
+      "tags": [
+        "Transport",
+        "3D Atlas"
+      ]
+    },
+    "enRuta": {
+      "description": "Interactive atlas of Barcelona public transport for exploring lines, stops, timetables, routes and connections across metro, bus and funicular services on a living city map.",
+      "tags": [
+        "Public transport",
+        "Barcelona"
+      ]
+    },
+    "elecciones": {
+      "description": "Interactive questionnaire for exploring political positions by topic, comparing responses across different axes and visualizing affinities, coverage and results through charts and coordinates.",
+      "tags": [
+        "Politics",
+        "Questionnaire"
+      ]
+    },
+    "bum": {
+      "description": "3D simulator for exploring the effects of nuclear explosions and asteroid or comet impacts anywhere in the world, with geographic, physical and time-based visualization of their consequences.",
+      "tags": [
+        "Simulation",
+        "Impacts"
+      ]
+    },
+    "sizes": {
+      "description": "Multi-scale visual comparator for placing objects of very different sizes side by side, from the microscopic world to the observable universe, with 2D/3D views, a catalog and an encyclopedia.",
+      "tags": [
+        "Scales",
+        "Visual comparator"
+      ]
+    },
+    "lector": {
+      "description": "Book and document reader for full-screen reading, with customizable typography, a library, notes, bookmarks and voice narration.",
+      "tags": [
+        "Reading",
+        "Books"
+      ]
+    }
+  },
+  "fr": {
+    "universal": {
+      "description": "Atlas continu de l’univers, de la Terre et du trafic orbital aux étoiles, galaxies, structures à grande échelle et horizon observable, avec échelles physiques, données scientifiques et navigation 3D.",
+      "tags": [
+        "Univers",
+        "Atlas 3D"
+      ]
+    },
+    "molecular": {
+      "description": "Studio de chimie visuelle pour construire des structures 2D, valider les liaisons et explorer les molécules en 3D, avec les 118 éléments, fragments, édition vectorielle et documents portables.",
+      "tags": [
+        "Chimie",
+        "Modélisation 3D"
+      ]
+    },
+    "games": {
+      "description": "Collection de jeux de genres variés à utiliser directement dans le navigateur, des jeux de plateau, de logique et de stratégie aux cartes et autres formats interactifs, réunis dans une même expérience.",
+      "tags": [
+        "Jeux",
+        "PWA"
+      ]
+    },
+    "transportination": {
+      "description": "Atlas interactif des déplacements sur et autour de la Terre, réunissant aviation, rail, navigation maritime et orbites avec cartographie, météo et vues 2D/3D.",
+      "tags": [
+        "Transport",
+        "Atlas 3D"
+      ]
+    },
+    "enRuta": {
+      "description": "Atlas interactif des transports publics de Barcelone pour explorer lignes, arrêts, horaires, itinéraires et correspondances de métro, bus et funiculaire sur une carte vivante de la ville.",
+      "tags": [
+        "Transports publics",
+        "Barcelone"
+      ]
+    },
+    "elecciones": {
+      "description": "Questionnaire interactif pour explorer des positions politiques par thème, comparer les réponses sur différents axes et visualiser affinités, couverture et résultats à l’aide de graphiques et de coordonnées.",
+      "tags": [
+        "Politique",
+        "Questionnaire"
+      ]
+    },
+    "bum": {
+      "description": "Simulateur 3D pour explorer les effets d’explosions nucléaires et d’impacts d’astéroïdes ou de comètes partout dans le monde, avec visualisation géographique, physique et temporelle de leurs conséquences.",
+      "tags": [
+        "Simulation",
+        "Impacts"
+      ]
+    },
+    "sizes": {
+      "description": "Comparateur visuel multi-échelle pour confronter des objets de tailles très différentes, du monde microscopique à l’univers observable, avec vues 2D/3D, catalogue et encyclopédie.",
+      "tags": [
+        "Échelles",
+        "Comparateur visuel"
+      ]
+    },
+    "lector": {
+      "description": "Lecteur de livres et de documents pour une lecture en plein écran, avec typographie personnalisable, bibliothèque, notes, signets et narration vocale.",
+      "tags": [
+        "Lecture",
+        "Livres"
+      ]
+    }
+  },
+  "de": {
+    "universal": {
+      "description": "Kontinuierlicher Atlas des Universums von Erde und Orbitalverkehr bis zu Sternen, Galaxien, großräumiger Struktur und beobachtbarem Horizont, mit physikalischen Maßstäben, wissenschaftlichen Daten und 3D-Navigation.",
+      "tags": [
+        "Universum",
+        "3D-Atlas"
+      ]
+    },
+    "molecular": {
+      "description": "Visuelles Chemiestudio zum Erstellen von 2D-Strukturen, Prüfen von Bindungen und Erkunden von Molekülen in 3D, mit allen 118 Elementen, Fragmenten, Vektorbearbeitung und portablen Dokumenten.",
+      "tags": [
+        "Chemie",
+        "3D-Modellierung"
+      ]
+    },
+    "games": {
+      "description": "Sammlung unterschiedlicher Spiele, die direkt im Browser gespielt werden können – von Brett-, Logik- und Strategiespielen bis zu Karten- und weiteren interaktiven Formaten in einer gemeinsamen Oberfläche.",
+      "tags": [
+        "Spiele",
+        "PWA"
+      ]
+    },
+    "transportination": {
+      "description": "Interaktiver Atlas der Bewegung auf und um die Erde, der Luftfahrt, Schienenverkehr, Schifffahrt und Umlaufbahnen mit Kartografie, Wetterdaten und 2D/3D-Ansichten verbindet.",
+      "tags": [
+        "Verkehr",
+        "3D-Atlas"
+      ]
+    },
+    "enRuta": {
+      "description": "Interaktiver Atlas des öffentlichen Nahverkehrs in Barcelona zum Erkunden von Linien, Haltestellen, Fahrplänen, Routen und Verbindungen von Metro, Bus und Standseilbahn auf einer lebendigen Stadtkarte.",
+      "tags": [
+        "ÖPNV",
+        "Barcelona"
+      ]
+    },
+    "elecciones": {
+      "description": "Interaktiver Fragebogen zur Erkundung politischer Positionen nach Themen, zum Vergleich von Antworten auf verschiedenen Achsen und zur Visualisierung von Übereinstimmungen, Abdeckung und Ergebnissen in Diagrammen und Koordinaten.",
+      "tags": [
+        "Politik",
+        "Fragebogen"
+      ]
+    },
+    "bum": {
+      "description": "3D-Simulator zur Erkundung der Auswirkungen nuklearer Explosionen sowie Asteroiden- und Kometeneinschläge an beliebigen Orten der Welt mit geografischer, physikalischer und zeitlicher Darstellung ihrer Folgen.",
+      "tags": [
+        "Simulation",
+        "Einschläge"
+      ]
+    },
+    "sizes": {
+      "description": "Visueller Größenvergleich über viele Maßstäbe hinweg, von mikroskopischen Objekten bis zum beobachtbaren Universum, mit 2D/3D-Ansichten, Katalog und Enzyklopädie.",
+      "tags": [
+        "Maßstäbe",
+        "Größenvergleich"
+      ]
+    },
+    "lector": {
+      "description": "Buch- und Dokumentenleser für das Lesen im Vollbild mit anpassbarer Typografie, Bibliothek, Notizen, Lesezeichen und Sprachausgabe.",
+      "tags": [
+        "Lesen",
+        "Bücher"
+      ]
+    }
+  },
+  "pt": {
+    "universal": {
+      "description": "Atlas contínuo do universo, da Terra e do tráfego orbital até estrelas, galáxias, estrutura em grande escala e horizonte observável, com escalas físicas, dados científicos e navegação 3D.",
+      "tags": [
+        "Universo",
+        "Atlas 3D"
+      ]
+    },
+    "molecular": {
+      "description": "Estúdio químico visual para construir estruturas 2D, validar ligações e explorar moléculas em 3D, com os 118 elementos, fragmentos, edição vetorial e documentos portáteis.",
+      "tags": [
+        "Química",
+        "Modelação 3D"
+      ]
+    },
+    "games": {
+      "description": "Coleção de jogos de diferentes géneros para jogar diretamente no navegador, desde tabuleiro, lógica e estratégia até cartas e outros formatos interativos, reunidos numa única experiência.",
+      "tags": [
+        "Jogos",
+        "PWA"
+      ]
+    },
+    "transportination": {
+      "description": "Atlas interativo do movimento sobre e em redor da Terra, reunindo aviação, ferrovia, navegação marítima e órbitas com cartografia, meteorologia e vistas 2D/3D.",
+      "tags": [
+        "Transporte",
+        "Atlas 3D"
+      ]
+    },
+    "enRuta": {
+      "description": "Atlas interativo do transporte público de Barcelona para explorar linhas, paragens, horários, percursos e ligações de metro, autocarro e funicular num mapa vivo da cidade.",
+      "tags": [
+        "Transporte público",
+        "Barcelona"
+      ]
+    },
+    "elecciones": {
+      "description": "Questionário interativo para explorar posições políticas por temas, comparar respostas em diferentes eixos e visualizar afinidades, cobertura e resultados através de gráficos e coordenadas.",
+      "tags": [
+        "Política",
+        "Questionário"
+      ]
+    },
+    "bum": {
+      "description": "Simulador 3D para explorar os efeitos de explosões nucleares e impactos de asteroides e cometas em qualquer lugar do mundo, com visualização geográfica, física e temporal das suas consequências.",
+      "tags": [
+        "Simulação",
+        "Impactos"
+      ]
+    },
+    "sizes": {
+      "description": "Comparador visual multiescala para confrontar objetos de dimensões muito diferentes, do mundo microscópico ao universo observável, com vistas 2D/3D, catálogo e enciclopédia.",
+      "tags": [
+        "Escalas",
+        "Comparador visual"
+      ]
+    },
+    "lector": {
+      "description": "Leitor de livros e documentos para leitura em ecrã inteiro, com tipografia personalizável, biblioteca, notas, marcadores e narração por voz.",
+      "tags": [
+        "Leitura",
+        "Livros"
+      ]
+    }
+  },
+  "it": {
+    "universal": {
+      "description": "Atlante continuo dell’universo, dalla Terra e dal traffico orbitale fino a stelle, galassie, struttura su larga scala e orizzonte osservabile, con scale fisiche, dati scientifici e navigazione 3D.",
+      "tags": [
+        "Universo",
+        "Atlante 3D"
+      ]
+    },
+    "molecular": {
+      "description": "Studio chimico visuale per costruire strutture 2D, validare legami ed esplorare molecole in 3D, con tutti i 118 elementi, frammenti, editing vettoriale e documenti portabili.",
+      "tags": [
+        "Chimica",
+        "Modellazione 3D"
+      ]
+    },
+    "games": {
+      "description": "Raccolta di giochi di generi diversi da usare direttamente nel browser, dai giochi da tavolo, di logica e strategia alle carte e ad altri formati interattivi, riuniti in un’unica esperienza.",
+      "tags": [
+        "Giochi",
+        "PWA"
+      ]
+    },
+    "transportination": {
+      "description": "Atlante interattivo del movimento sulla Terra e intorno ad essa, che riunisce aviazione, ferrovie, navigazione marittima e orbite con cartografia, meteo e viste 2D/3D.",
+      "tags": [
+        "Trasporti",
+        "Atlante 3D"
+      ]
+    },
+    "enRuta": {
+      "description": "Atlante interattivo del trasporto pubblico di Barcellona per esplorare linee, fermate, orari, percorsi e collegamenti di metro, autobus e funicolare su una mappa viva della città.",
+      "tags": [
+        "Trasporto pubblico",
+        "Barcellona"
+      ]
+    },
+    "elecciones": {
+      "description": "Questionario interattivo per esplorare posizioni politiche per tema, confrontare risposte su diversi assi e visualizzare affinità, copertura e risultati attraverso grafici e coordinate.",
+      "tags": [
+        "Politica",
+        "Questionario"
+      ]
+    },
+    "bum": {
+      "description": "Simulatore 3D per esplorare gli effetti di esplosioni nucleari e impatti di asteroidi e comete in qualsiasi luogo del mondo, con visualizzazione geografica, fisica e temporale delle conseguenze.",
+      "tags": [
+        "Simulazione",
+        "Impatti"
+      ]
+    },
+    "sizes": {
+      "description": "Comparatore visuale multiscala per affiancare oggetti di dimensioni molto diverse, dal mondo microscopico all’universo osservabile, con viste 2D/3D, catalogo ed enciclopedia.",
+      "tags": [
+        "Scale",
+        "Comparatore visuale"
+      ]
+    },
+    "lector": {
+      "description": "Lettore di libri e documenti per leggere a schermo intero, con tipografia personalizzabile, biblioteca, note, segnalibri e narrazione vocale.",
+      "tags": [
+        "Lettura",
+        "Libri"
+      ]
+    }
+  }
 };
-function applyExtraCatalogLanguage(lang){const data=extraCatalogTranslations[lang]||extraCatalogTranslations.es;extraCatalogProjects.forEach(project=>{const card=document.querySelector('.project-card[data-project-id="'+project.id+'"]');if(!card)return;const t=data[project.id];const description=card.querySelector(':scope>p');if(description&&t?.description)description.textContent=t.description;card.querySelectorAll('.tag-list span').forEach((span,index)=>{if(t?.tags?.[index])span.textContent=t.tags[index]})})}
+function applyExtraCatalogLanguage(lang){const data=extraCatalogTranslations[lang]||extraCatalogTranslations.es;extraCatalogProjects.forEach(project=>{const card=document.querySelector('.project-card[data-project-id="'+project.id+'"]');if(!card)return;const t=data[project.key];const description=card.querySelector(':scope>p');if(description&&t?.description)description.textContent=t.description;card.querySelectorAll('.tag-list span').forEach((span,index)=>{if(t?.tags?.[index])span.textContent=t.tags[index]})})}
 function installExtraCatalogProjects(){const grid=document.querySelector('#proyectos .project-grid');if(!grid||typeof appendProject!=='function')return;extraCatalogProjects.forEach(project=>appendProject(grid,project));if(typeof prepareProjectSlots==='function')prepareProjectSlots();if(typeof bindProjectCards==='function')bindProjectCards();const lang=(document.getElementById('languageSelect')?.value||document.documentElement.lang||'es').split('-')[0];applyExtraCatalogLanguage(lang)}
 function initExtraCatalogProjects(){installExtraCatalogProjects();const select=document.getElementById('languageSelect');if(select&&!select.dataset.extraCatalogBound){select.dataset.extraCatalogBound='true';select.addEventListener('change',()=>applyExtraCatalogLanguage(select.value))}document.addEventListener('portfolio-language-change',event=>applyExtraCatalogLanguage(event.detail?.lang||select?.value||'es'))}
 if(document.readyState==='loading')window.addEventListener('DOMContentLoaded',initExtraCatalogProjects,{once:true});else initExtraCatalogProjects();

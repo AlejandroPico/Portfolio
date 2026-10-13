@@ -177,3 +177,8 @@ Proyecto en evolución. La intención es mantenerlo como portfolio activo, añad
 - GitHub: https://github.com/AlejandroPico
 - LinkedIn: https://www.linkedin.com/in/alejandro-pico-perez-a70681210/
 - Email: alejandro.picoperez@gmail.com
+
+## Actualización 20261013-1
+
+- Añadido Lector: lectura de libros y documentos con notas y narración por voz.
+- Su icono se obtiene de `https://alejandropico.github.io/Lector/favicon.svg`.
