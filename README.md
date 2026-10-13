@@ -189,3 +189,10 @@ Proyecto en evolución. La intención es mantenerlo como portfolio activo, añad
 - Auto es la opción inicial del selector: sigue las preferencias de idioma del navegador/sistema y permite volver a la detección automática tras elegir un idioma manualmente. Si ninguno está disponible, se utiliza inglés.
 - Traducciones de perfil, CV, contacto, descripciones y etiquetas de los 29 proyectos, incluido Lector.
 - Los iconos de las fichas siguen obteniéndose del `favicon.svg` de la raíz pública de cada proyecto.
+
+## Vista alternativa · Plan B
+
+- Rama de diseño: `plan-b`.
+- Comparación publicada: https://alejandropico.github.io/Portfolio/plan-b/#proyectos
+- La galería habitual permanece en https://alejandropico.github.io/Portfolio/#proyectos
+- GitHub Pages mantiene su publicación automática desde `main`. El directorio `plan-b/` publica la entrada y la hoja de estilos de la rama alternativa usando los recursos comunes. Para reflejar futuros cambios visuales de la rama, se actualizan esas dos copias en `main`.
