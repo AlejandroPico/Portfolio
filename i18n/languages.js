@@ -1,12 +1,12 @@
 window.portfolioLanguages=[
-  {code:'es',label:'ES',name:'Español',flagUrl:'https://upload.wikimedia.org/wikipedia/en/9/9a/Flag_of_Spain.svg',file:'es.js'},
-  {code:'ca',label:'CA',name:'Català',flagUrl:'https://upload.wikimedia.org/wikipedia/commons/c/ce/Flag_of_Catalonia.svg',file:'ca.js'},
-  {code:'en',label:'EN',name:'English',flagUrl:'https://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg',file:'en.js'},
-  {code:'fr',label:'FR',name:'Français',flagUrl:'https://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg',file:'fr.js'},
-  {code:'de',label:'DE',name:'Deutsch',flagUrl:'https://upload.wikimedia.org/wikipedia/en/b/ba/Flag_of_Germany.svg',file:'de.js'},
-  {code:'pt',label:'PT',name:'Português',flagUrl:'https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_Portugal.svg',file:'pt.js'},
-  {code:'it',label:'IT',name:'Italiano',flagUrl:'https://upload.wikimedia.org/wikipedia/en/0/03/Flag_of_Italy.svg',file:'it.js'},
-  {code:'zh',label:'中文',name:'中文（简体）',flagUrl:'https://upload.wikimedia.org/wikipedia/commons/0/0d/Flag_of_China.svg',file:'zh.js'},
-  {code:'ja',label:'日本語',name:'日本語',flagUrl:'https://upload.wikimedia.org/wikipedia/en/9/9e/Flag_of_Japan.svg',file:'ja.js'},
-  {code:'hi',label:'हिन्दी',name:'हिन्दी',flagUrl:'https://upload.wikimedia.org/wikipedia/en/4/41/Flag_of_India.svg',file:'hi.js'}
+  {code:'es',label:'ES',name:'Español',flagUrl:'assets/flags/es.svg',file:'es.js'},
+  {code:'ca',label:'CA',name:'Català',flagUrl:'assets/flags/ca.svg',file:'ca.js'},
+  {code:'en',label:'EN',name:'English',flagUrl:'assets/flags/en.svg',file:'en.js'},
+  {code:'fr',label:'FR',name:'Français',flagUrl:'assets/flags/fr.svg',file:'fr.js'},
+  {code:'de',label:'DE',name:'Deutsch',flagUrl:'assets/flags/de.svg',file:'de.js'},
+  {code:'pt',label:'PT',name:'Português',flagUrl:'assets/flags/pt.svg',file:'pt.js'},
+  {code:'it',label:'IT',name:'Italiano',flagUrl:'assets/flags/it.svg',file:'it.js'},
+  {code:'zh',label:'中文',name:'中文（简体）',flagUrl:'assets/flags/zh.svg',file:'zh.js'},
+  {code:'ja',label:'日本語',name:'日本語',flagUrl:'assets/flags/ja.svg',file:'ja.js'},
+  {code:'hi',label:'हिन्दी',name:'हिन्दी',flagUrl:'assets/flags/hi.svg',file:'hi.js'}
 ];

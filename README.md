@@ -190,9 +190,9 @@ Proyecto en evolución. La intención es mantenerlo como portfolio activo, añad
 - Traducciones de perfil, CV, contacto, descripciones y etiquetas de los 29 proyectos, incluido Lector.
 - Los iconos de las fichas siguen obteniéndose del `favicon.svg` de la raíz pública de cada proyecto.
 
-## Vista alternativa · Plan B
+## Actualización 20261013-4
 
-- Rama de diseño: `plan-b`.
-- Comparación publicada: https://alejandropico.github.io/Portfolio/plan-b/#proyectos
-- La galería habitual permanece en https://alejandropico.github.io/Portfolio/#proyectos
-- GitHub Pages mantiene su publicación automática desde `main`. El directorio `plan-b/` publica la entrada y la hoja de estilos de la rama alternativa usando los recursos comunes. Para reflejar futuros cambios visuales de la rama, se actualizan esas dos copias en `main`.
+- La galería compacta aprobada de Plan B es ahora el diseño principal: cinco columnas en escritorio y distribución adaptable, con cristal, expansión, descripción, etiquetas y enlaces.
+- Lector y los diez idiomas se mantienen, con selección automática del idioma del navegador.
+- Las diez banderas se sirven desde `assets/flags/`, incluido el icono chino cuya URL externa devolvía 404. Recursos de flag-icons bajo licencia MIT, incluida en esa carpeta.
+- Trabajo y publicación unificados en `main`; retirada la vista de comparación y la rama secundaria.

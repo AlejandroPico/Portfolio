@@ -1,4 +1,4 @@
-/* Plan B: a denser glass gallery; all existing project interactions are retained. */
+/* Standard compact glass gallery with responsive project details. */
 #proyectos .project-grid{grid-template-columns:repeat(5,minmax(0,1fr))!important;gap:.6rem!important}
 #proyectos .project-slot{height:92px}
 #proyectos .project-slot>.project-card{padding:.7rem .65rem}
