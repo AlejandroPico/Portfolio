@@ -11,7 +11,7 @@ function initLanguagePicker(){
  if(lang.flagUrl){const img=document.createElement('img');img.src=lang.flagUrl;img.alt='';img.loading='lazy';item.appendChild(img)}else{const icon=document.createElement('span');icon.textContent='◌';icon.setAttribute('aria-hidden','true');item.appendChild(icon)}
  const name=document.createElement('span');name.textContent=lang.name;item.appendChild(name);menu.appendChild(item)});
  picker.append(button,menu);select.after(picker);
- function refresh(){button.textContent=(langs.find(lang=>lang.code===select.value)||langs[0]).label;menu.querySelectorAll('button').forEach(b=>{const active=b.dataset.lang===select.value;b.classList.toggle('selected',active);b.setAttribute('aria-pressed',String(active))})}
+ function refresh(){const code=select.value==='auto'?(document.documentElement.lang||detectPortfolioLanguage()).split('-')[0]:select.value;const language=languages.find(lang=>lang.code===code)||languages.find(lang=>lang.code==='en');button.textContent=language.label;button.setAttribute('aria-label',language.name+(select.value==='auto'?' · Auto':''));menu.querySelectorAll('button').forEach(b=>{const active=b.dataset.lang===select.value;b.classList.toggle('selected',active);b.setAttribute('aria-pressed',String(active))})}
  function close(){picker.classList.remove('open');button.setAttribute('aria-expanded','false')}
  button.addEventListener('click',()=>{const open=picker.classList.toggle('open');button.setAttribute('aria-expanded',String(open))});
  menu.addEventListener('click',event=>{const item=event.target.closest('button[data-lang]');if(!item)return;select.value=item.dataset.lang;select.dispatchEvent(new Event('change'));refresh();close();button.focus()});

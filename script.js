@@ -1,11 +1,12 @@
 let portfolioThemeMode='auto';
-let portfolioVisualStyle='classic';
-try{portfolioThemeMode=localStorage.getItem('portfolio-theme')||'auto';portfolioVisualStyle=localStorage.getItem('portfolio-visual-style')||'classic'}catch(e){}
+const portfolioVisualStyles=['classic','aurora','nebula','solstice'];
+let portfolioVisualStyle=portfolioVisualStyles[Math.floor(Math.random()*portfolioVisualStyles.length)];
+try{portfolioThemeMode=localStorage.getItem('portfolio-theme')||'auto'}catch(e){}
 function loadCss(href){if(document.querySelector('link[href^="'+href.split('?')[0]+'"]'))return;const link=document.createElement('link');link.rel='stylesheet';link.href=href;document.head.appendChild(link)}
 function loadJs(src){if(document.querySelector('script[src^="'+src.split('?')[0]+'"]'))return;const script=document.createElement('script');script.async=false;script.src=src;document.body.appendChild(script)}
 function portfolioAutoTheme(){const h=new Date().getHours();return h>=7&&h<20?'light':'dark'}
 function portfolioApplyTheme(){const t=portfolioThemeMode==='auto'?portfolioAutoTheme():portfolioThemeMode;document.body.setAttribute('data-theme',t);document.body.setAttribute('data-visual-style',portfolioVisualStyle);const b=document.getElementById('themeButton');if(b)b.textContent=portfolioThemeMode==='auto'?'Auto':portfolioThemeMode==='light'?'Claro':'Oscuro'}
-function portfolioThemePanel(){let panel=document.getElementById('themePanel');if(panel)return panel;panel=document.createElement('div');panel.id='themePanel';panel.className='theme-panel';panel.innerHTML='<button type="button" data-style="classic">Clásico<small>Estilo cristal actual</small></button><button type="button" data-style="aurora">Aurora<small>Cristal reforzado y acento técnico</small></button><button type="button" data-style="nebula">Nebula<small>Azul espacial con brillo frío</small></button><button type="button" data-style="solstice">Solstice<small>Ámbar cálido y verde suave</small></button>';document.body.appendChild(panel);panel.addEventListener('click',event=>{const btn=event.target.closest('button[data-style]');if(!btn)return;portfolioVisualStyle=btn.dataset.style;try{localStorage.setItem('portfolio-visual-style',portfolioVisualStyle)}catch(e){}portfolioApplyTheme();portfolioMarkPanel();panel.classList.remove('open')});return panel}
+function portfolioThemePanel(){let panel=document.getElementById('themePanel');if(panel)return panel;panel=document.createElement('div');panel.id='themePanel';panel.className='theme-panel';panel.innerHTML='<button type="button" data-style="classic">Clásico<small>Estilo cristal actual</small></button><button type="button" data-style="aurora">Aurora<small>Cristal reforzado y acento técnico</small></button><button type="button" data-style="nebula">Nebula<small>Azul espacial con brillo frío</small></button><button type="button" data-style="solstice">Solstice<small>Ámbar cálido y verde suave</small></button>';document.body.appendChild(panel);panel.addEventListener('click',event=>{const btn=event.target.closest('button[data-style]');if(!btn)return;portfolioVisualStyle=btn.dataset.style;portfolioApplyTheme();portfolioMarkPanel();panel.classList.remove('open')});return panel}
 function portfolioMarkPanel(){const panel=document.getElementById('themePanel');if(!panel)return;panel.querySelectorAll('button[data-style]').forEach(btn=>btn.classList.toggle('active',btn.dataset.style===portfolioVisualStyle))}
 function portfolioToggleThemePanel(){const panel=portfolioThemePanel();portfolioMarkPanel();panel.classList.toggle('open')}
 function normalizeHeroName(){const last=document.querySelector('.hero-copy h1 span:last-child');if(last)last.textContent='Pico Perez'}
@@ -46,4 +47,4 @@ loadCss('mobile-nav.css?v=20260815-2');
 portfolioApplyTheme();
 if(document.readyState==='loading')window.addEventListener('DOMContentLoaded',initPortfolio,{once:true});else initPortfolio();
 document.addEventListener('portfolio-language-change',()=>setTimeout(initScrollReveal,120));
-loadJs('i18n/index.js?v=20261013-4');
+loadJs('i18n/index.js?v=20261013-5');

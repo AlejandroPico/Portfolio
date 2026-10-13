@@ -196,3 +196,10 @@ Proyecto en evolución. La intención es mantenerlo como portfolio activo, añad
 - Lector y los diez idiomas se mantienen, con selección automática del idioma del navegador.
 - Las diez banderas se sirven desde `assets/flags/`, incluido el icono chino cuya URL externa devolvía 404. Recursos de flag-icons bajo licencia MIT, incluida en esa carpeta.
 - Trabajo y publicación unificados en `main`; retirada la vista de comparación y la rama secundaria.
+
+## Actualización 20261013-5
+
+- En Auto, el selector de idiomas muestra las letras del idioma detectado (ES, CAT, EN, FR, DE, PT, IT, ZH, JA, HI), sin bandera en el botón. Auto continúa disponible en el menú.
+- Tema con iconos: medio círculo para Auto, sol para Mañana, ocaso para Tarde y luna para Noche. Nombre accesible y tooltip en el idioma seleccionado.
+- Cada visita elige al azar Clásico, Aurora, Nebula o Solstice. Alt+clic permite cambiarlo durante esa visita; el ciclo solar se mantiene independiente.
+- Descripciones centradas verticalmente entre cabecera y enlaces, con alineación a la izquierda y dimensiones conservadas.

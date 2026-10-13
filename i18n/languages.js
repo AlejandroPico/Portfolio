@@ -1,12 +1,12 @@
 window.portfolioLanguages=[
   {code:'es',label:'ES',name:'Español',flagUrl:'assets/flags/es.svg',file:'es.js'},
-  {code:'ca',label:'CA',name:'Català',flagUrl:'assets/flags/ca.svg',file:'ca.js'},
+  {code:'ca',label:'CAT',name:'Català',flagUrl:'assets/flags/ca.svg',file:'ca.js'},
   {code:'en',label:'EN',name:'English',flagUrl:'assets/flags/en.svg',file:'en.js'},
   {code:'fr',label:'FR',name:'Français',flagUrl:'assets/flags/fr.svg',file:'fr.js'},
   {code:'de',label:'DE',name:'Deutsch',flagUrl:'assets/flags/de.svg',file:'de.js'},
   {code:'pt',label:'PT',name:'Português',flagUrl:'assets/flags/pt.svg',file:'pt.js'},
   {code:'it',label:'IT',name:'Italiano',flagUrl:'assets/flags/it.svg',file:'it.js'},
-  {code:'zh',label:'中文',name:'中文（简体）',flagUrl:'assets/flags/zh.svg',file:'zh.js'},
-  {code:'ja',label:'日本語',name:'日本語',flagUrl:'assets/flags/ja.svg',file:'ja.js'},
-  {code:'hi',label:'हिन्दी',name:'हिन्दी',flagUrl:'assets/flags/hi.svg',file:'hi.js'}
+  {code:'zh',label:'ZH',name:'中文（简体）',flagUrl:'assets/flags/zh.svg',file:'zh.js'},
+  {code:'ja',label:'JA',name:'日本語',flagUrl:'assets/flags/ja.svg',file:'ja.js'},
+  {code:'hi',label:'HI',name:'हिन्दी',flagUrl:'assets/flags/hi.svg',file:'hi.js'}
 ];
