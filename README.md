@@ -189,3 +189,11 @@ Proyecto en evolución. La intención es mantenerlo como portfolio activo, añad
 - Auto es la opción inicial del selector: sigue las preferencias de idioma del navegador/sistema y permite volver a la detección automática tras elegir un idioma manualmente. Si ninguno está disponible, se utiliza inglés.
 - Traducciones de perfil, CV, contacto, descripciones y etiquetas de los 29 proyectos, incluido Lector.
 - Los iconos de las fichas siguen obteniéndose del `favicon.svg` de la raíz pública de cada proyecto.
+
+## Plan B · Galería compacta
+
+Esta rama conserva los 29 proyectos, idiomas y comportamiento de las fichas de `main`. La alternativa reduce la anchura de las tarjetas y muestra cinco columnas en escritorio, cuatro o tres en pantallas intermedias y dos en tablet pequeña. En móvil mantiene una lista de fichas compactas con expansión al tocar. Las fichas expandidas crecen hacia dentro en los bordes y permiten mostrar el texto completo.
+
+Vista publicada: https://alejandropico.github.io/Portfolio/plan-b/#proyectos
+
+GitHub Pages publica desde `main`. La vista de comparación contiene la entrada y CSS de esta rama, y comparte los recursos del Portfolio. Para republicarla se actualizan `plan-b/index.html` y `plan-b/project-gallery-plan-b.css` en `main`. No cambia la galería principal.

@@ -1,0 +1,48 @@
+/* Plan B: a denser glass gallery; all existing project interactions are retained. */
+#proyectos .project-grid{grid-template-columns:repeat(5,minmax(0,1fr));gap:.6rem}
+#proyectos .project-slot{height:92px}
+#proyectos .project-slot>.project-card{padding:.7rem .65rem}
+#proyectos .project-head{gap:.55rem}
+#proyectos .project-icon{width:2rem;height:2rem;padding:.16rem}
+#proyectos .project-head h3{font-size:1rem;line-height:1.18;white-space:normal;overflow-wrap:anywhere;text-wrap:balance}
+@media(hover:hover) and (pointer:fine) and (min-width:761px){
+ #proyectos .project-slot{--detail-width:360px}
+ #proyectos .project-slot>.project-card:is(:hover,:focus,:focus-within){
+  inset:auto;top:-115px;left:calc((100% - var(--detail-width))/2);right:auto;
+  width:var(--detail-width)!important;height:auto!important;min-height:322px!important;
+  padding:1.25rem;gap:.9rem;overflow:visible;justify-content:flex-start;
+ }
+ #proyectos .project-slot>.project-card:is(:hover,:focus,:focus-within) .project-head h3{font-size:1.25rem;line-height:1.18}
+ #proyectos .project-slot>.project-card:is(:hover,:focus,:focus-within)>p{max-height:none;font-size:.96rem;line-height:1.6}
+ #proyectos .project-slot>.project-card:is(:hover,:focus,:focus-within) .project-foot{max-height:none;flex-wrap:wrap;row-gap:.65rem}
+ #proyectos .project-slot>.project-card:is(:hover,:focus,:focus-within) .project-icon{width:2.35rem;height:2.35rem}
+}
+@media(min-width:1121px){
+ #proyectos .project-slot:nth-child(5n+1)>.project-card:is(:hover,:focus,:focus-within){left:0;right:auto}
+ #proyectos .project-slot:nth-child(5n)>.project-card:is(:hover,:focus,:focus-within){left:auto;right:0}
+}
+@media(min-width:921px) and (max-width:1120px){
+ #proyectos .project-grid{grid-template-columns:repeat(4,minmax(0,1fr))}
+ #proyectos .project-slot:nth-child(4n+1)>.project-card:is(:hover,:focus,:focus-within){left:0;right:auto}
+ #proyectos .project-slot:nth-child(4n)>.project-card:is(:hover,:focus,:focus-within){left:auto;right:0}
+}
+@media(min-width:761px) and (max-width:920px){
+ #proyectos .project-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+ #proyectos .project-slot:nth-child(3n+1)>.project-card:is(:hover,:focus,:focus-within){left:0;right:auto}
+ #proyectos .project-slot:nth-child(3n)>.project-card:is(:hover,:focus,:focus-within){left:auto;right:0}
+}
+@media(max-width:760px){
+ #proyectos .project-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:.55rem}
+ #proyectos .project-slot{height:82px}
+ #proyectos .project-slot.is-mobile-open{grid-column:1/-1;height:320px}
+ #proyectos .project-slot>.project-card.is-mobile-expanded{padding:1.15rem;gap:.85rem}
+ #proyectos .project-slot>.project-card.is-mobile-expanded>p{max-height:none;font-size:.95rem;line-height:1.6}
+ #proyectos .project-slot>.project-card.is-mobile-expanded .project-foot{max-height:none;flex-wrap:wrap;row-gap:.65rem}
+}
+@media(max-width:539px){
+ #proyectos .project-grid{grid-template-columns:1fr;gap:.5rem}
+ #proyectos .project-slot{height:74px}
+ #proyectos .project-slot.is-mobile-open{height:342px}
+ #proyectos .project-head h3{font-size:1.06rem}
+}
+@media(prefers-reduced-motion:reduce){#proyectos .project-slot,#proyectos .project-card{transition:none!important}}
