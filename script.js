@@ -1,14 +1,22 @@
 let portfolioThemeMode='auto';
-const portfolioVisualStyles=['classic','aurora','nebula','solstice'];
+const portfolioVisualStyles=['matte','classic','aurora','nebula','solstice','ocean','sky','cosmos'];
 let portfolioVisualStyle=portfolioVisualStyles[Math.floor(Math.random()*portfolioVisualStyles.length)];
 try{portfolioThemeMode=localStorage.getItem('portfolio-theme')||'auto'}catch(e){}
 function loadCss(href){if(document.querySelector('link[href^="'+href.split('?')[0]+'"]'))return;const link=document.createElement('link');link.rel='stylesheet';link.href=href;document.head.appendChild(link)}
 function loadJs(src){if(document.querySelector('script[src^="'+src.split('?')[0]+'"]'))return;const script=document.createElement('script');script.async=false;script.src=src;document.body.appendChild(script)}
 function portfolioAutoTheme(){const h=new Date().getHours();return h>=7&&h<20?'light':'dark'}
 function portfolioApplyTheme(){const t=portfolioThemeMode==='auto'?portfolioAutoTheme():portfolioThemeMode;document.body.setAttribute('data-theme',t);document.body.setAttribute('data-visual-style',portfolioVisualStyle);const b=document.getElementById('themeButton');if(b)b.textContent=portfolioThemeMode==='auto'?'Auto':portfolioThemeMode==='light'?'Claro':'Oscuro'}
-function portfolioThemePanel(){let panel=document.getElementById('themePanel');if(panel)return panel;panel=document.createElement('div');panel.id='themePanel';panel.className='theme-panel';panel.innerHTML='<button type="button" data-style="classic">Clásico<small>Estilo cristal actual</small></button><button type="button" data-style="aurora">Aurora<small>Cristal reforzado y acento técnico</small></button><button type="button" data-style="nebula">Nebula<small>Azul espacial con brillo frío</small></button><button type="button" data-style="solstice">Solstice<small>Ámbar cálido y verde suave</small></button>';document.body.appendChild(panel);panel.addEventListener('click',event=>{const btn=event.target.closest('button[data-style]');if(!btn)return;portfolioVisualStyle=btn.dataset.style;portfolioApplyTheme();portfolioMarkPanel();panel.classList.remove('open')});return panel}
+function portfolioThemePanel(){let panel=document.getElementById('themePanel');if(panel)return panel;panel=document.createElement('div');panel.id='themePanel';panel.className='theme-panel';panel.innerHTML='<button type="button" data-style="matte">Mate<small>Fondo liso, sin decoraciones</small></button><button type="button" data-style="classic">Clásico<small>Estilo cristal original</small></button><button type="button" data-style="aurora">Aurora<small>Cristal y destellos boreales</small></button><button type="button" data-style="nebula">Nébula<small>Azul espacial con brillo frío</small></button><button type="button" data-style="solstice">Solsticio<small>Ámbar cálido y verde suave</small></button><button type="button" data-style="ocean">Océano<small>Corrientes, luz submarina y burbujas</small></button><button type="button" data-style="sky">Cielo<small>Nubes que recorren el horizonte</small></button><button type="button" data-style="cosmos">Cosmos<small>Polvo estelar y estrellas vivas</small></button>';document.body.appendChild(panel);panel.addEventListener('click',event=>{const btn=event.target.closest('button[data-style]');if(!btn)return;portfolioVisualStyle=btn.dataset.style;portfolioApplyTheme();portfolioMarkPanel();panel.classList.remove('open')});return panel}
 function portfolioMarkPanel(){const panel=document.getElementById('themePanel');if(!panel)return;panel.querySelectorAll('button[data-style]').forEach(btn=>btn.classList.toggle('active',btn.dataset.style===portfolioVisualStyle))}
 function portfolioToggleThemePanel(){const panel=portfolioThemePanel();portfolioMarkPanel();panel.classList.toggle('open')}
+function portfolioAmbientScene(){
+ if(document.querySelector('.ambient-scene'))return;
+ const scene=document.createElement('div');scene.className='ambient-scene';scene.setAttribute('aria-hidden','true');
+ for(let i=0;i<3;i++){const layer=document.createElement('span');layer.className='ambient-layer ambient-layer--'+(i+1);scene.appendChild(layer)}
+ for(let i=0;i<12;i++){const particle=document.createElement('i');particle.style.setProperty('--i',i);particle.style.setProperty('--x',((i*37+11)%100)+'%');particle.style.setProperty('--y',((i*23+9)%100)+'%');scene.appendChild(particle)}
+ document.body.prepend(scene);
+ const sync=()=>{scene.dataset.paused=String(document.hidden)};sync();document.addEventListener('visibilitychange',sync)
+}
 function normalizeHeroName(){const last=document.querySelector('.hero-copy h1 span:last-child');if(last)last.textContent='Pico Perez'}
 function projectFaviconUrl(url){return String(url||'').replace(/\/?$/,'/')+'favicon.svg'}
 function syncProjectFavicons(){document.querySelectorAll('.project-card[data-url]').forEach(card=>{const icon=card.querySelector('.project-icon');if(icon)icon.src=projectFaviconUrl(card.dataset.url)})}
@@ -40,11 +48,13 @@ function initProgressNavigation(){const nav=document.querySelector('.site-nav');
 function initScrollReveal(){const items=[...document.querySelectorAll('.project-slot,.tech-card,.resume-column,.value-grid p,.profile-text p,.contact-form')];if(!items.length)return;if(!document.getElementById('scroll-reveal-style')){const style=document.createElement('style');style.id='scroll-reveal-style';style.textContent='@media (prefers-reduced-motion:no-preference){.reveal-item{opacity:0;transform:translateY(18px);transition:opacity .58s ease,transform .58s ease;transition-delay:var(--reveal-delay,0ms)}.reveal-item.is-visible{opacity:1;transform:none}}';document.head.appendChild(style)}items.forEach((item,index)=>{item.classList.add('reveal-item');item.style.setProperty('--reveal-delay',Math.min(index%8,6)*45+'ms')});if(!('IntersectionObserver'in window)){items.forEach(item=>item.classList.add('is-visible'));return}const observer=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('is-visible');observer.unobserve(entry.target)}})},{threshold:.14,rootMargin:'0px 0px -6% 0px'});items.forEach(item=>observer.observe(item))}
 function initPortfolio(){const year=document.querySelector('#year');if(year)year.textContent=new Date().getFullYear();normalizeHeroName();ensureProjectCatalog();syncProjectFavicons();prepareProjectSlots();bindMenu();bindTheme();bindProjectCards();initProgressNavigation();setTimeout(initScrollReveal,450)}
 loadCss('layout-polish.css?v=20260707-1');
-loadCss('glass-ui.css?v=20261021-4');
-loadCss('theme-variants.css?v=20261021-4');
+loadCss('glass-ui.css?v=20261021-5');
+loadCss('theme-variants.css?v=20261021-5');
+loadCss('ambient-themes.css?v=20261021-5');
 loadCss('project-gallery.css?v=20260815-3');
 loadCss('mobile-nav.css?v=20260815-2');
+portfolioAmbientScene();
 portfolioApplyTheme();
 if(document.readyState==='loading')window.addEventListener('DOMContentLoaded',initPortfolio,{once:true});else initPortfolio();
 document.addEventListener('portfolio-language-change',()=>setTimeout(initScrollReveal,120));
-loadJs('i18n/index.js?v=20261021-4');
+loadJs('i18n/index.js?v=20261021-5');
