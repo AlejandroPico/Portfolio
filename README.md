@@ -76,7 +76,7 @@ El catálogo actual reúne **29 proyectos**. Están agrupados aquí por su temá
 
 - **Galería compacta con efecto cristal.** Cinco columnas en pantallas amplias y distribución adaptable a tablet y móvil. Las fichas muestran título y favicon; al pasar el ratón, enfocar con el teclado o tocar en móvil, se amplían con descripción, etiquetas y enlaces.
 - **Once idiomas y detección automática.** Auto sigue las preferencias del navegador; también se puede elegir un idioma manualmente. El botón muestra su abreviatura y el desplegable incorpora el nombre y la bandera.
-- **Tema según el momento del día.** Mañana, Tarde y Noche, además de un modo automático que utiliza una estimación del ciclo solar según la zona horaria y la época del año. El control utiliza iconos y conserva un nombre accesible.
+- **Tema según el momento del día.** Mañana, Tarde y Noche, además de un modo automático que utiliza una estimación del ciclo solar según la zona horaria y la época del año. El fondo cambia gradualmente; el texto principal, secundario y los enlaces ajustan su contraste según la luminosidad, también en las superficies de cristal durante las transiciones. El control utiliza iconos y conserva un nombre accesible.
 - **Cuatro estilos visuales.** Clásico, Aurora, Nebula y Solstice. En cada visita se elige uno al azar; `Alt + clic` sobre el botón de tema permite cambiarlo durante esa visita.
 - **Preferencias guardadas.** La elección de idioma y el modo del tema se conservan mediante `localStorage`.
 - **Navegación por secciones.** Indicador de progreso, sección activa y animaciones que respetan la preferencia de movimiento reducido.
@@ -131,6 +131,16 @@ python -m http.server 8000
 ```
 
 Abre **[http://localhost:8000](http://localhost:8000)**. El servidor estático permite probar la carga de archivos y el service worker en un entorno local.
+
+## Comprobar las transiciones de tema
+
+Las pruebas de contraste recorren cada minuto de cuatro días representativos del año, todas las mezclas entre paletas y el caso de regresión de las 18:35. Comprueban un contraste mínimo de 4,5:1 para texto principal, secundario y acentos, conservando los colores interpolados del fondo. Requieren Node.js, sin instalar dependencias:
+
+```bash
+TZ=Europe/Madrid node --test tests/solar-contrast.test.cjs
+```
+
+La animación respeta la preferencia de movimiento reducido.
 
 ## Publicación e instalación
 

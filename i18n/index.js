@@ -6,7 +6,7 @@ function detectPortfolioLanguage(){
  }
  return 'en';
 }
-async function initI18nBundle(){const v='20261021-1';await loadI18nAsset('solar-theme.css?v='+v,'css');await loadI18nAsset('i18n/language-picker.css?v='+v,'css');await loadI18nAsset('i18n/core.js?v='+v);await loadI18nAsset('i18n/languages.js?v='+v);for(const lang of window.portfolioLanguages){await loadI18nAsset('i18n/'+lang.file+'?v='+v)}await loadI18nAsset('i18n/project-extras.js?v='+v);await loadI18nAsset('i18n/tags.js?v='+v);await loadI18nAsset('i18n/language-picker.js?v='+v);await loadI18nAsset('i18n/project-catalog-extra.js?v='+v);for(const [lang,data] of Object.entries(window.portfolioLocaleAdditions||{})){
+async function initI18nBundle(){const v='20261021-2';await loadI18nAsset('solar-theme.css?v='+v,'css');await loadI18nAsset('i18n/language-picker.css?v='+v,'css');await loadI18nAsset('i18n/core.js?v='+v);await loadI18nAsset('i18n/languages.js?v='+v);for(const lang of window.portfolioLanguages){await loadI18nAsset('i18n/'+lang.file+'?v='+v)}await loadI18nAsset('i18n/project-extras.js?v='+v);await loadI18nAsset('i18n/tags.js?v='+v);await loadI18nAsset('i18n/language-picker.js?v='+v);await loadI18nAsset('i18n/project-catalog-extra.js?v='+v);for(const [lang,data] of Object.entries(window.portfolioLocaleAdditions||{})){
  extraProjectDescriptions[lang]=data.extras;tagLine[lang]=data.tags;
  extraCatalogTranslations[lang]=data.catalog;projectActionLabels[lang]={visit:data.visit};
 }
