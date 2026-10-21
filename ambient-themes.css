@@ -12,25 +12,42 @@ body:is([data-visual-style="ocean"],[data-visual-style="sky"],[data-visual-style
 /* Océano: long shafts of light, slow currents and rising bubbles. */
 [data-visual-style="ocean"] .ambient-layer--1{background:radial-gradient(ellipse at 20% 0%,#55bcb53d,transparent 60%),radial-gradient(ellipse at 85% 90%,#307c9c30,transparent 65%);animation:ambient-current 44s ease-in-out infinite alternate}
 [data-visual-style="ocean"] .ambient-layer--2{background:repeating-conic-gradient(from 164deg at 45% -20%,transparent 0deg 7deg,#a5ece51c 9deg 11deg,transparent 13deg 20deg);transform-origin:45% 0;animation:ambient-rays 32s ease-in-out infinite alternate}
-[data-visual-style="ocean"] .ambient-layer--3{inset:55% -20% -30%;border-radius:50%;border-top:1px solid #54b8bd33;box-shadow:0 -24px 70px #55b5b31a;animation:ambient-current 28s ease-in-out infinite alternate-reverse}
+[data-visual-style="ocean"] .ambient-layer--3{display:none}
 [data-visual-style="ocean"] .ambient-scene i{width:calc(4px + var(--i)*1px);height:calc(4px + var(--i)*1px);border:1px solid #70b9bf66;border-radius:50%;background:#9cd9df0d;animation:ambient-bubble calc(30s + var(--i)*3s) linear infinite;animation-delay:calc(var(--i)*-7s)}
-/* Cielo: soft, irregular cloud banks slide across the open sky. */
-[data-visual-style="sky"] .ambient-layer--1{background:radial-gradient(ellipse at 20% 30%,#8dbed82e,transparent 60%),radial-gradient(ellipse at 80% 70%,#f2c18a26,transparent 60%);animation:ambient-current 60s ease-in-out infinite alternate}
-[data-visual-style="sky"] .ambient-layer--2,[data-visual-style="sky"] .ambient-layer--3{inset:0 -35%;background:radial-gradient(ellipse 15% 6% at 24% 23%,#b9cdd64d,transparent 100%),radial-gradient(ellipse 23% 8% at 34% 27%,#cbd8df42,transparent 100%),radial-gradient(ellipse 18% 6% at 60% 62%,#a8bdcd38,transparent 100%),radial-gradient(ellipse 26% 9% at 73% 65%,#c8d4d938,transparent 100%);animation:ambient-cloud 85s ease-in-out infinite alternate}
-[data-visual-style="sky"] .ambient-layer--3{transform:scale(.8) translateY(20%);opacity:.6;animation-duration:115s;animation-direction:alternate-reverse}
+/* Cielo: recognisable blurred clouds cross the viewport continuously.
+   Each layer contains two identical tiles, so the loop has no jump. */
+body[data-solar-managed][data-visual-style="sky"]{background:var(--bg)!important}
+[data-visual-style="sky"] .ambient-layer--1{display:none}
+[data-visual-style="sky"] .ambient-layer--2,[data-visual-style="sky"] .ambient-layer--3{
+ --cloud:color-mix(in srgb,var(--text) 16%,transparent);
+ --cloud-edge:color-mix(in srgb,var(--text) 8%,transparent);
+ inset:0 auto auto 0;width:200vw;height:100%;filter:blur(12px);
+ background:
+ radial-gradient(ellipse 9vw 4vh at 16vw 25%,var(--cloud) 30%,transparent 100%),
+ radial-gradient(ellipse 13vw 5vh at 24vw 29%,var(--cloud) 35%,transparent 100%),
+ radial-gradient(ellipse 9vw 4vh at 33vw 31%,var(--cloud-edge) 30%,transparent 100%),
+ radial-gradient(ellipse 10vw 5vh at 70vw 67%,var(--cloud) 25%,transparent 100%),
+ radial-gradient(ellipse 15vw 4vh at 81vw 71%,var(--cloud) 35%,transparent 100%),
+ radial-gradient(ellipse 9vw 3vh at 92vw 73%,var(--cloud-edge) 25%,transparent 100%);
+ background-size:100vw 100%;background-repeat:repeat-x;
+ animation:ambient-cloud 65s linear infinite;animation-delay:-18s
+}
+[data-visual-style="sky"] .ambient-layer--3{top:20%;height:75%;opacity:.65;animation-duration:95s;animation-direction:reverse;animation-delay:-42s}
 [data-visual-style="sky"] .ambient-scene i{display:none}
 /* Cosmos: a wide nebula, orbital dust and sparse, gently breathing stars. */
 [data-visual-style="cosmos"] .ambient-layer--1{background:radial-gradient(ellipse at 30% 40%,#8263b333,transparent 50%),radial-gradient(ellipse at 70% 60%,#4b9ebd30,transparent 55%);animation:ambient-orbit 100s ease-in-out infinite alternate}
 [data-visual-style="cosmos"] .ambient-layer--2{inset:10% -25%;border:1px solid #8b9db624;border-radius:50%;transform:rotate(-28deg);box-shadow:0 0 65px #8b72b51c,inset 0 0 65px #759bbd14;animation:ambient-orbit 90s ease-in-out infinite alternate-reverse}
 [data-visual-style="cosmos"] .ambient-layer--3{background:radial-gradient(1px 1px at 12% 28%,#91a6c080 90%,transparent),radial-gradient(1px 1px at 67% 42%,#aba1bf80 90%,transparent),radial-gradient(1px 1px at 36% 74%,#91a6c080 90%,transparent);background-size:347px 293px;animation:ambient-current 70s ease-in-out infinite alternate}
 [data-visual-style="cosmos"] .ambient-scene i{width:3px;height:3px;opacity:.4;border-radius:50%;background:#8b9ebc;box-shadow:0 0 7px 1px #99aacc55;animation:ambient-star calc(9s + var(--i)*1s) ease-in-out infinite alternate;animation-delay:calc(var(--i)*-3s)}
-[data-day-phase="night"][data-visual-style="sky"] .ambient-layer--2,[data-day-phase="night"][data-visual-style="sky"] .ambient-layer--3{opacity:.45}
+/* A brief shooting star about once every minute and a half, never flashing. */
+[data-visual-style="cosmos"] .ambient-scene::after{content:"";position:absolute;top:22%;left:78%;width:clamp(70px,11vw,150px);height:2px;background:linear-gradient(90deg,color-mix(in srgb,var(--text) 32%,transparent),transparent);opacity:0;transform:rotate(-31deg);animation:ambient-meteor 97s linear infinite;animation-delay:-70s}
+@keyframes ambient-meteor{0%,96%{opacity:0;transform:translate3d(0,0,0) rotate(-31deg)}96.15%{opacity:.65}97.2%{opacity:0;transform:translate3d(-280px,168px,0) rotate(-31deg)}100%{opacity:0;transform:translate3d(-280px,168px,0) rotate(-31deg)}}
 @keyframes ambient-current{from{transform:translate3d(-2%,-1%,0) scale(1)}to{transform:translate3d(3%,2%,0) scale(1.04)}}
 @keyframes ambient-rays{from{transform:rotate(-5deg);opacity:.4}to{transform:rotate(5deg);opacity:.8}}
 @keyframes ambient-bubble{from{transform:translate3d(0,105vh,0);opacity:0}15%,80%{opacity:.5}to{transform:translate3d(28px,-105vh,0);opacity:0}}
-@keyframes ambient-cloud{from{translate:-5% 0}to{translate:9% 1%}}
+@keyframes ambient-cloud{from{transform:translate3d(0,0,0)}to{transform:translate3d(-50%,0,0)}}
 @keyframes ambient-orbit{from{transform:rotate(-28deg) scale(1)}to{transform:rotate(-12deg) scale(1.08)}}
 @keyframes ambient-star{from{opacity:.2;transform:scale(.7)}to{opacity:.5;transform:scale(1.15)}}
-.ambient-scene[data-paused="true"] *{animation-play-state:paused!important}
+.ambient-scene[data-paused="true"] *,.ambient-scene[data-paused="true"]::after{animation-play-state:paused!important}
 .theme-panel{max-height:calc(100dvh - 6rem);max-width:calc(100vw - 2.2rem);overflow-y:auto;overscroll-behavior:contain}
-@media(prefers-reduced-motion:reduce){.ambient-scene *{animation:none!important}}
+@media(prefers-reduced-motion:reduce){.ambient-scene *,.ambient-scene::after{animation:none!important}}
