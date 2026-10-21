@@ -47,4 +47,4 @@ loadCss('mobile-nav.css?v=20260815-2');
 portfolioApplyTheme();
 if(document.readyState==='loading')window.addEventListener('DOMContentLoaded',initPortfolio,{once:true});else initPortfolio();
 document.addEventListener('portfolio-language-change',()=>setTimeout(initScrollReveal,120));
-loadJs('i18n/index.js?v=20261021-2');
+loadJs('i18n/index.js?v=20261021-3');
