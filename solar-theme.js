@@ -1,4 +1,6 @@
 const portfolioThemeLabels={
+  ru:{auto:'Автоматически',morning:'Утро',afternoon:'День',night:'Ночь'},
+  ar:{auto:'تلقائي',morning:'الصباح',afternoon:'بعد الظهر',night:'الليل'},
   es:{auto:'Auto',morning:'Mañana',afternoon:'Tarde',night:'Noche'},
   ca:{auto:'Auto',morning:'Matí',afternoon:'Tarda',night:'Nit'},
   en:{auto:'Auto',morning:'Morning',afternoon:'Afternoon',night:'Night'},

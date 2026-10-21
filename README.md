@@ -75,7 +75,7 @@ El catálogo actual reúne **29 proyectos**. Están agrupados aquí por su temá
 ## Experiencia de navegación
 
 - **Galería compacta con efecto cristal.** Cinco columnas en pantallas amplias y distribución adaptable a tablet y móvil. Las fichas muestran título y favicon; al pasar el ratón, enfocar con el teclado o tocar en móvil, se amplían con descripción, etiquetas y enlaces.
-- **Once idiomas y detección automática.** Auto sigue las preferencias del navegador; también se puede elegir un idioma manualmente. El botón muestra su abreviatura y el desplegable incorpora el nombre y la bandera.
+- **Trece idiomas y detección automática.** Auto sigue las preferencias del navegador; también se puede elegir un idioma manualmente. El botón muestra su abreviatura y el desplegable incorpora el nombre y la bandera.
 - **Tema según el momento del día.** Mañana, Tarde y Noche, además de un modo automático que utiliza una estimación del ciclo solar según la zona horaria y la época del año. El fondo cambia gradualmente; el texto principal, secundario y los enlaces ajustan su contraste según la luminosidad, también en las superficies de cristal durante las transiciones. El control utiliza iconos y conserva un nombre accesible.
 - **Ocho estilos visuales.** Mate (fondo liso sin decoración), Clásico, Aurora, Nébula, Solsticio, Océano, Cielo y Cosmos. Los tres últimos incorporan animaciones ambientales suaves: luz y burbujas submarinas, nubes borrosas que cruzan el fondo y polvo estelar con una estrella fugaz muy esporádica. Todos funcionan con Mañana, Tarde y Noche y conservan el cristal de las tarjetas y su protección de contraste. En cada visita se elige uno al azar, con la misma probabilidad; `Alt + clic` sobre el botón de tema permite cambiarlo durante esa visita. Las animaciones se detienen al ocultar la pestaña y respetan la preferencia de movimiento reducido.
 - **Preferencias guardadas.** La elección de idioma y el modo del tema se conservan mediante `localStorage`.
@@ -101,8 +101,10 @@ Las traducciones se organizan en archivos dedicados dentro de [`i18n/`](i18n/). 
 | 日本語 | JA | [ja.js](i18n/ja.js) |
 | हिन्दी | HI | [hi.js](i18n/hi.js) |
 | 한국어 | KO | [ko.js](i18n/ko.js) |
+| Русский | RU | [ru.js](i18n/ru.js) |
+| العربية | AR | [ar.js](i18n/ar.js) |
 
-Auto reconoce variantes regionales como `es-ES` o `ko-KR`. Cuando ninguna preferencia del navegador coincide con un idioma disponible, utiliza inglés. Las banderas del selector son recursos locales; el coreano utiliza la de Corea del Sur.
+Auto reconoce variantes regionales como `es-ES`, `ko-KR`, `ru-RU` o `ar-EG`. Cuando ninguna preferencia del navegador coincide con un idioma disponible, utiliza inglés. Las banderas del selector son recursos locales; el coreano utiliza la de Corea del Sur y el árabe un emblema lingüístico neutro. La interfaz árabe adapta la lectura, las fichas y la cronología a la escritura de derecha a izquierda, manteniendo legibles los nombres de proyectos y tecnologías. El portugués conserva una única traducción.
 
 ## Tecnología y organización
 
@@ -132,15 +134,17 @@ python -m http.server 8000
 
 Abre **[http://localhost:8000](http://localhost:8000)**. El servidor estático permite probar la carga de archivos y el service worker en un entorno local.
 
-## Comprobar las transiciones de tema
+## Comprobaciones
 
 Las pruebas de contraste recorren cada minuto de cuatro días representativos del año, todas las mezclas entre paletas y el caso de regresión de las 18:35. Comprueban un contraste mínimo de 4,5:1 para texto principal, secundario y acentos, conservando los colores interpolados del fondo y comprobando que el cristal siga siendo translúcido y reflectante. Requieren Node.js, sin instalar dependencias:
 
 ```bash
-TZ=Europe/Madrid node --test tests/solar-contrast.test.cjs
+TZ=Europe/Madrid node --test tests/*.test.cjs
 ```
 
 La animación respeta la preferencia de movimiento reducido.
+
+Las pruebas de idiomas comprueban la cobertura de las traducciones rusa y árabe (interfaz, CV, proyectos y conocimientos), el manifiesto RTL y la ausencia de variantes portuguesas duplicadas.
 
 ## Publicación e instalación
 
@@ -153,10 +157,10 @@ El formulario de contacto utiliza `mailto:`: abre el cliente de correo con el me
 ## Mantenimiento del contenido
 
 - **Proyectos.** El catálogo combina las fichas iniciales de `index.html`, las entradas de `script.js` y el catálogo complementario de `i18n/project-catalog-extra.js`. Al añadir un proyecto, deben actualizarse también las descripciones, etiquetas y esta relación del README.
-- **Idiomas.** `i18n/languages.js` declara los idiomas y sus archivos. Para incorporar uno nuevo, hay que completar su traducción, registrar su bandera local y revisar conocimientos, etiquetas y nombres de los temas. `i18n/ko.js` ofrece un ejemplo de la estructura completa.
+- **Idiomas.** `i18n/languages.js` declara los idiomas y sus archivos. Para incorporar uno nuevo, hay que completar su traducción, registrar su bandera local y revisar conocimientos, etiquetas y nombres de los temas. `i18n/ko.js`, `i18n/ru.js` e `i18n/ar.js` ofrecen ejemplos de la estructura completa; el manifiesto declara `dir: rtl` para el árabe.
 - **Recursos.** Los cambios de interfaz utilizan versiones en las URL de los recursos y en la caché del service worker para facilitar su actualización.
 
-Las banderas proceden de [flag-icons](https://github.com/lipis/flag-icons), con su [licencia MIT incluida](assets/flags/LICENSE).
+La colección de banderas incluye recursos de [flag-icons](https://github.com/lipis/flag-icons), con su [licencia MIT incluida](assets/flags/LICENSE).
 
 ## Autor y contacto
 

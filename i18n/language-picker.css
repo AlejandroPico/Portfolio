@@ -3,3 +3,26 @@
 .language-picker__menu button{font:inherit;font-size:.88rem}
 :lang(zh),:lang(ja),:lang(hi),:lang(ko){letter-spacing:normal}
 :lang(zh) .project-card>p,:lang(ja) .project-card>p,:lang(hi) .project-card>p,:lang(ko) .project-card>p{line-height:1.65}
+
+/* Arabic text flows RTL; names, brands and the gallery grid stay unambiguous. */
+html[dir="rtl"]{letter-spacing:normal}
+html[dir="rtl"] :is(h2,h3,p,.kicker,.nav-links a,.tag-list span,.contact-form,.cv-actions a){letter-spacing:normal;line-height:1.65}
+html[dir="rtl"] :is(.hero-copy,.profile-text,.value-grid,.resume-column,.contact-open){text-align:start}
+html[dir="rtl"] .hero-copy h1{direction:ltr;unicode-bidi:isolate;line-height:.95;text-align:right}
+html[dir="rtl"] .project-grid{direction:ltr}
+html[dir="rtl"] .project-card{direction:rtl}
+html[dir="rtl"] #proyectos .project-slot>.project-card>p{text-align:start!important;line-height:1.8}
+html[dir="rtl"] :is(.project-head h3,.tech-card span){direction:ltr;unicode-bidi:plaintext}
+html[dir="rtl"] .resume-column ol{border-left:0;border-right:1px solid var(--line)}
+html[dir="rtl"] .resume-column li{padding:0 1.25rem 1.7rem 0}
+html[dir="rtl"] .resume-column li::before{left:auto;right:-5px}
+html[dir="rtl"] .resume-column li ul{padding-left:0;padding-right:1.1rem}
+html[dir="rtl"] .resume-column li li{padding:0 0 .28rem}
+html[dir="rtl"] :is(.resume-column strong,.resume-column>ol>li>span){unicode-bidi:plaintext}
+html[dir="rtl"] .contact-form input,html[dir="rtl"] .contact-form textarea{direction:rtl;text-align:start}
+.language-picker__menu{direction:ltr}
+.language-picker__menu button span:last-child{unicode-bidi:plaintext}
+@media(max-width:760px){html[dir="rtl"] .hero-copy,html[dir="rtl"] .hero-copy h1{text-align:center}}
+
+html[dir="rtl"] .theme-panel button{text-align:start;line-height:1.65}
+html[dir="rtl"] .project-card .tag-list span{white-space:normal}

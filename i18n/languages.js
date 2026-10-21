@@ -9,5 +9,7 @@ window.portfolioLanguages=[
   {code:'zh',label:'ZH',name:'中文（简体）',flagUrl:'assets/flags/zh.svg',file:'zh.js'},
   {code:'ja',label:'JA',name:'日本語',flagUrl:'assets/flags/ja.svg',file:'ja.js'},
   {code:'hi',label:'HI',name:'हिन्दी',flagUrl:'assets/flags/hi.svg',file:'hi.js'},
-  {code:'ko',label:'KO',name:'한국어',flagUrl:'assets/flags/ko.svg',file:'ko.js'}
+  {code:'ko',label:'KO',name:'한국어',flagUrl:'assets/flags/ko.svg',file:'ko.js'},
+  {code:'ru',label:'RU',name:'Русский',flagUrl:'assets/flags/ru.svg',file:'ru.js'},
+  {code:'ar',label:'AR',name:'العربية',flagUrl:'assets/flags/ar.svg',file:'ar.js',dir:'rtl'}
 ];
