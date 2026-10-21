@@ -203,3 +203,11 @@ Proyecto en evolución. La intención es mantenerlo como portfolio activo, añad
 - Tema con iconos: medio círculo para Auto, sol para Mañana, ocaso para Tarde y luna para Noche. Nombre accesible y tooltip en el idioma seleccionado.
 - Cada visita elige al azar Clásico, Aurora, Nebula o Solstice. Alt+clic permite cambiarlo durante esa visita; el ciclo solar se mantiene independiente.
 - Descripciones centradas verticalmente entre cabecera y enlaces, con alineación a la izquierda y dimensiones conservadas.
+
+## Actualización 20261021-1
+
+- Añadido coreano (`ko`): once idiomas disponibles, con traducción de navegación, perfil, CV, contacto, conocimientos, temas y las 29 fichas de proyectos.
+- Traducciones en `i18n/ko.js`, siguiendo la estructura de los idiomas existentes.
+- Bandera de Corea del Sur en el desplegable (`assets/flags/ko.svg`, fuente `kr.svg` de flag-icons, licencia MIT).
+- Auto reconoce `ko-KR`; el botón superior muestra KO, sin bandera, según el formato del selector.
+- El desplegable se abre hacia el espacio disponible y limita su altura para que también se pueda seleccionar el último idioma en móvil.

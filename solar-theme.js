@@ -8,6 +8,7 @@ const portfolioThemeLabels={
   it:{auto:'Auto',morning:'Mattina',afternoon:'Pomeriggio',night:'Notte'},
   zh:{auto:'Auto',morning:'早晨',afternoon:'下午',night:'夜晚'},
   ja:{auto:'Auto',morning:'朝',afternoon:'午後',night:'夜'},
+  ko:{auto:'자동',morning:'아침',afternoon:'오후',night:'밤'},
   hi:{auto:'Auto',morning:'सुबह',afternoon:'दोपहर',night:'रात'}
 };
 const solarPalettes={

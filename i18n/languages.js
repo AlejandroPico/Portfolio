@@ -8,5 +8,6 @@ window.portfolioLanguages=[
   {code:'it',label:'IT',name:'Italiano',flagUrl:'assets/flags/it.svg',file:'it.js'},
   {code:'zh',label:'ZH',name:'中文（简体）',flagUrl:'assets/flags/zh.svg',file:'zh.js'},
   {code:'ja',label:'JA',name:'日本語',flagUrl:'assets/flags/ja.svg',file:'ja.js'},
-  {code:'hi',label:'HI',name:'हिन्दी',flagUrl:'assets/flags/hi.svg',file:'hi.js'}
+  {code:'hi',label:'HI',name:'हिन्दी',flagUrl:'assets/flags/hi.svg',file:'hi.js'},
+  {code:'ko',label:'KO',name:'한국어',flagUrl:'assets/flags/ko.svg',file:'ko.js'}
 ];

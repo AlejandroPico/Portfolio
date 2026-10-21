@@ -13,7 +13,7 @@ function initLanguagePicker(){
  picker.append(button,menu);select.after(picker);
  function refresh(){const code=select.value==='auto'?(document.documentElement.lang||detectPortfolioLanguage()).split('-')[0]:select.value;const language=languages.find(lang=>lang.code===code)||languages.find(lang=>lang.code==='en');button.textContent=language.label;button.setAttribute('aria-label',language.name+(select.value==='auto'?' · Auto':''));menu.querySelectorAll('button').forEach(b=>{const active=b.dataset.lang===select.value;b.classList.toggle('selected',active);b.setAttribute('aria-pressed',String(active))})}
  function close(){picker.classList.remove('open');button.setAttribute('aria-expanded','false')}
- button.addEventListener('click',()=>{const open=picker.classList.toggle('open');button.setAttribute('aria-expanded',String(open))});
+ button.addEventListener('click',()=>{const open=picker.classList.toggle('open');button.setAttribute('aria-expanded',String(open));if(open){const rect=button.getBoundingClientRect();const above=rect.top-12;const below=window.innerHeight-rect.bottom-12;const up=above>below;menu.style.setProperty('top',up?'auto':'calc(100% + .35rem)','important');menu.style.setProperty('bottom',up?'calc(100% + .35rem)':'auto','important');menu.style.maxHeight=Math.max(80,(up?above:below)-8)+'px'}});
  menu.addEventListener('click',event=>{const item=event.target.closest('button[data-lang]');if(!item)return;select.value=item.dataset.lang;select.dispatchEvent(new Event('change'));refresh();close();button.focus()});
  document.addEventListener('click',event=>{if(!picker.contains(event.target))close()});
  picker.addEventListener('keydown',event=>{if(event.key==='Escape'){close();button.focus()}});
