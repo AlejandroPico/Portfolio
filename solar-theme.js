@@ -36,8 +36,41 @@ function solarInk(backgrounds){return solarWorstContrast('#000000',backgrounds)>
 function solarReadableColor(preferred,backgrounds,target=4.6){const ink=solarInk(backgrounds);const required=Math.min(target,solarWorstContrast(ink,backgrounds));if(solarWorstContrast(preferred,backgrounds)>=required)return preferred;let low=0,high=1;for(let i=0;i<16;i++){const mid=(low+high)/2;if(solarWorstContrast(solarMix(preferred,ink,mid),backgrounds)>=required)high=mid;else low=mid}return solarMix(preferred,ink,high)}
 function solarDecorationStrength(background){const l=solarLuminance(background);if(l<.09)return 1-smoothstep((l-.035)/.055);return smoothstep((l-.32)/.23)}
 function solarReadingContext(background){let strength=solarDecorationStrength(background);let backgrounds=[background,solarMix(background,'#ffffff',.35*strength),solarMix(background,'#000000',.35*strength)];if(solarWorstContrast(solarInk(backgrounds),backgrounds)<4.6){strength=0;backgrounds=[background]}return{strength,backgrounds}}
-function readableSolarPalette(palette){const body=solarReadingContext(palette.bg);const panel=solarReadingContext(palette.surface);const adapt=context=>({text:solarReadableColor(palette.text,context.backgrounds,7),muted:solarReadableColor(palette.muted,context.backgrounds),accent:solarReadableColor(palette.accent,context.backgrounds),accent2:solarReadableColor(palette.accent2,context.backgrounds)});return{palette:{...palette,...adapt(body)},panel:adapt(panel),bodyStrength:body.strength,panelStrength:panel.strength,guarded:body.strength<1||panel.strength<1||solarInk(body.backgrounds)==='#ffffff',ink:solarInk(body.backgrounds)}}
-function applyPalette(palette,phase){const safe=readableSolarPalette(palette);const s=document.body.style;Object.entries(safe.palette).forEach(([key,value])=>s.setProperty('--'+({surface2:'surface-2',accent2:'accent-2'}[key]||key),value));Object.entries(safe.panel).forEach(([key,value])=>s.setProperty('--solar-panel-'+key,value));s.setProperty('--solar-decor-strength',safe.bodyStrength);s.setProperty('--solar-panel-shine',safe.panelStrength*.12);s.setProperty('--solar-shadow-alpha',Math.min(safe.bodyStrength,safe.panelStrength)*.2);document.body.dataset.solarManaged='true';document.body.dataset.solarReadable=String(safe.guarded);document.body.dataset.solarBackdrop=String(safe.bodyStrength<1);document.body.dataset.dayPhase=phase;document.body.dataset.theme=safe.ink==='#ffffff'?'dark':phase==='afternoon'?'afternoon':'light';document.documentElement.style.colorScheme=safe.ink==='#ffffff'?'dark':'light'}
+// Model the translucent glass backing plus an upper bound on its reflective
+// layers. Keep a non-zero gloss in dark conditions, with the original shapes.
+function solarGlassContext(palette,ink){
+ const light=ink==='#000000';
+ const film=light?'#ffffff':'#000000';
+ const alpha=light?.4:.55;
+ const backdrops=[palette.bg,solarMix(palette.bg,'#000000',.4),solarMix(palette.bg,'#ffffff',.4)];
+ const bases=backdrops.map(bg=>solarMix(bg,film,alpha));
+ // Worst-case alpha of the dark glass gradients and both reflective layers.
+ const layers=[.20,.115,.62*.42,.18*.42,.42*.42,.46*.72,.22*.72,.12*.72];
+ let gloss=light?1:.35;
+ function backgrounds(g){const reflection=1-layers.reduce((transparency,a)=>transparency*(1-a*g),1);return [...bases,...bases.map(bg=>solarMix(bg,'#ffffff',light?.08:reflection))]}
+ while(!light&&solarWorstContrast(ink,backgrounds(gloss))<5&&gloss>.08)gloss-=.01;
+ return{backgrounds:backgrounds(gloss),gloss,underlay:`rgba(${light?'255,255,255':'0,0,0'},${alpha})`,surface:solarMix(palette.surface,film,alpha)};
+}
+function readableSolarPalette(palette){
+ const body=solarReadingContext(palette.bg);
+ const ink=solarInk(body.backgrounds);
+ const glass=solarGlassContext(palette,ink);
+ const adapt=context=>({text:solarReadableColor(palette.text,context.backgrounds,7),muted:solarReadableColor(palette.muted,context.backgrounds,5.4),accent:solarReadableColor(palette.accent,context.backgrounds,5.4),accent2:solarReadableColor(palette.accent2,context.backgrounds,5.4)});
+ return{palette:{...palette,...adapt(body)},panel:adapt(glass),bodyStrength:body.strength,panelStrength:glass.gloss,guarded:body.strength<1,ink,glass};
+}
+function applyPalette(palette,phase){
+ const safe=readableSolarPalette(palette);const s=document.body.style;
+ Object.entries(safe.palette).forEach(([key,value])=>s.setProperty('--'+({surface2:'surface-2',accent2:'accent-2'}[key]||key),value));
+ Object.entries(safe.panel).forEach(([key,value])=>s.setProperty('--solar-panel-'+key,value));
+ s.setProperty('--solar-gloss',safe.glass.gloss);
+ s.setProperty('--solar-glass-underlay',safe.glass.underlay);
+ s.setProperty('--solar-glass-surface',safe.glass.surface);
+ s.setProperty('--solar-backdrop-opacity',Math.max(.22,safe.bodyStrength*.92));
+ s.setProperty('--solar-text-halo',safe.ink==='#ffffff'?'rgba(0,0,0,.65)':'rgba(255,255,255,.65)');
+ document.body.dataset.solarManaged='true';document.body.dataset.solarBackdrop=String(safe.bodyStrength<1);
+ document.body.dataset.dayPhase=phase;document.body.dataset.theme=safe.ink==='#ffffff'?'dark':phase==='afternoon'?'afternoon':'light';
+ document.documentElement.style.colorScheme=safe.ink==='#ffffff'?'dark':'light';
+}
 let solarDisplayedPalette=null;
 let solarAnimationFrame=null;
 let solarRequestedPalette='';
