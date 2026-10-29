@@ -315,3 +315,7 @@ tx.ar.visualStyles={
     "غبار نجمي وشهاب نادر"
   ]
 };
+
+// Additional portfolio projects.
+window.portfolioLocaleAdditions.ar.catalog.historicmap={"description": "أطلس تفاعلي لتاريخ الأرض والمجتمعات البشرية، يضم خريطة ثنائية الأبعاد وكرة أرضية ثلاثية الأبعاد وتنقلًا زمنيًا وبطاقات للبلدان والكيانات التاريخية.", "tags": ["التاريخ", "خرائط 2D/3D"]};
+window.portfolioLocaleAdditions.ar.catalog.extraExtra={"description": "قارئ أخبار RSS بلا حسابات، يتيح اختيار المصادر والبحث وتجميع التغطيات المتشابهة وخيارات القراءة وحفظ المقالات محليًا.", "tags": ["الأخبار", "RSS"]};

@@ -77,3 +77,7 @@ window.portfolioLocaleAdditions.ko={
 };
 catLabels.ko=['언어 및 마크업','데이터베이스·검색·스트리밍','아키텍처·API·방법론','프레임워크·API·개발','DevOps·클라우드·저장소','IDE·엔진·편집기','시스템·가상화·터미널','디자인·문서·협업·사무 도구','AI·웹·학습 자료','브라우저 및 개인정보 보호'];
 nameLabels.ko={'Arquitectura hexagonal.svg':'헥사고날 아키텍처','Microservicios.svg':'마이크로서비스','Modelo Vista Controlador.svg':'모델–뷰–컨트롤러','API Rest.svg':'REST API','SCRUM.svg':'Scrum','DDD.svg':'도메인 주도 설계','CI CD.svg':'CI/CD'};
+
+// Additional portfolio projects.
+window.portfolioLocaleAdditions.ko.catalog.historicmap={"description": "지구와 인류 사회의 역사를 탐구하는 인터랙티브 아틀라스. 2D 지도, 3D 지구본, 시간 탐색과 국가 및 역사적 실체의 정보를 제공합니다.", "tags": ["역사", "2D/3D 지도"]};
+window.portfolioLocaleAdditions.ko.catalog.extraExtra={"description": "계정 없이 사용하는 RSS 뉴스 리더. 매체 선택, 검색, 관련 보도 묶음, 읽기 설정과 기기 내 기사 저장을 지원합니다.", "tags": ["뉴스", "RSS"]};

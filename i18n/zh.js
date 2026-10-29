@@ -250,3 +250,7 @@ window.portfolioLocaleAdditions.zh={
   },
   "visit": "访问网站"
 };
+
+// Additional portfolio projects.
+window.portfolioLocaleAdditions.zh.catalog.historicmap={"description": "地球与人类社会历史的交互式图谱，提供二维地图、三维地球仪、时间导航以及国家和历史实体资料。", "tags": ["历史", "二维/三维地图"]};
+window.portfolioLocaleAdditions.zh.catalog.extraExtra={"description": "无需账户的 RSS 新闻阅读器，支持选择媒体、搜索、归组相关报道、阅读设置和本地收藏。", "tags": ["新闻", "RSS"]};

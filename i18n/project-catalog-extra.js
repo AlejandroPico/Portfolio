@@ -115,6 +115,32 @@ const extraCatalogProjects=[
       "Lectura",
       "Libros"
     ]
+  },
+  {
+    "id": "historicmap",
+    "key": "historicmap",
+    "title": "Historicmap",
+    "url": "https://alejandropico.github.io/Historicmap/",
+    "repo": "https://github.com/AlejandroPico/Historicmap",
+    "icon": "https://alejandropico.github.io/Historicmap/favicon.svg",
+    "description": "Atlas interactivo de la historia de la Tierra y las sociedades humanas, con mapa 2D, globo 3D, navegación temporal y fichas de países y entidades históricas.",
+    "tags": [
+      "Historia",
+      "Mapas 2D/3D"
+    ]
+  },
+  {
+    "id": "extra-extra",
+    "key": "extraExtra",
+    "title": "Extra Extra",
+    "url": "https://alejandropico.github.io/Xtraxtra/",
+    "repo": "https://github.com/AlejandroPico/Xtraxtra",
+    "icon": "https://alejandropico.github.io/Xtraxtra/favicon.svg",
+    "description": "Lector de noticias RSS sin cuentas, con selección de medios, búsqueda, agrupación de coberturas y opciones de lectura y guardado local.",
+    "tags": [
+      "Noticias",
+      "RSS"
+    ]
   }
 ];
 const extraCatalogTranslations={
@@ -181,6 +207,20 @@ const extraCatalogTranslations={
         "Lectura",
         "Libros"
       ]
+    },
+    "historicmap": {
+      "description": "Atlas interactivo de la historia de la Tierra y las sociedades humanas, con mapa 2D, globo 3D, navegación temporal y fichas de países y entidades históricas.",
+      "tags": [
+        "Historia",
+        "Mapas 2D/3D"
+      ]
+    },
+    "extraExtra": {
+      "description": "Lector de noticias RSS sin cuentas, con selección de medios, búsqueda, agrupación de coberturas y opciones de lectura y guardado local.",
+      "tags": [
+        "Noticias",
+        "RSS"
+      ]
     }
   },
   "ca": {
@@ -245,6 +285,20 @@ const extraCatalogTranslations={
       "tags": [
         "Lectura",
         "Llibres"
+      ]
+    },
+    "historicmap": {
+      "description": "Atles interactiu de la història de la Terra i les societats humanes, amb mapa 2D, globus 3D, navegació temporal i fitxes de països i entitats històriques.",
+      "tags": [
+        "Història",
+        "Mapes 2D/3D"
+      ]
+    },
+    "extraExtra": {
+      "description": "Lector de notícies RSS sense comptes, amb selecció de mitjans, cerca, agrupació de cobertures i opcions de lectura i desament local.",
+      "tags": [
+        "Notícies",
+        "RSS"
       ]
     }
   },
@@ -311,6 +365,20 @@ const extraCatalogTranslations={
         "Reading",
         "Books"
       ]
+    },
+    "historicmap": {
+      "description": "Interactive atlas of the history of Earth and human societies, with a 2D map, 3D globe, timeline navigation and profiles of countries and historical entities.",
+      "tags": [
+        "History",
+        "2D/3D maps"
+      ]
+    },
+    "extraExtra": {
+      "description": "Account-free RSS news reader with source selection, search, grouped coverage, reading options and locally saved articles.",
+      "tags": [
+        "News",
+        "RSS"
+      ]
     }
   },
   "fr": {
@@ -375,6 +443,20 @@ const extraCatalogTranslations={
       "tags": [
         "Lecture",
         "Livres"
+      ]
+    },
+    "historicmap": {
+      "description": "Atlas interactif de l’histoire de la Terre et des sociétés humaines, avec carte 2D, globe 3D, navigation chronologique et fiches de pays et d’entités historiques.",
+      "tags": [
+        "Histoire",
+        "Cartes 2D/3D"
+      ]
+    },
+    "extraExtra": {
+      "description": "Lecteur d’actualités RSS sans compte, avec sélection des médias, recherche, regroupement des couvertures et options de lecture et de sauvegarde locale.",
+      "tags": [
+        "Actualités",
+        "RSS"
       ]
     }
   },
@@ -441,6 +523,20 @@ const extraCatalogTranslations={
         "Lesen",
         "Bücher"
       ]
+    },
+    "historicmap": {
+      "description": "Interaktiver Atlas zur Geschichte der Erde und menschlicher Gesellschaften mit 2D-Karte, 3D-Globus, Zeitnavigation und Profilen von Ländern und historischen Einheiten.",
+      "tags": [
+        "Geschichte",
+        "2D/3D-Karten"
+      ]
+    },
+    "extraExtra": {
+      "description": "RSS-Nachrichtenleser ohne Konto mit Medienauswahl, Suche, gruppierter Berichterstattung sowie Leseoptionen und lokal gespeicherten Artikeln.",
+      "tags": [
+        "Nachrichten",
+        "RSS"
+      ]
     }
   },
   "pt": {
@@ -506,6 +602,20 @@ const extraCatalogTranslations={
         "Leitura",
         "Livros"
       ]
+    },
+    "historicmap": {
+      "description": "Atlas interativo da história da Terra e das sociedades humanas, com mapa 2D, globo 3D, navegação temporal e fichas de países e entidades históricas.",
+      "tags": [
+        "História",
+        "Mapas 2D/3D"
+      ]
+    },
+    "extraExtra": {
+      "description": "Leitor de notícias RSS sem contas, com seleção de meios, pesquisa, agrupamento de notícias relacionadas e opções de leitura e gravação local.",
+      "tags": [
+        "Notícias",
+        "RSS"
+      ]
     }
   },
   "it": {
@@ -570,6 +680,20 @@ const extraCatalogTranslations={
       "tags": [
         "Lettura",
         "Libri"
+      ]
+    },
+    "historicmap": {
+      "description": "Atlante interattivo della storia della Terra e delle società umane, con mappa 2D, globo 3D, navigazione temporale e schede di paesi ed entità storiche.",
+      "tags": [
+        "Storia",
+        "Mappe 2D/3D"
+      ]
+    },
+    "extraExtra": {
+      "description": "Lettore di notizie RSS senza account, con selezione delle fonti, ricerca, raggruppamento delle notizie correlate e opzioni di lettura e salvataggio locale.",
+      "tags": [
+        "Notizie",
+        "RSS"
       ]
     }
   }

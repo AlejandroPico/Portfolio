@@ -21,7 +21,7 @@ El objetivo es presentar mi trabajo de forma clara y facilitar que puedas conoce
 
 ## Proyectos
 
-El catálogo actual reúne **29 proyectos**. Están agrupados aquí por su temática para facilitar la consulta. Cada nombre abre la aplicación y el enlace **Código** lleva a su repositorio.
+El catálogo actual reúne **31 proyectos**. Están agrupados aquí por su temática para facilitar la consulta. Cada nombre abre la aplicación y el enlace **Código** lleva a su repositorio.
 
 ### Ciencia, espacio y simulación
 
@@ -56,6 +56,8 @@ El catálogo actual reúne **29 proyectos**. Están agrupados aquí por su temá
 
 | Proyecto | Descripción | Repositorio |
 | --- | --- | --- |
+| [Historicmap](https://alejandropico.github.io/Historicmap/) | Atlas de historia de la Tierra y las sociedades humanas con mapa 2D, globo 3D y navegación temporal. | [Código](https://github.com/AlejandroPico/Historicmap) |
+| [Extra Extra](https://alejandropico.github.io/Xtraxtra/) | Lector de noticias RSS con selección de medios, búsqueda, agrupación de coberturas y guardado local. | [Código](https://github.com/AlejandroPico/Xtraxtra) |
 | [Cams](https://alejandropico.github.io/Cams/) | Exploración de webcams públicas, emisiones en directo y capturas de todo el mundo. | [Código](https://github.com/AlejandroPico/Cams) |
 | [Media World](https://alejandropico.github.io/MediaWorld/) | Explorador de radio y televisión sobre un globo 3D. | [Código](https://github.com/AlejandroPico/MediaWorld) |
 | [Transportination](https://alejandropico.github.io/Transportination/) | Atlas del movimiento terrestre y orbital: aviación, ferrocarril, navegación y satélites. | [Código](https://github.com/AlejandroPico/Transportination) |

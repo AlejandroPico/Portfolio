@@ -58,13 +58,13 @@ function initProgressNavigation(){const nav=document.querySelector('.site-nav');
 function initScrollReveal(){const items=[...document.querySelectorAll('.project-slot,.tech-card,.resume-column,.value-grid p,.profile-text p,.contact-form')];if(!items.length)return;if(!document.getElementById('scroll-reveal-style')){const style=document.createElement('style');style.id='scroll-reveal-style';style.textContent='@media (prefers-reduced-motion:no-preference){.reveal-item{opacity:0;transform:translateY(18px);transition:opacity .58s ease,transform .58s ease;transition-delay:var(--reveal-delay,0ms)}.reveal-item.is-visible{opacity:1;transform:none}}';document.head.appendChild(style)}items.forEach((item,index)=>{item.classList.add('reveal-item');item.style.setProperty('--reveal-delay',Math.min(index%8,6)*45+'ms')});if(!('IntersectionObserver'in window)){items.forEach(item=>item.classList.add('is-visible'));return}const observer=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('is-visible');observer.unobserve(entry.target)}})},{threshold:.14,rootMargin:'0px 0px -6% 0px'});items.forEach(item=>observer.observe(item))}
 function initPortfolio(){const year=document.querySelector('#year');if(year)year.textContent=new Date().getFullYear();normalizeHeroName();ensureProjectCatalog();syncProjectFavicons();prepareProjectSlots();bindMenu();bindTheme();bindProjectCards();initProgressNavigation();setTimeout(initScrollReveal,450)}
 loadCss('layout-polish.css?v=20260707-1');
-loadCss('glass-ui.css?v=20261021-7');
-loadCss('theme-variants.css?v=20261021-7');
-loadCss('ambient-themes.css?v=20261021-7');
+loadCss('glass-ui.css?v=20261029-1');
+loadCss('theme-variants.css?v=20261029-1');
+loadCss('ambient-themes.css?v=20261029-1');
 loadCss('project-gallery.css?v=20260815-3');
 loadCss('mobile-nav.css?v=20260815-2');
 portfolioAmbientScene();
 portfolioApplyTheme();
 if(document.readyState==='loading')window.addEventListener('DOMContentLoaded',initPortfolio,{once:true});else initPortfolio();
 document.addEventListener('portfolio-language-change',()=>{portfolioTranslateThemePanel();setTimeout(initScrollReveal,120)});
-loadJs('i18n/index.js?v=20261021-7');
+loadJs('i18n/index.js?v=20261029-1');

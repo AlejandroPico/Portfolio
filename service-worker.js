@@ -1,9 +1,9 @@
 const CACHE_PREFIX = 'portfolio-pwa-';
-const CACHE_NAME = `${CACHE_PREFIX}20261021-7`;
+const CACHE_NAME = `${CACHE_PREFIX}20261029-1`;
 const APP_SHELL = [
-  './', './index.html', './styles.css', './project-gallery-compact.css?v=20261021-7', './solar-theme.css', './ambient-themes.css?v=20261021-7',
+  './', './index.html', './styles.css', './project-gallery-compact.css?v=20261029-1', './solar-theme.css', './ambient-themes.css?v=20261029-1',
   './script.js', './skills-icons.js', './solar-theme.js',
-  './i18n/project-catalog-extra.js', './i18n/ru.js?v=20261021-7', './i18n/ar.js?v=20261021-7', './assets/flags/ru.svg', './assets/flags/ar.svg', './manifest.webmanifest',
+  './i18n/project-catalog-extra.js?v=20261029-1', './i18n/ru.js?v=20261029-1', './i18n/ar.js?v=20261029-1', './assets/flags/ru.svg', './assets/flags/ar.svg', './manifest.webmanifest',
   './icons/icon-192.png', './icons/icon-512.png', './icons/icon-maskable-512.png'
 ];
 
