@@ -135,7 +135,7 @@ const extraCatalogProjects=[
     "title": "Extra Extra",
     "url": "https://alejandropico.github.io/Xtraxtra/",
     "repo": "https://github.com/AlejandroPico/Xtraxtra",
-    "icon": "https://alejandropico.github.io/Xtraxtra/favicon.svg",
+    "icon": "https://alejandropico.github.io/Xtraxtra/favicon.png?v=51da5361",
     "description": "Lector de noticias RSS sin cuentas, con selección de medios, búsqueda, agrupación de coberturas y opciones de lectura y guardado local.",
     "tags": [
       "Noticias",

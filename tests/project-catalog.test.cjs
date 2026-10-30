@@ -17,6 +17,7 @@ test('the two requested projects appear in order with their published links',()=
   const item=projects.find(p=>p.id===id);assert.equal(projects.filter(p=>p.id===id).length,1);
   assert.equal(item.url,'https://alejandropico.github.io/'+repo+'/');
   assert.equal(item.repo,'https://github.com/AlejandroPico/'+repo);
+  if(id==='extra-extra')assert.equal(new URL(item.icon).pathname,'/Xtraxtra/favicon.png');
  }
 });
 test('both new project descriptions and tags exist for every supported language',()=>{
