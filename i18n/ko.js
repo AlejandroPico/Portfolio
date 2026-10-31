@@ -81,3 +81,4 @@ nameLabels.ko={'Arquitectura hexagonal.svg':'헥사고날 아키텍처','Microse
 // Additional portfolio projects.
 window.portfolioLocaleAdditions.ko.catalog.historicmap={"description": "지구와 인류 사회의 역사를 탐구하는 인터랙티브 아틀라스. 2D 지도, 3D 지구본, 시간 탐색과 국가 및 역사적 실체의 정보를 제공합니다.", "tags": ["역사", "2D/3D 지도"]};
 window.portfolioLocaleAdditions.ko.catalog.extraExtra={"description": "계정 없이 사용하는 RSS 뉴스 리더. 매체 선택, 검색, 관련 보도 묶음, 읽기 설정과 기기 내 기사 저장을 지원합니다.", "tags": ["뉴스", "RSS"]};
+window.portfolioLocaleAdditions.ko.catalog.trader={"description": "차트, 기술 지표, 자산 관심 목록과 수동 관리 포트폴리오를 제공하는 웹·데스크톱용 시장 분석 도구입니다.", "tags": ["시장", "분석"]};

@@ -319,3 +319,4 @@ tx.ru.visualStyles={
 // Additional portfolio projects.
 window.portfolioLocaleAdditions.ru.catalog.historicmap={"description": "Интерактивный атлас истории Земли и человеческих обществ с картой 2D, глобусом 3D, навигацией во времени и карточками стран и исторических образований.", "tags": ["История", "Карты 2D/3D"]};
 window.portfolioLocaleAdditions.ru.catalog.extraExtra={"description": "RSS-читалка новостей без учётной записи: выбор источников, поиск, группировка публикаций, настройки чтения и сохранение статей на устройстве.", "tags": ["Новости", "RSS"]};
+window.portfolioLocaleAdditions.ru.catalog.trader={"description": "Терминал анализа рынков для браузера и компьютера: графики, технические индикаторы, списки активов и портфель с ручным управлением.", "tags": ["Рынки", "Анализ"]};

@@ -141,6 +141,19 @@ const extraCatalogProjects=[
       "Noticias",
       "RSS"
     ]
+  },
+  {
+    "id": "trader",
+    "key": "trader",
+    "title": "Trader",
+    "url": "https://alejandropico.github.io/Trader/",
+    "repo": "https://github.com/AlejandroPico/Trader",
+    "icon": "https://alejandropico.github.io/Trader/favicon.svg",
+    "description": "Terminal de análisis de mercados para web y escritorio, con gráficos, indicadores técnicos, seguimiento de activos y cartera manual.",
+    "tags": [
+      "Mercados",
+      "Análisis"
+    ]
   }
 ];
 const extraCatalogTranslations={
@@ -221,6 +234,13 @@ const extraCatalogTranslations={
         "Noticias",
         "RSS"
       ]
+    },
+    "trader": {
+      "description": "Terminal de análisis de mercados para web y escritorio, con gráficos, indicadores técnicos, seguimiento de activos y cartera manual.",
+      "tags": [
+        "Mercados",
+        "Análisis"
+      ]
     }
   },
   "ca": {
@@ -299,6 +319,13 @@ const extraCatalogTranslations={
       "tags": [
         "Notícies",
         "RSS"
+      ]
+    },
+    "trader": {
+      "description": "Terminal d’anàlisi de mercats per a web i escriptori, amb gràfics, indicadors tècnics, seguiment d’actius i cartera manual.",
+      "tags": [
+        "Mercats",
+        "Anàlisi"
       ]
     }
   },
@@ -379,6 +406,13 @@ const extraCatalogTranslations={
         "News",
         "RSS"
       ]
+    },
+    "trader": {
+      "description": "Market analysis terminal for web and desktop, with charts, technical indicators, asset watchlists and a manually managed portfolio.",
+      "tags": [
+        "Markets",
+        "Analysis"
+      ]
     }
   },
   "fr": {
@@ -457,6 +491,13 @@ const extraCatalogTranslations={
       "tags": [
         "Actualités",
         "RSS"
+      ]
+    },
+    "trader": {
+      "description": "Terminal d’analyse des marchés pour le web et le bureau, avec graphiques, indicateurs techniques, suivi d’actifs et portefeuille manuel.",
+      "tags": [
+        "Marchés",
+        "Analyse"
       ]
     }
   },
@@ -537,6 +578,13 @@ const extraCatalogTranslations={
         "Nachrichten",
         "RSS"
       ]
+    },
+    "trader": {
+      "description": "Marktanalyse-Terminal für Web und Desktop mit Charts, technischen Indikatoren, Wertpapierlisten und einem manuell geführten Portfolio.",
+      "tags": [
+        "Märkte",
+        "Analyse"
+      ]
     }
   },
   "pt": {
@@ -616,6 +664,13 @@ const extraCatalogTranslations={
         "Notícias",
         "RSS"
       ]
+    },
+    "trader": {
+      "description": "Terminal de análise de mercados para a web e desktop, com gráficos, indicadores técnicos, acompanhamento de ativos e carteira manual.",
+      "tags": [
+        "Mercados",
+        "Análise"
+      ]
     }
   },
   "it": {
@@ -694,6 +749,13 @@ const extraCatalogTranslations={
       "tags": [
         "Notizie",
         "RSS"
+      ]
+    },
+    "trader": {
+      "description": "Terminale di analisi dei mercati per web e desktop, con grafici, indicatori tecnici, monitoraggio degli strumenti e portafoglio manuale.",
+      "tags": [
+        "Mercati",
+        "Analisi"
       ]
     }
   }

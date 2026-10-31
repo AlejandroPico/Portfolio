@@ -254,3 +254,4 @@ window.portfolioLocaleAdditions.hi={
 // Additional portfolio projects.
 window.portfolioLocaleAdditions.hi.catalog.historicmap={"description": "पृथ्वी और मानव समाज के इतिहास का इंटरैक्टिव एटलस, जिसमें 2D मानचित्र, 3D ग्लोब, समय नेविगेशन और देशों व ऐतिहासिक इकाइयों की जानकारी है।", "tags": ["इतिहास", "2D/3D मानचित्र"]};
 window.portfolioLocaleAdditions.hi.catalog.extraExtra={"description": "बिना खाते वाला RSS समाचार रीडर, जिसमें मीडिया चयन, खोज, संबंधित कवरेज का समूह, पढ़ने के विकल्प और स्थानीय रूप से सहेजना शामिल है।", "tags": ["समाचार", "RSS"]};
+window.portfolioLocaleAdditions.hi.catalog.trader={"description": "वेब और डेस्कटॉप के लिए बाजार विश्लेषण टर्मिनल, जिसमें चार्ट, तकनीकी संकेतक, परिसंपत्तियों की निगरानी और मैनुअल पोर्टफोलियो हैं।", "tags": ["बाजार", "विश्लेषण"]};

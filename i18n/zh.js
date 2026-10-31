@@ -254,3 +254,4 @@ window.portfolioLocaleAdditions.zh={
 // Additional portfolio projects.
 window.portfolioLocaleAdditions.zh.catalog.historicmap={"description": "地球与人类社会历史的交互式图谱，提供二维地图、三维地球仪、时间导航以及国家和历史实体资料。", "tags": ["历史", "二维/三维地图"]};
 window.portfolioLocaleAdditions.zh.catalog.extraExtra={"description": "无需账户的 RSS 新闻阅读器，支持选择媒体、搜索、归组相关报道、阅读设置和本地收藏。", "tags": ["新闻", "RSS"]};
+window.portfolioLocaleAdditions.zh.catalog.trader={"description": "适用于网页和桌面的市场分析终端，提供图表、技术指标、资产关注列表和手动管理的投资组合。", "tags": ["市场", "分析"]};
