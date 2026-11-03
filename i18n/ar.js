@@ -320,3 +320,4 @@ tx.ar.visualStyles={
 window.portfolioLocaleAdditions.ar.catalog.historicmap={"description": "أطلس تفاعلي لتاريخ الأرض والمجتمعات البشرية، يضم خريطة ثنائية الأبعاد وكرة أرضية ثلاثية الأبعاد وتنقلًا زمنيًا وبطاقات للبلدان والكيانات التاريخية.", "tags": ["التاريخ", "خرائط 2D/3D"]};
 window.portfolioLocaleAdditions.ar.catalog.extraExtra={"description": "قارئ أخبار RSS بلا حسابات، يتيح اختيار المصادر والبحث وتجميع التغطيات المتشابهة وخيارات القراءة وحفظ المقالات محليًا.", "tags": ["الأخبار", "RSS"]};
 window.portfolioLocaleAdditions.ar.catalog.trader={"description": "أداة لتحليل الأسواق على الويب وسطح المكتب، تضم الرسوم البيانية والمؤشرات الفنية ومتابعة الأصول ومحفظة تُدار يدويًا.", "tags": ["الأسواق", "التحليل"]};
+window.portfolioLocaleAdditions.ar.catalog.electrogames={"description": "مجموعة ألعاب أركيد وكلاسيكيات إلكترونية للمتصفح، تضم Snake وPong وBreakout وكاسحة الألغام، مع تحكم للحاسوب والأجهزة اللمسية.", "tags": ["ألعاب", "أركيد"]};

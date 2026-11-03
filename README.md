@@ -21,7 +21,7 @@ El objetivo es presentar mi trabajo de forma clara y facilitar que puedas conoce
 
 ## Proyectos
 
-El catálogo actual reúne **32 proyectos**. Están agrupados aquí por su temática para facilitar la consulta. Cada nombre abre la aplicación y el enlace **Código** lleva a su repositorio.
+El catálogo actual reúne **33 proyectos**. Están agrupados aquí por su temática para facilitar la consulta. Cada nombre abre la aplicación y el enlace **Código** lleva a su repositorio.
 
 ### Ciencia, espacio y simulación
 
@@ -73,6 +73,7 @@ El catálogo actual reúne **32 proyectos**. Están agrupados aquí por su temá
 | [MindSage](https://alejandropico.github.io/Biografias/) | Archivo de historias, biografías y memoria familiar con recursos multimedia. | [Código](https://github.com/AlejandroPico/Biografias) |
 | [Lector](https://alejandropico.github.io/Lector/) | Lectura de libros y documentos con ajustes de presentación, notas y narración por voz. | [Código](https://github.com/AlejandroPico/Lector) |
 | [Games](https://alejandropico.github.io/Games/) | Colección de juegos de mesa, lógica, estrategia, cartas y otros géneros para el navegador. | [Código](https://github.com/AlejandroPico/Games) |
+| [ElectroGames](https://alejandropico.github.io/Electrogames/) | Juegos arcade y clásicos electrónicos como Snake, Pong, Breakout y Buscaminas para navegador. | [Código](https://github.com/AlejandroPico/Electrogames) |
 | [Elecciones](https://alejandropico.github.io/Elecciones/) | Cuestionario para explorar posiciones políticas y visualizar respuestas y afinidades. | [Código](https://github.com/AlejandroPico/Elecciones) |
 
 ## Experiencia de navegación

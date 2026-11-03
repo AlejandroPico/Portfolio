@@ -154,6 +154,19 @@ const extraCatalogProjects=[
       "Mercados",
       "Análisis"
     ]
+  },
+  {
+    "id": "electrogames",
+    "key": "electrogames",
+    "title": "ElectroGames",
+    "url": "https://alejandropico.github.io/Electrogames/",
+    "repo": "https://github.com/AlejandroPico/Electrogames",
+    "icon": "https://alejandropico.github.io/Electrogames/favicon.svg",
+    "description": "Colección de juegos arcade y clásicos electrónicos para navegador, con Snake, Pong, Breakout y Buscaminas, y controles para ordenador y móvil.",
+    "tags": [
+      "Juegos",
+      "Arcade"
+    ]
   }
 ];
 const extraCatalogTranslations={
@@ -241,6 +254,13 @@ const extraCatalogTranslations={
         "Mercados",
         "Análisis"
       ]
+    },
+    "electrogames": {
+      "description": "Colección de juegos arcade y clásicos electrónicos para navegador, con Snake, Pong, Breakout y Buscaminas, y controles para ordenador y móvil.",
+      "tags": [
+        "Juegos",
+        "Arcade"
+      ]
     }
   },
   "ca": {
@@ -326,6 +346,13 @@ const extraCatalogTranslations={
       "tags": [
         "Mercats",
         "Anàlisi"
+      ]
+    },
+    "electrogames": {
+      "description": "Col·lecció de jocs arcade i clàssics electrònics per al navegador, amb Snake, Pong, Breakout i el Cerca-mines, i controls per a ordinador i mòbil.",
+      "tags": [
+        "Jocs",
+        "Arcade"
       ]
     }
   },
@@ -413,6 +440,13 @@ const extraCatalogTranslations={
         "Markets",
         "Analysis"
       ]
+    },
+    "electrogames": {
+      "description": "A browser collection of arcade and classic electronic games including Snake, Pong, Breakout and Minesweeper, with desktop and touch controls.",
+      "tags": [
+        "Games",
+        "Arcade"
+      ]
     }
   },
   "fr": {
@@ -498,6 +532,13 @@ const extraCatalogTranslations={
       "tags": [
         "Marchés",
         "Analyse"
+      ]
+    },
+    "electrogames": {
+      "description": "Collection de jeux d’arcade et de classiques électroniques pour navigateur, avec Snake, Pong, Breakout et le Démineur, jouables sur ordinateur et mobile.",
+      "tags": [
+        "Jeux",
+        "Arcade"
       ]
     }
   },
@@ -585,6 +626,13 @@ const extraCatalogTranslations={
         "Märkte",
         "Analyse"
       ]
+    },
+    "electrogames": {
+      "description": "Sammlung klassischer elektronischer Arcade-Spiele für den Browser, darunter Snake, Pong, Breakout und Minesweeper, mit Steuerung für Computer und Mobilgeräte.",
+      "tags": [
+        "Spiele",
+        "Arcade"
+      ]
     }
   },
   "pt": {
@@ -671,6 +719,13 @@ const extraCatalogTranslations={
         "Mercados",
         "Análise"
       ]
+    },
+    "electrogames": {
+      "description": "Coleção de jogos arcade e clássicos eletrónicos para navegador, com Snake, Pong, Breakout e Campo Minado, e controlos para computador e telemóvel.",
+      "tags": [
+        "Jogos",
+        "Arcade"
+      ]
     }
   },
   "it": {
@@ -756,6 +811,13 @@ const extraCatalogTranslations={
       "tags": [
         "Mercati",
         "Analisi"
+      ]
+    },
+    "electrogames": {
+      "description": "Raccolta di giochi arcade e classici elettronici per browser, con Snake, Pong, Breakout e Campo minato e controlli per computer e dispositivi mobili.",
+      "tags": [
+        "Giochi",
+        "Arcade"
       ]
     }
   }

@@ -10,9 +10,9 @@ vm.runInContext(read('i18n/project-catalog-extra.js')+'\nwindow.catalogForTest=e
 vm.runInContext(read('i18n/languages.js'),context);
 for(const lang of ['zh','ja','hi','ko','ru','ar'])vm.runInContext(read('i18n/'+lang+'.js'),context);
 const projects=context.window.catalogForTest;
-const entries=[['historicmap','Historicmap','historicmap'],['extra-extra','Xtraxtra','extraExtra'],['trader','Trader','trader']];
+const entries=[['historicmap','Historicmap','historicmap'],['extra-extra','Xtraxtra','extraExtra'],['trader','Trader','trader'],['electrogames','Electrogames','electrogames']];
 test('the latest projects appear in order with their published links',()=>{
- assert.deepEqual(Array.from(projects.slice(-3),p=>p.id),entries.map(e=>e[0]));
+ assert.deepEqual(Array.from(projects.slice(-4),p=>p.id),entries.map(e=>e[0]));
  for(const [id,repo] of entries){
   const item=projects.find(p=>p.id===id);assert.equal(projects.filter(p=>p.id===id).length,1);
   assert.equal(item.url,'https://alejandropico.github.io/'+repo+'/');

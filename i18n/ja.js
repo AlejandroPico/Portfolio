@@ -255,3 +255,4 @@ window.portfolioLocaleAdditions.ja={
 window.portfolioLocaleAdditions.ja.catalog.historicmap={"description": "地球と人類社会の歴史を探るインタラクティブなアトラス。2D地図、3D地球儀、時代ナビゲーション、国や歴史上の組織の資料を備えています。", "tags": ["歴史", "2D/3D地図"]};
 window.portfolioLocaleAdditions.ja.catalog.extraExtra={"description": "アカウント不要のRSSニュースリーダー。媒体の選択、検索、関連記事のグループ化、表示設定や記事のローカル保存に対応します。", "tags": ["ニュース", "RSS"]};
 window.portfolioLocaleAdditions.ja.catalog.trader={"description": "ウェブとデスクトップで使える市場分析ツール。チャート、テクニカル指標、銘柄の追跡、手動管理のポートフォリオを備えています。", "tags": ["市場", "分析"]};
+window.portfolioLocaleAdditions.ja.catalog.electrogames={"description": "Snake、Pong、Breakout、マインスイーパーを収録したブラウザー向けのアーケード・電子ゲーム集。パソコンとタッチ操作に対応します。", "tags": ["ゲーム", "アーケード"]};
