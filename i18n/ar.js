@@ -321,3 +321,7 @@ window.portfolioLocaleAdditions.ar.catalog.historicmap={"description": "أطلس
 window.portfolioLocaleAdditions.ar.catalog.extraExtra={"description": "قارئ أخبار RSS بلا حسابات، يتيح اختيار المصادر والبحث وتجميع التغطيات المتشابهة وخيارات القراءة وحفظ المقالات محليًا.", "tags": ["الأخبار", "RSS"]};
 window.portfolioLocaleAdditions.ar.catalog.trader={"description": "أداة لتحليل الأسواق على الويب وسطح المكتب، تضم الرسوم البيانية والمؤشرات الفنية ومتابعة الأصول ومحفظة تُدار يدويًا.", "tags": ["الأسواق", "التحليل"]};
 window.portfolioLocaleAdditions.ar.catalog.electrogames={"description": "مجموعة ألعاب أركيد وكلاسيكيات إلكترونية للمتصفح، تضم Snake وPong وBreakout وكاسحة الألغام، مع تحكم للحاسوب والأجهزة اللمسية.", "tags": ["ألعاب", "أركيد"]};
+window.portfolioLocaleAdditions.ar.catalog.videogames={"description": "فهرس لأجهزة الألعاب والحواسيب الكلاسيكية مع بطاقات تاريخية ومحاكاة محلية لسوبر نينتندو باستخدام ألعاب يوفّرها المستخدم.", "tags": ["ألعاب فيديو", "محاكاة"]};
+window.portfolioLocaleAdditions.ar.catalog.tools={"description": "سطح مكتب لأدوات مجانية في المتصفح، يضم المفكرة والآلة الحاسبة وأدوات الصور والبيانات وملفات PDF.", "tags": ["أدوات", "إنتاجية"]};
+window.portfolioLocaleAdditions.ar.catalog.pais={"description": "أطلس مفتوح لإسبانيا لاستكشاف الخرائط والبيانات الرسمية عبر الخرائط والطبقات الإقليمية والسلاسل التاريخية.", "tags": ["إسبانيا", "أطلس"]};
+window.portfolioLocaleAdditions.ar.catalog.radiolab={"description": "محطة راديو تجريبية تضم جهاز استقبال محاكى وطيفًا وصوتًا اصطناعيًا وسجل اتصالات محليًا.", "tags": ["راديو", "محاكاة"]};

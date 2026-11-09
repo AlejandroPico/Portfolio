@@ -167,6 +167,58 @@ const extraCatalogProjects=[
       "Juegos",
       "Arcade"
     ]
+  },
+  {
+    "id": "videogames",
+    "key": "videogames",
+    "title": "VideoGames",
+    "url": "https://alejandropico.github.io/VideoGames/",
+    "repo": "https://github.com/AlejandroPico/VideoGames",
+    "icon": "https://alejandropico.github.io/VideoGames/favicon.svg",
+    "description": "Catálogo de consolas y ordenadores clásicos con fichas históricas y emulación local de Super Nintendo mediante juegos aportados por el usuario.",
+    "tags": [
+      "Videojuegos",
+      "Emulación"
+    ]
+  },
+  {
+    "id": "tools",
+    "key": "tools",
+    "title": "Tools",
+    "url": "https://alejandropico.github.io/Tools/",
+    "repo": "https://github.com/AlejandroPico/Tools",
+    "icon": "https://alejandropico.github.io/Tools/favicon.svg",
+    "description": "Escritorio de utilidades gratuitas en el navegador, con aplicaciones como bloc de notas, calculadora y herramientas de imagen, datos y PDF.",
+    "tags": [
+      "Herramientas",
+      "Productividad"
+    ]
+  },
+  {
+    "id": "pais",
+    "key": "pais",
+    "title": "País",
+    "url": "https://alejandropico.github.io/Pais/",
+    "repo": "https://github.com/AlejandroPico/Pais",
+    "icon": "https://alejandropico.github.io/Pais/favicon.svg",
+    "description": "Atlas abierto de España para explorar cartografía y datos oficiales mediante mapas, capas territoriales y series históricas.",
+    "tags": [
+      "España",
+      "Atlas"
+    ]
+  },
+  {
+    "id": "radiolab",
+    "key": "radiolab",
+    "title": "Radiolab",
+    "url": "https://alejandropico.github.io/Radiolab/",
+    "repo": "https://github.com/AlejandroPico/Radiolab",
+    "icon": "https://alejandropico.github.io/Radiolab/favicon.svg",
+    "description": "Estación de radio experimental con receptor simulado, espectro, audio sintético y libro de guardia local.",
+    "tags": [
+      "Radio",
+      "Simulación"
+    ]
   }
 ];
 const extraCatalogTranslations={
@@ -261,6 +313,34 @@ const extraCatalogTranslations={
         "Juegos",
         "Arcade"
       ]
+    },
+    "videogames": {
+      "description": "Catálogo de consolas y ordenadores clásicos con fichas históricas y emulación local de Super Nintendo mediante juegos aportados por el usuario.",
+      "tags": [
+        "Videojuegos",
+        "Emulación"
+      ]
+    },
+    "tools": {
+      "description": "Escritorio de utilidades gratuitas en el navegador, con aplicaciones como bloc de notas, calculadora y herramientas de imagen, datos y PDF.",
+      "tags": [
+        "Herramientas",
+        "Productividad"
+      ]
+    },
+    "pais": {
+      "description": "Atlas abierto de España para explorar cartografía y datos oficiales mediante mapas, capas territoriales y series históricas.",
+      "tags": [
+        "España",
+        "Atlas"
+      ]
+    },
+    "radiolab": {
+      "description": "Estación de radio experimental con receptor simulado, espectro, audio sintético y libro de guardia local.",
+      "tags": [
+        "Radio",
+        "Simulación"
+      ]
     }
   },
   "ca": {
@@ -353,6 +433,34 @@ const extraCatalogTranslations={
       "tags": [
         "Jocs",
         "Arcade"
+      ]
+    },
+    "videogames": {
+      "description": "Catàleg de consoles i ordinadors clàssics amb fitxes històriques i emulació local de Super Nintendo amb jocs aportats per l’usuari.",
+      "tags": [
+        "Videojocs",
+        "Emulació"
+      ]
+    },
+    "tools": {
+      "description": "Escriptori d’utilitats gratuïtes al navegador, amb aplicacions com el bloc de notes, la calculadora i eines d’imatge, dades i PDF.",
+      "tags": [
+        "Eines",
+        "Productivitat"
+      ]
+    },
+    "pais": {
+      "description": "Atles obert d’Espanya per explorar cartografia i dades oficials mitjançant mapes, capes territorials i sèries històriques.",
+      "tags": [
+        "Espanya",
+        "Atles"
+      ]
+    },
+    "radiolab": {
+      "description": "Estació de ràdio experimental amb receptor simulat, espectre, àudio sintètic i llibre de guàrdia local.",
+      "tags": [
+        "Ràdio",
+        "Simulació"
       ]
     }
   },
@@ -447,6 +555,34 @@ const extraCatalogTranslations={
         "Games",
         "Arcade"
       ]
+    },
+    "videogames": {
+      "description": "A catalogue of classic consoles and computers with historical profiles and local Super Nintendo emulation using games supplied by the user.",
+      "tags": [
+        "Video games",
+        "Emulation"
+      ]
+    },
+    "tools": {
+      "description": "A browser desktop of free utilities, including a notepad, calculator, and tools for images, data and PDFs.",
+      "tags": [
+        "Tools",
+        "Productivity"
+      ]
+    },
+    "pais": {
+      "description": "An open atlas of Spain for exploring official maps and data through territorial layers and historical series.",
+      "tags": [
+        "Spain",
+        "Atlas"
+      ]
+    },
+    "radiolab": {
+      "description": "An experimental radio station with a simulated receiver, spectrum, synthetic audio and a local logbook.",
+      "tags": [
+        "Radio",
+        "Simulation"
+      ]
     }
   },
   "fr": {
@@ -539,6 +675,34 @@ const extraCatalogTranslations={
       "tags": [
         "Jeux",
         "Arcade"
+      ]
+    },
+    "videogames": {
+      "description": "Catalogue de consoles et d’ordinateurs classiques avec fiches historiques et émulation locale Super Nintendo à partir de jeux fournis par l’utilisateur.",
+      "tags": [
+        "Jeux vidéo",
+        "Émulation"
+      ]
+    },
+    "tools": {
+      "description": "Bureau d’utilitaires gratuits dans le navigateur, avec bloc-notes, calculatrice et outils pour les images, les données et les PDF.",
+      "tags": [
+        "Outils",
+        "Productivité"
+      ]
+    },
+    "pais": {
+      "description": "Atlas ouvert de l’Espagne pour explorer cartes et données officielles à travers des couches territoriales et des séries historiques.",
+      "tags": [
+        "Espagne",
+        "Atlas"
+      ]
+    },
+    "radiolab": {
+      "description": "Station de radio expérimentale avec récepteur simulé, spectre, audio synthétique et carnet de bord local.",
+      "tags": [
+        "Radio",
+        "Simulation"
       ]
     }
   },
@@ -633,6 +797,34 @@ const extraCatalogTranslations={
         "Spiele",
         "Arcade"
       ]
+    },
+    "videogames": {
+      "description": "Katalog klassischer Konsolen und Computer mit historischen Porträts und lokaler Super-Nintendo-Emulation mit selbst bereitgestellten Spielen.",
+      "tags": [
+        "Videospiele",
+        "Emulation"
+      ]
+    },
+    "tools": {
+      "description": "Browser-Desktop mit kostenlosen Anwendungen wie Notizblock, Rechner und Werkzeugen für Bilder, Daten und PDFs.",
+      "tags": [
+        "Werkzeuge",
+        "Produktivität"
+      ]
+    },
+    "pais": {
+      "description": "Offener Atlas Spaniens zur Erkundung offizieller Karten und Daten mit Gebietsebenen und historischen Reihen.",
+      "tags": [
+        "Spanien",
+        "Atlas"
+      ]
+    },
+    "radiolab": {
+      "description": "Experimentelle Radiostation mit simuliertem Empfänger, Spektrum, synthetischem Audio und lokalem Logbuch.",
+      "tags": [
+        "Funk",
+        "Simulation"
+      ]
     }
   },
   "pt": {
@@ -726,6 +918,34 @@ const extraCatalogTranslations={
         "Jogos",
         "Arcade"
       ]
+    },
+    "videogames": {
+      "description": "Catálogo de consolas e computadores clássicos com fichas históricas e emulação local da Super Nintendo com jogos fornecidos pelo utilizador.",
+      "tags": [
+        "Videojogos",
+        "Emulação"
+      ]
+    },
+    "tools": {
+      "description": "Ambiente de ferramentas gratuitas no navegador, com bloco de notas, calculadora e aplicações para imagem, dados e PDF.",
+      "tags": [
+        "Ferramentas",
+        "Produtividade"
+      ]
+    },
+    "pais": {
+      "description": "Atlas aberto de Espanha para explorar cartografia e dados oficiais com mapas, camadas territoriais e séries históricas.",
+      "tags": [
+        "Espanha",
+        "Atlas"
+      ]
+    },
+    "radiolab": {
+      "description": "Estação de rádio experimental com recetor simulado, espectro, áudio sintético e livro de registo local.",
+      "tags": [
+        "Rádio",
+        "Simulação"
+      ]
     }
   },
   "it": {
@@ -818,6 +1038,34 @@ const extraCatalogTranslations={
       "tags": [
         "Giochi",
         "Arcade"
+      ]
+    },
+    "videogames": {
+      "description": "Catalogo di console e computer classici con schede storiche ed emulazione locale Super Nintendo usando giochi forniti dall’utente.",
+      "tags": [
+        "Videogiochi",
+        "Emulazione"
+      ]
+    },
+    "tools": {
+      "description": "Desktop di utilità gratuite nel browser, con blocco note, calcolatrice e strumenti per immagini, dati e PDF.",
+      "tags": [
+        "Strumenti",
+        "Produttività"
+      ]
+    },
+    "pais": {
+      "description": "Atlante aperto della Spagna per esplorare mappe e dati ufficiali tramite livelli territoriali e serie storiche.",
+      "tags": [
+        "Spagna",
+        "Atlante"
+      ]
+    },
+    "radiolab": {
+      "description": "Stazione radio sperimentale con ricevitore simulato, spettro, audio sintetico e registro locale.",
+      "tags": [
+        "Radio",
+        "Simulazione"
       ]
     }
   }

@@ -21,7 +21,7 @@ El objetivo es presentar mi trabajo de forma clara y facilitar que puedas conoce
 
 ## Proyectos
 
-El catálogo actual reúne **33 proyectos**. Están agrupados aquí por su temática para facilitar la consulta. Cada nombre abre la aplicación y el enlace **Código** lleva a su repositorio.
+El catálogo actual reúne **37 proyectos**. Están agrupados aquí por su temática para facilitar la consulta. Cada nombre abre la aplicación y el enlace **Código** lleva a su repositorio.
 
 ### Ciencia, espacio y simulación
 
@@ -48,6 +48,8 @@ El catálogo actual reúne **33 proyectos**. Están agrupados aquí por su temá
 | Proyecto | Descripción | Repositorio |
 | --- | --- | --- |
 | [Atlas Editor](https://alejandropico.github.io/Editor/) | Editor vectorial para esquemas, mapas, cronologías, infografías y redes interactivas. | [Código](https://github.com/AlejandroPico/Editor) |
+| [Tools](https://alejandropico.github.io/Tools/) | Escritorio de utilidades gratuitas para texto, cálculo, imágenes, datos y PDF en el navegador. | [Código](https://github.com/AlejandroPico/Tools) |
+| [Radiolab](https://alejandropico.github.io/Radiolab/) | Estación de radio experimental con receptor simulado, espectro y libro de guardia local. | [Código](https://github.com/AlejandroPico/Radiolab) |
 | [IDE](https://alejandropico.github.io/IDE/) | Entorno de desarrollo para trabajar con proyectos, lenguajes y herramientas desde navegador y escritorio. | [Código](https://github.com/AlejandroPico/IDE) |
 | [BitWire](https://alejandropico.github.io/BitWire/) | Laboratorio de diseño y simulación de circuitos eléctricos, electrónicos y digitales. | [Código](https://github.com/AlejandroPico/BitWire) |
 | [Auditorium](https://alejandropico.github.io/Auditorium/) | Estudio musical modular para composición, síntesis, mezcla y producción sonora. | [Código](https://github.com/AlejandroPico/Auditorium) |
@@ -58,6 +60,7 @@ El catálogo actual reúne **33 proyectos**. Están agrupados aquí por su temá
 | --- | --- | --- |
 | [Trader](https://alejandropico.github.io/Trader/) | Terminal de análisis de mercados con gráficos, indicadores técnicos, seguimiento de activos y cartera manual. | [Código](https://github.com/AlejandroPico/Trader) |
 | [Historicmap](https://alejandropico.github.io/Historicmap/) | Atlas de historia de la Tierra y las sociedades humanas con mapa 2D, globo 3D y navegación temporal. | [Código](https://github.com/AlejandroPico/Historicmap) |
+| [País](https://alejandropico.github.io/Pais/) | Atlas de España con cartografía y datos oficiales, capas territoriales y series históricas. | [Código](https://github.com/AlejandroPico/Pais) |
 | [Extra Extra](https://alejandropico.github.io/Xtraxtra/) | Lector de noticias RSS con selección de medios, búsqueda, agrupación de coberturas y guardado local. | [Código](https://github.com/AlejandroPico/Xtraxtra) |
 | [Cams](https://alejandropico.github.io/Cams/) | Exploración de webcams públicas, emisiones en directo y capturas de todo el mundo. | [Código](https://github.com/AlejandroPico/Cams) |
 | [Media World](https://alejandropico.github.io/MediaWorld/) | Explorador de radio y televisión sobre un globo 3D. | [Código](https://github.com/AlejandroPico/MediaWorld) |
@@ -74,6 +77,7 @@ El catálogo actual reúne **33 proyectos**. Están agrupados aquí por su temá
 | [Lector](https://alejandropico.github.io/Lector/) | Lectura de libros y documentos con ajustes de presentación, notas y narración por voz. | [Código](https://github.com/AlejandroPico/Lector) |
 | [Games](https://alejandropico.github.io/Games/) | Colección de juegos de mesa, lógica, estrategia, cartas y otros géneros para el navegador. | [Código](https://github.com/AlejandroPico/Games) |
 | [ElectroGames](https://alejandropico.github.io/Electrogames/) | Juegos arcade y clásicos electrónicos como Snake, Pong, Breakout y Buscaminas para navegador. | [Código](https://github.com/AlejandroPico/Electrogames) |
+| [VideoGames](https://alejandropico.github.io/VideoGames/) | Catálogo de consolas clásicas y emulación local de Super Nintendo con juegos del usuario. | [Código](https://github.com/AlejandroPico/VideoGames) |
 | [Elecciones](https://alejandropico.github.io/Elecciones/) | Cuestionario para explorar posiciones políticas y visualizar respuestas y afinidades. | [Código](https://github.com/AlejandroPico/Elecciones) |
 
 ## Experiencia de navegación

@@ -256,3 +256,7 @@ window.portfolioLocaleAdditions.zh.catalog.historicmap={"description": "地球�
 window.portfolioLocaleAdditions.zh.catalog.extraExtra={"description": "无需账户的 RSS 新闻阅读器，支持选择媒体、搜索、归组相关报道、阅读设置和本地收藏。", "tags": ["新闻", "RSS"]};
 window.portfolioLocaleAdditions.zh.catalog.trader={"description": "适用于网页和桌面的市场分析终端，提供图表、技术指标、资产关注列表和手动管理的投资组合。", "tags": ["市场", "分析"]};
 window.portfolioLocaleAdditions.zh.catalog.electrogames={"description": "浏览器街机和经典电子游戏合集，包含贪吃蛇、乒乓球、打砖块和扫雷，支持电脑与触屏操作。", "tags": ["游戏", "街机"]};
+window.portfolioLocaleAdditions.zh.catalog.videogames={"description": "经典游戏主机和电脑目录，提供历史资料，并可使用用户自备的游戏在本地模拟超级任天堂。", "tags": ["电子游戏", "模拟"]};
+window.portfolioLocaleAdditions.zh.catalog.tools={"description": "浏览器中的免费工具桌面，包含记事本、计算器以及图像、数据和 PDF 工具。", "tags": ["工具", "效率"]};
+window.portfolioLocaleAdditions.zh.catalog.pais={"description": "开放的西班牙地图集，通过地图、地域图层和历史序列探索官方地图和数据。", "tags": ["西班牙", "地图集"]};
+window.portfolioLocaleAdditions.zh.catalog.radiolab={"description": "实验性无线电工作站，提供模拟接收机、频谱、合成音频和本地日志。", "tags": ["无线电", "模拟"]};

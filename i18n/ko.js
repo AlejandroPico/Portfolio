@@ -83,3 +83,7 @@ window.portfolioLocaleAdditions.ko.catalog.historicmap={"description": "지구�
 window.portfolioLocaleAdditions.ko.catalog.extraExtra={"description": "계정 없이 사용하는 RSS 뉴스 리더. 매체 선택, 검색, 관련 보도 묶음, 읽기 설정과 기기 내 기사 저장을 지원합니다.", "tags": ["뉴스", "RSS"]};
 window.portfolioLocaleAdditions.ko.catalog.trader={"description": "차트, 기술 지표, 자산 관심 목록과 수동 관리 포트폴리오를 제공하는 웹·데스크톱용 시장 분석 도구입니다.", "tags": ["시장", "분석"]};
 window.portfolioLocaleAdditions.ko.catalog.electrogames={"description": "Snake, Pong, Breakout, 지뢰찾기를 담은 브라우저용 아케이드 및 고전 전자 게임 모음으로, 컴퓨터와 터치 조작을 지원합니다.", "tags": ["게임", "아케이드"]};
+window.portfolioLocaleAdditions.ko.catalog.videogames={"description": "고전 콘솔과 컴퓨터의 역사 정보를 살펴보고 사용자가 준비한 게임으로 슈퍼패미컴을 로컬에서 에뮬레이션하는 카탈로그입니다.", "tags": ["비디오 게임", "에뮬레이션"]};
+window.portfolioLocaleAdditions.ko.catalog.tools={"description": "메모장과 계산기, 이미지·데이터·PDF 도구 등을 제공하는 브라우저용 무료 유틸리티 데스크톱입니다.", "tags": ["도구", "생산성"]};
+window.portfolioLocaleAdditions.ko.catalog.pais={"description": "지도와 지역 레이어, 역사 시계열을 통해 스페인의 공식 지도와 데이터를 탐구하는 열린 아틀라스입니다.", "tags": ["스페인", "아틀라스"]};
+window.portfolioLocaleAdditions.ko.catalog.radiolab={"description": "모의 수신기, 스펙트럼, 합성 오디오와 로컬 교신 일지를 갖춘 실험용 무선국입니다.", "tags": ["무선", "시뮬레이션"]};

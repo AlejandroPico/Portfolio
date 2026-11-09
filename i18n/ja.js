@@ -256,3 +256,7 @@ window.portfolioLocaleAdditions.ja.catalog.historicmap={"description": "地球�
 window.portfolioLocaleAdditions.ja.catalog.extraExtra={"description": "アカウント不要のRSSニュースリーダー。媒体の選択、検索、関連記事のグループ化、表示設定や記事のローカル保存に対応します。", "tags": ["ニュース", "RSS"]};
 window.portfolioLocaleAdditions.ja.catalog.trader={"description": "ウェブとデスクトップで使える市場分析ツール。チャート、テクニカル指標、銘柄の追跡、手動管理のポートフォリオを備えています。", "tags": ["市場", "分析"]};
 window.portfolioLocaleAdditions.ja.catalog.electrogames={"description": "Snake、Pong、Breakout、マインスイーパーを収録したブラウザー向けのアーケード・電子ゲーム集。パソコンとタッチ操作に対応します。", "tags": ["ゲーム", "アーケード"]};
+window.portfolioLocaleAdditions.ja.catalog.videogames={"description": "クラシックなゲーム機とコンピューターのカタログ。歴史資料と、利用者が用意したゲームによるスーパーファミコンのローカルエミュレーションを提供します。", "tags": ["ゲーム", "エミュレーション"]};
+window.portfolioLocaleAdditions.ja.catalog.tools={"description": "メモ帳、電卓、画像・データ・PDFツールなどを備えた、ブラウザーで使える無料ツールのデスクトップ。", "tags": ["ツール", "生産性"]};
+window.portfolioLocaleAdditions.ja.catalog.pais={"description": "地図、地域レイヤー、時系列データを通じて公式データを探索できるスペインのオープンアトラス。", "tags": ["スペイン", "アトラス"]};
+window.portfolioLocaleAdditions.ja.catalog.radiolab={"description": "模擬受信機、スペクトル、合成音声、ローカルのログブックを備えた実験的な無線ステーション。", "tags": ["無線", "シミュレーション"]};
