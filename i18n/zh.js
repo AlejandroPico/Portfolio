@@ -260,3 +260,4 @@ window.portfolioLocaleAdditions.zh.catalog.videogames={"description": "经典游
 window.portfolioLocaleAdditions.zh.catalog.tools={"description": "浏览器中的免费工具桌面，包含记事本、计算器以及图像、数据和 PDF 工具。", "tags": ["工具", "效率"]};
 window.portfolioLocaleAdditions.zh.catalog.pais={"description": "开放的西班牙地图集，通过地图、地域图层和历史序列探索官方地图和数据。", "tags": ["西班牙", "地图集"]};
 window.portfolioLocaleAdditions.zh.catalog.radiolab={"description": "实验性无线电工作站，提供模拟接收机、频谱、合成音频和本地日志。", "tags": ["无线电", "模拟"]};
+window.portfolioLocaleAdditions.zh.catalog.relitree={"description": "个人研究项目，探索宗教及其演变，并使用 Atlas Editor 以交互式树状图呈现；项目仍在开发中。", "tags": ["宗教", "研究"]};

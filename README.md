@@ -21,7 +21,7 @@ El objetivo es presentar mi trabajo de forma clara y facilitar que puedas conoce
 
 ## Proyectos
 
-El catálogo actual reúne **37 proyectos**. Están agrupados aquí por su temática para facilitar la consulta. Cada nombre abre la aplicación y el enlace **Código** lleva a su repositorio.
+El catálogo actual reúne **38 proyectos**. Están agrupados aquí por su temática para facilitar la consulta. Cada nombre abre la aplicación y el enlace **Código** lleva a su repositorio.
 
 ### Ciencia, espacio y simulación
 
@@ -74,6 +74,7 @@ El catálogo actual reúne **37 proyectos**. Están agrupados aquí por su temá
 | [Oblitus est scientia](https://alejandropico.github.io/Oblitus/) | Archivo editorial y divulgativo sobre ciencia, tecnología y pensamiento crítico. | [Código](https://github.com/AlejandroPico/Oblitus) |
 | [Arteteca](https://alejandropico.github.io/Arteteca/) | Exposición digital de arte con mosaico de obras, filtros y fichas de consulta. | [Código](https://github.com/AlejandroPico/Arteteca) |
 | [MindSage](https://alejandropico.github.io/Biografias/) | Archivo de historias, biografías y memoria familiar con recursos multimedia. | [Código](https://github.com/AlejandroPico/Biografias) |
+| [Relitree](https://alejandropico.github.io/Relitree/) | Investigación personal en desarrollo sobre las religiones y su evolución, presentada como árbol interactivo con Atlas Editor. | [Código](https://github.com/AlejandroPico/Relitree) |
 | [Lector](https://alejandropico.github.io/Lector/) | Lectura de libros y documentos con ajustes de presentación, notas y narración por voz. | [Código](https://github.com/AlejandroPico/Lector) |
 | [Games](https://alejandropico.github.io/Games/) | Colección de juegos de mesa, lógica, estrategia, cartas y otros géneros para el navegador. | [Código](https://github.com/AlejandroPico/Games) |
 | [ElectroGames](https://alejandropico.github.io/Electrogames/) | Juegos arcade y clásicos electrónicos como Snake, Pong, Breakout y Buscaminas para navegador. | [Código](https://github.com/AlejandroPico/Electrogames) |

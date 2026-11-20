@@ -325,3 +325,4 @@ window.portfolioLocaleAdditions.ru.catalog.videogames={"description": "Ката�
 window.portfolioLocaleAdditions.ru.catalog.tools={"description": "Рабочий стол бесплатных браузерных приложений: блокнот, калькулятор и инструменты для изображений, данных и PDF.", "tags": ["Инструменты", "Продуктивность"]};
 window.portfolioLocaleAdditions.ru.catalog.pais={"description": "Открытый атлас Испании для изучения официальных карт и данных с территориальными слоями и историческими рядами.", "tags": ["Испания", "Атлас"]};
 window.portfolioLocaleAdditions.ru.catalog.radiolab={"description": "Экспериментальная радиостанция с моделируемым приёмником, спектром, синтетическим аудио и локальным журналом.", "tags": ["Радио", "Моделирование"]};
+window.portfolioLocaleAdditions.ru.catalog.relitree={"description": "Личное исследование религий и их развития в процессе работы, представленное интерактивным деревом с помощью Atlas Editor.", "tags": ["Религии", "Исследование"]};

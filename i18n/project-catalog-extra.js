@@ -219,6 +219,19 @@ const extraCatalogProjects=[
       "Radio",
       "Simulación"
     ]
+  },
+  {
+    "id": "relitree",
+    "key": "relitree",
+    "title": "Relitree",
+    "url": "https://alejandropico.github.io/Relitree/",
+    "repo": "https://github.com/AlejandroPico/Relitree",
+    "icon": "https://alejandropico.github.io/Relitree/favicon.svg",
+    "description": "Investigación personal en desarrollo sobre las religiones y su evolución, presentada como árbol interactivo con Atlas Editor.",
+    "tags": [
+      "Religiones",
+      "Investigación"
+    ]
   }
 ];
 const extraCatalogTranslations={
@@ -341,6 +354,13 @@ const extraCatalogTranslations={
         "Radio",
         "Simulación"
       ]
+    },
+    "relitree": {
+      "description": "Investigación personal en desarrollo sobre las religiones y su evolución, presentada como árbol interactivo con Atlas Editor.",
+      "tags": [
+        "Religiones",
+        "Investigación"
+      ]
     }
   },
   "ca": {
@@ -461,6 +481,13 @@ const extraCatalogTranslations={
       "tags": [
         "Ràdio",
         "Simulació"
+      ]
+    },
+    "relitree": {
+      "description": "Recerca personal en desenvolupament sobre les religions i la seva evolució, presentada com a arbre interactiu amb Atlas Editor.",
+      "tags": [
+        "Religions",
+        "Recerca"
       ]
     }
   },
@@ -583,6 +610,13 @@ const extraCatalogTranslations={
         "Radio",
         "Simulation"
       ]
+    },
+    "relitree": {
+      "description": "An ongoing personal research project on religions and their evolution, presented as an interactive tree with Atlas Editor.",
+      "tags": [
+        "Religions",
+        "Research"
+      ]
     }
   },
   "fr": {
@@ -703,6 +737,13 @@ const extraCatalogTranslations={
       "tags": [
         "Radio",
         "Simulation"
+      ]
+    },
+    "relitree": {
+      "description": "Recherche personnelle en cours sur les religions et leur évolution, présentée sous forme d’arbre interactif avec Atlas Editor.",
+      "tags": [
+        "Religions",
+        "Recherche"
       ]
     }
   },
@@ -825,6 +866,13 @@ const extraCatalogTranslations={
         "Funk",
         "Simulation"
       ]
+    },
+    "relitree": {
+      "description": "Laufendes persönliches Forschungsprojekt über Religionen und ihre Entwicklung, dargestellt als interaktiver Baum mit Atlas Editor.",
+      "tags": [
+        "Religionen",
+        "Forschung"
+      ]
     }
   },
   "pt": {
@@ -946,6 +994,13 @@ const extraCatalogTranslations={
         "Rádio",
         "Simulação"
       ]
+    },
+    "relitree": {
+      "description": "Investigação pessoal em desenvolvimento sobre as religiões e a sua evolução, apresentada como árvore interativa com o Atlas Editor.",
+      "tags": [
+        "Religiões",
+        "Investigação"
+      ]
     }
   },
   "it": {
@@ -1066,6 +1121,13 @@ const extraCatalogTranslations={
       "tags": [
         "Radio",
         "Simulazione"
+      ]
+    },
+    "relitree": {
+      "description": "Ricerca personale in corso sulle religioni e la loro evoluzione, presentata come albero interattivo con Atlas Editor.",
+      "tags": [
+        "Religioni",
+        "Ricerca"
       ]
     }
   }

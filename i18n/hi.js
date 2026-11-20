@@ -260,3 +260,4 @@ window.portfolioLocaleAdditions.hi.catalog.videogames={"description": "पुर
 window.portfolioLocaleAdditions.hi.catalog.tools={"description": "ब्राउज़र में मुफ़्त उपयोगिताओं का डेस्कटॉप, जिसमें नोटपैड, कैलकुलेटर और छवि, डेटा व PDF उपकरण शामिल हैं।", "tags": ["उपकरण", "उत्पादकता"]};
 window.portfolioLocaleAdditions.hi.catalog.pais={"description": "मानचित्र, क्षेत्रीय परतों और ऐतिहासिक शृंखलाओं से आधिकारिक आँकड़ों को देखने के लिए स्पेन का खुला एटलस।", "tags": ["स्पेन", "एटलस"]};
 window.portfolioLocaleAdditions.hi.catalog.radiolab={"description": "सिम्युलेटेड रिसीवर, स्पेक्ट्रम, कृत्रिम ऑडियो और स्थानीय लॉगबुक वाला प्रायोगिक रेडियो स्टेशन।", "tags": ["रेडियो", "सिमुलेशन"]};
+window.portfolioLocaleAdditions.hi.catalog.relitree={"description": "धर्मों और उनके विकास पर जारी व्यक्तिगत शोध, जिसे Atlas Editor से एक इंटरैक्टिव वृक्ष के रूप में प्रस्तुत किया गया है।", "tags": ["धर्म", "शोध"]};
