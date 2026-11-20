@@ -87,4 +87,4 @@ window.portfolioLocaleAdditions.ko.catalog.videogames={"description": "고전 �
 window.portfolioLocaleAdditions.ko.catalog.tools={"description": "메모장과 계산기, 이미지·데이터·PDF 도구 등을 제공하는 브라우저용 무료 유틸리티 데스크톱입니다.", "tags": ["도구", "생산성"]};
 window.portfolioLocaleAdditions.ko.catalog.pais={"description": "지도와 지역 레이어, 역사 시계열을 통해 스페인의 공식 지도와 데이터를 탐구하는 열린 아틀라스입니다.", "tags": ["스페인", "아틀라스"]};
 window.portfolioLocaleAdditions.ko.catalog.radiolab={"description": "모의 수신기, 스펙트럼, 합성 오디오와 로컬 교신 일지를 갖춘 실험용 무선국입니다.", "tags": ["무선", "시뮬레이션"]};
-window.portfolioLocaleAdditions.ko.catalog.relitree={"description": "종교와 그 발전을 탐구하는 진행 중인 개인 연구로, Atlas Editor를 활용한 인터랙티브 계통도로 표현합니다.", "tags": ["종교", "연구"]};
+window.portfolioLocaleAdditions.ko.catalog.relitree={"description": "역사 속 종교의 기원, 발전과 상호 관계를 탐구하는 개인 연구로, Atlas Editor를 활용한 인터랙티브 계통도로 표현합니다.", "tags": ["종교", "연구"]};

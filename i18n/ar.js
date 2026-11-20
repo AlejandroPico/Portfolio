@@ -325,4 +325,4 @@ window.portfolioLocaleAdditions.ar.catalog.videogames={"description": "فهرس 
 window.portfolioLocaleAdditions.ar.catalog.tools={"description": "سطح مكتب لأدوات مجانية في المتصفح، يضم المفكرة والآلة الحاسبة وأدوات الصور والبيانات وملفات PDF.", "tags": ["أدوات", "إنتاجية"]};
 window.portfolioLocaleAdditions.ar.catalog.pais={"description": "أطلس مفتوح لإسبانيا لاستكشاف الخرائط والبيانات الرسمية عبر الخرائط والطبقات الإقليمية والسلاسل التاريخية.", "tags": ["إسبانيا", "أطلس"]};
 window.portfolioLocaleAdditions.ar.catalog.radiolab={"description": "محطة راديو تجريبية تضم جهاز استقبال محاكى وطيفًا وصوتًا اصطناعيًا وسجل اتصالات محليًا.", "tags": ["راديو", "محاكاة"]};
-window.portfolioLocaleAdditions.ar.catalog.relitree={"description": "بحث شخصي قيد التطوير عن الأديان وتطورها، يُعرض كشجرة تفاعلية باستخدام Atlas Editor.", "tags": ["الأديان", "بحث"]};
+window.portfolioLocaleAdditions.ar.catalog.relitree={"description": "بحث شخصي في الأديان عبر التاريخ، يستكشف نشأتها وتطورها وصلاتها، ويعرضها في شجرة تفاعلية باستخدام Atlas Editor.", "tags": ["الأديان", "بحث"]};

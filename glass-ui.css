@@ -40,3 +40,14 @@ body[data-theme="dark"] .contact-form input,body[data-theme="dark"] .contact-for
 .tech-card.has-local-icon img{filter:drop-shadow(0 6px 10px rgba(0,0,0,.14));}
 .project-card .tag-list span,.project-card .tag-list span:hover{all:unset!important;display:inline!important;color:var(--muted)!important;font-size:.7rem!important;letter-spacing:.09em!important;line-height:1.25!important;cursor:default!important;}
 .project-card .tag-list span+span::before{content:"/";margin:0 .5rem;color:color-mix(in srgb,var(--muted) 65%,transparent);}
+
+/* Preserve coloured artwork; brighten the affected monochrome marks at night. */
+body[data-theme="dark"] .tech-card.has-local-icon img:is(
+ [src$="Cobol.svg"],[src$="Rust.svg"],[src$="LaTeX.svg"],[src$="TeX.svg"],
+ [src$="Microsoft%20SQL%20Server.svg"],[src$="Kafka.svg"],[src$="Symfony.svg"],
+ [src$="Matter.svg"],[src$="GitHub.svg"],[src$="Unreal%20Engine.svg"],
+ [src$="ChatGPT.svg"],[src$="Wordpress.svg"]
+){filter:invert(1) drop-shadow(0 1px 1px rgba(0,0,0,.3))}
+/* Gemini is a wide wordmark: give it room and keep its original colours. */
+.tech-card.has-local-icon img[src$="Google%20Gemini.svg"]{width:4.7rem!important;max-width:100%;height:2.55rem;object-fit:contain}
+body[data-theme="dark"] .tech-card.has-local-icon img[src$="Google%20Gemini.svg"]{content:url("Icons/Google%20Gemini%20nocturno.svg")}

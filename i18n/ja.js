@@ -260,4 +260,4 @@ window.portfolioLocaleAdditions.ja.catalog.videogames={"description": "クラシ
 window.portfolioLocaleAdditions.ja.catalog.tools={"description": "メモ帳、電卓、画像・データ・PDFツールなどを備えた、ブラウザーで使える無料ツールのデスクトップ。", "tags": ["ツール", "生産性"]};
 window.portfolioLocaleAdditions.ja.catalog.pais={"description": "地図、地域レイヤー、時系列データを通じて公式データを探索できるスペインのオープンアトラス。", "tags": ["スペイン", "アトラス"]};
 window.portfolioLocaleAdditions.ja.catalog.radiolab={"description": "模擬受信機、スペクトル、合成音声、ローカルのログブックを備えた実験的な無線ステーション。", "tags": ["無線", "シミュレーション"]};
-window.portfolioLocaleAdditions.ja.catalog.relitree={"description": "宗教とその変遷を調べる個人研究プロジェクト。Atlas Editorを用いたインタラクティブな樹形図として制作中です。", "tags": ["宗教", "研究"]};
+window.portfolioLocaleAdditions.ja.catalog.relitree={"description": "宗教の歴史をたどる個人研究。起源、変遷、相互のつながりを、Atlas Editorを用いたインタラクティブな樹形図で表します。", "tags": ["宗教", "研究"]};

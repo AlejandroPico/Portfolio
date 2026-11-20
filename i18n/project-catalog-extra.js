@@ -227,7 +227,7 @@ const extraCatalogProjects=[
     "url": "https://alejandropico.github.io/Relitree/",
     "repo": "https://github.com/AlejandroPico/Relitree",
     "icon": "https://alejandropico.github.io/Relitree/favicon.svg",
-    "description": "Investigación personal en desarrollo sobre las religiones y su evolución, presentada como árbol interactivo con Atlas Editor.",
+    "description": "Investigación personal sobre las religiones a lo largo de la historia: sus orígenes, evolución y vínculos, representados en un árbol interactivo con Atlas Editor.",
     "tags": [
       "Religiones",
       "Investigación"
@@ -356,7 +356,7 @@ const extraCatalogTranslations={
       ]
     },
     "relitree": {
-      "description": "Investigación personal en desarrollo sobre las religiones y su evolución, presentada como árbol interactivo con Atlas Editor.",
+      "description": "Investigación personal sobre las religiones a lo largo de la historia: sus orígenes, evolución y vínculos, representados en un árbol interactivo con Atlas Editor.",
       "tags": [
         "Religiones",
         "Investigación"
@@ -484,7 +484,7 @@ const extraCatalogTranslations={
       ]
     },
     "relitree": {
-      "description": "Recerca personal en desenvolupament sobre les religions i la seva evolució, presentada com a arbre interactiu amb Atlas Editor.",
+      "description": "Recerca personal sobre les religions al llarg de la història: els seus orígens, evolució i vincles, representats en un arbre interactiu amb Atlas Editor.",
       "tags": [
         "Religions",
         "Recerca"
@@ -612,7 +612,7 @@ const extraCatalogTranslations={
       ]
     },
     "relitree": {
-      "description": "An ongoing personal research project on religions and their evolution, presented as an interactive tree with Atlas Editor.",
+      "description": "Personal research into religions throughout history: their origins, evolution and connections, represented in an interactive tree with Atlas Editor.",
       "tags": [
         "Religions",
         "Research"
@@ -740,7 +740,7 @@ const extraCatalogTranslations={
       ]
     },
     "relitree": {
-      "description": "Recherche personnelle en cours sur les religions et leur évolution, présentée sous forme d’arbre interactif avec Atlas Editor.",
+      "description": "Recherche personnelle sur les religions à travers l’histoire : leurs origines, leur évolution et leurs liens, représentés dans un arbre interactif avec Atlas Editor.",
       "tags": [
         "Religions",
         "Recherche"
@@ -868,7 +868,7 @@ const extraCatalogTranslations={
       ]
     },
     "relitree": {
-      "description": "Laufendes persönliches Forschungsprojekt über Religionen und ihre Entwicklung, dargestellt als interaktiver Baum mit Atlas Editor.",
+      "description": "Persönliche Forschung über Religionen im Lauf der Geschichte: ihre Ursprünge, Entwicklung und Verbindungen, dargestellt in einem interaktiven Baum mit Atlas Editor.",
       "tags": [
         "Religionen",
         "Forschung"
@@ -996,7 +996,7 @@ const extraCatalogTranslations={
       ]
     },
     "relitree": {
-      "description": "Investigação pessoal em desenvolvimento sobre as religiões e a sua evolução, apresentada como árvore interativa com o Atlas Editor.",
+      "description": "Investigação pessoal sobre as religiões ao longo da história: origens, evolução e ligações, representadas numa árvore interativa com o Atlas Editor.",
       "tags": [
         "Religiões",
         "Investigação"
@@ -1124,7 +1124,7 @@ const extraCatalogTranslations={
       ]
     },
     "relitree": {
-      "description": "Ricerca personale in corso sulle religioni e la loro evoluzione, presentata come albero interattivo con Atlas Editor.",
+      "description": "Ricerca personale sulle religioni nel corso della storia: origini, evoluzione e legami, rappresentati in un albero interattivo con Atlas Editor.",
       "tags": [
         "Religioni",
         "Ricerca"
